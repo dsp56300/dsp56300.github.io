@@ -3,6 +3,17 @@
 
 @import "jekyll-theme-hacker";
 
+nav {
+  margin-top: 1em;
+}
+
+nav .btn {
+  display: inline-block;
+  margin: 0.2em 0.1em;
+  padding: 0.3em 0.6em;
+  font-size: 0.85em;
+}
+
 .video-container {
   position: relative;
   width: 100%;
