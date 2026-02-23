@@ -6,9 +6,9 @@ permalink: /technical/osirus-c
 
 All technical information we discovered on the architecture of the Access Virus synthesizer series is documented here.
 
-See the `[access_virus](https://github.com/dsp563c/dsp563c-tools/tree/master/access_virus)` directory for a guide on how to use the tools and for additional information on specific hardware versions.
+See the [access_virus](https://github.com/dsp563c/dsp563c-tools/tree/master/access_virus) directory for a guide on how to use the tools and for additional information on specific hardware versions.
 
-## [](https://github.com/dsp563c/dsp563c-tools#hardware-versions)Hardware Versions
+## Hardware Versions
 
 - 1997 Virus A - 1 x Motorola DSP 56303, 1x SAB 80C535-N
 - 1999 Virus B - 1 x Motorola DSP 56311, 1x SAB 80C535-N
@@ -16,26 +16,26 @@ See the `[access_virus](https://github.com/dsp563c/dsp563c-tools/tree/master/ac
 - 2005 Virus TI - 2 x Freescale DSP 56367 - 2x150 MHz, 1x ST UPSD3212CV
 - 2009 Virus TI2 - 2 x Freescale DSP 56367 - 2x150 MHz stock but overclocked
 
-## [](https://github.com/dsp563c/dsp563c-tools#motorola-dsp563xx)Motorola DSP563xx
+## Motorola DSP563xx
 
 Each synthesizer has at least one 24-bit DSP (Motorola DSP563xx series) that performs the audio processing. Detailed information on the device and instruction set can be found in the corresponding Motorola User Manual and DSP56300 Family Manual.
 
-## [](https://github.com/dsp563c/dsp563c-tools#i8051-microcontroller)i8051 microcontroller
+## i8051 microcontroller
 
 Handling user inputs from knobs and showing data on an LED display is handled by an 8-bit MCU with the Intel i8051 instruction set. This microcontroller also takes care of initializing the DSP. The DSP is connected to the microcontroller via the Host Interface (HDI08).
 
-## [](https://github.com/dsp563c/dsp563c-tools#flash-memory)Flash memory
+## Flash memory
 
 The flash memory contains all the code and data the synthesizer needs to operate. All legacy models have 512K flash memory, the newer TI and TI2 models feature a total of 1M.
 
-#### [](https://github.com/dsp563c/dsp563c-tools#contents)Contents
+#### Contents
 
 - i8051 operating system
 - i8051 flash programming routines
 - DSP563xx code (PRAM) and memory (XRAM, YRAM)
 - Presets and other data
 
-#### [](https://github.com/dsp563c/dsp563c-tools#layout)Layout
+#### Layout
 
 Flash memory is split up in banks of 32K (`0x8000`) bytes. This allows the memory to be directly addressable by the microcontroller, because the i8051 microcontroller only has 16 bits of address space for XRAM (`0x0 - 0xFFFF`).
 
@@ -45,7 +45,7 @@ The bank switching routine accepts one argument A, which can be mapped to a file
 
 Example for `A = 0x10`: `(0x10 & 0xF0) << 11 == 0x8000`
 
-#### [](https://github.com/dsp563c/dsp563c-tools#banks)Banks
+#### Banks
 
 The exact structure of the banks differs from synthesizer model to model, but for 512K flash it roughly looks like this:
 
@@ -57,7 +57,7 @@ The exact structure of the banks differs from synthesizer model to model, but fo
 
 ```
 
-## [](https://github.com/dsp563c/dsp563c-tools#execution-flow)Execution Flow
+## Execution Flow
 
 The i8051 microcontroller will go through the following initialization phases:
 
@@ -68,11 +68,11 @@ The i8051 microcontroller will go through the following initialization phases:
     - Start DSP initialization (see below)
     - ... (TODO)
 
-## [](https://github.com/dsp563c/dsp563c-tools#dsp-initialization)DSP initialization
+## DSP initialization
 
 The microcontroller will initialize the DSP by reading 24bit words from several banks in flash. For legacy models, the DSP data starts at bank 3 (offset 0x18000). For TI and TI2, the DSP data starts at bank 14 (offset 0x70000).
 
-#### [](https://github.com/dsp563c/dsp563c-tools#bank-parsing)Bank parsing
+#### Bank parsing
 
 Each bank is structured like this:
 
@@ -82,7 +82,7 @@ The number of words to be read can be calculated as follows: `word_count = (siz
 
 With each bank read, the index will decrement. The last bank to be read has an index of 0. At the end of the last bank there is a string terminated with a null-byte that represents the version of the firmware.
 
-#### [](https://github.com/dsp563c/dsp563c-tools#bank-data-stream)Bank data stream
+#### Bank data stream
 
 The resulting data stream is structured like this (each element is one word / 24bits):
 
@@ -92,7 +92,7 @@ This datastream is sent over the HDI08 port which is connected to the DSP. The b
 
 The assembly source code of the built-in bootstrap program can be found in Appendix A of the Motorola User Manual.
 
-#### [](https://github.com/dsp563c/dsp563c-tools#dsp-chunk-data)DSP chunk data
+#### DSP chunk data
 
 The BootROM can be disassembled to see exactly how it processes the remaining chunk data, but the process is briefly described here.
 
@@ -102,7 +102,7 @@ The `size` element indicates the number of words in the chunk.
 
 The `addr` element indicates the destination address for the words.
 
-##### [](https://github.com/dsp563c/dsp563c-tools#commands)Commands
+##### Commands
 
 ```
 000000: Write to P memory
@@ -112,17 +112,17 @@ The `addr` element indicates the destination address for the words.
 000004: Jump to address (start execution)
 ```
 
-## [](https://github.com/dsp563c/dsp563c-tools#reverse-engineering)Reverse Engineering
+## Reverse Engineering
 
 Both the microcontroller code and the DSP code can be disassembled using your favourite disassembler (we are using IDA Pro).
 
-#### [](https://github.com/dsp563c/dsp563c-tools#microcontroller)Microcontroller
+#### Microcontroller
 
 Just load the entire flash rom into IDA and select Intel 8051 as the processor type (and select the correct device name, see the hardware list). The RESET_0 routine should be visible (which is the main entrypoint).
 
 Note that some routines are not recognized automatically (such as the flash programming ones). You can go to the correct offset and press `c` to instruct IDA to disassemble those.
 
-#### [](https://github.com/dsp563c/dsp563c-tools#dsp-code)DSP Code
+#### DSP Code
 
 You can use the tools in [this](https://github.com/dsp563c/dsp563c-tools) repository to extract the DSP program from any Access Virus flash dump file.
 
