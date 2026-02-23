@@ -38,7 +38,7 @@ Here is a video of the emulator in action, you can grab a copy of our various em
 
 [https://www.matrixsynth.com/2024/04/xenia-waldorf-microwave-xt-emulator.html?m=1](https://www.matrixsynth.com/2024/04/xenia-waldorf-microwave-xt-emulator.html?m=1)
 
-[https://synthanatomy.com/2024/04/dsp56300-xenia-and-ostirus-waldorf-microwave-xt-access-virus-ti-emulators.html(https://synthanatomy.com/2024/04/dsp56300-xenia-and-ostirus-waldorf-microwave-xt-access-virus-ti-emulators.html)
+[https://synthanatomy.com/2024/04/dsp56300-xenia-and-ostirus-waldorf-microwave-xt-access-virus-ti-emulators.html](https://synthanatomy.com/2024/04/dsp56300-xenia-and-ostirus-waldorf-microwave-xt-access-virus-ti-emulators.html)
 
 [https://synthanatomy.com/2023/04/the-usual-suspects-vavra-a-waldorf-microq-emulation-using-the-dsp56300-plugin.html](https://synthanatomy.com/2023/04/the-usual-suspects-vavra-a-waldorf-microq-emulation-using-the-dsp56300-plugin.html)
 
