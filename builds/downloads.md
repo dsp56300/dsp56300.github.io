@@ -1,0 +1,128 @@
+---
+title: "Gearmulator Downloads"
+layout: default
+permalink: /builds/downloads
+---
+
+<label>Product: <select id="productFilter"><option value="">All</option></select></label>
+<label>Format: <select id="formatFilter"><option value="">All</option></select></label>
+<label>OS: <select id="osFilter"><option value="">All</option></select></label>
+
+<ul id="assetList"></ul>
+
+<style>
+  #assetList { list-style-type: none; padding: 0; }
+  #assetList li { margin: 0.3em 0; }
+</style>
+
+<script>
+async function fetchRelease(version) {
+    const localUrl = `${version}.json`;
+    const githubUrl = `https://api.github.com/repos/dsp56300/gearmulator/releases/tags/${version}`;
+
+    // 1. Try local cached JSON
+    try {
+        const localResp = await fetch(localUrl, { cache: "no-store" });
+        if (localResp.ok) {
+            console.log("Using cached release JSON:", localUrl);
+            return localResp;
+        }
+    } catch (e) {
+        // Network or CORS error – ignore and fallback
+    }
+
+    // 2. Fallback to GitHub API
+    console.log("Falling back to GitHub API");
+    const apiResp = await fetch(githubUrl);
+    if (!apiResp.ok)
+        throw new Error("Failed to fetch release data");
+
+    return apiResp;
+}
+
+async function main() {
+    const params = new URLSearchParams(window.location.search);
+    const version = params.get('version');
+    if (!version) {
+        document.getElementById('assetList').innerHTML = '<li>No version specified in URL</li>';
+        return;
+    }
+
+    const preProduct = params.get('product') || '';
+    const preFormat = params.get('format') || '';
+    const preOS = params.get('os') || '';
+
+    const resp = await fetchRelease(version);
+    const data = await resp.json();
+
+    const assetList = document.getElementById('assetList');
+    const productFilter = document.getElementById('productFilter');
+    const formatFilter = document.getElementById('formatFilter');
+    const osFilter = document.getElementById('osFilter');
+
+    const validFormats = new Set(['AU','CLAP','LV2','VST2','VST3']);
+    const products = new Set();
+    const formats = new Set();
+    const oses = new Set();
+
+    const assets = data.assets.map(a => {
+        const name = a.name;
+        const parts = name.split('-');
+
+        const product = parts[1] || '';
+        const maybeFormat = parts[2] || '';
+        const format = validFormats.has(maybeFormat) ? maybeFormat : '';
+
+        const osIndex = format === '' ? 3 : 4;
+        let os = parts[osIndex] || '';
+        os = os.replace(/\.[^/.]+$/, '');
+
+        if (product) products.add(product);
+        if (format) formats.add(format);
+        if (os) oses.add(os);
+
+        return { name, url: a.browser_download_url, product, format, os };
+    });
+
+    function populateFilter(select, items, preValue) {
+        [...items].sort().forEach(i => {
+            const opt = document.createElement('option');
+            opt.value = i; opt.textContent = i;
+            if (i === preValue) opt.selected = true;
+            select.appendChild(opt);
+        });
+    }
+
+    populateFilter(productFilter, products, preProduct);
+    populateFilter(formatFilter, formats, preFormat);
+    populateFilter(osFilter, oses, preOS);
+
+    function render() {
+        assetList.innerHTML = '';
+        const p = productFilter.value;
+        const f = formatFilter.value;
+        const o = osFilter.value;
+
+        assets.forEach(a => {
+            if ((p === '' || a.product === p) &&
+                (f === '' || a.format === f) &&
+                (o === '' || a.os === o)) {
+                const li = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = a.url;
+                link.textContent = a.name;
+                li.appendChild(link);
+                assetList.appendChild(li);
+            }
+        });
+    }
+
+    productFilter.addEventListener('change', render);
+    formatFilter.addEventListener('change', render);
+    osFilter.addEventListener('change', render);
+
+    render();
+}
+
+main();
+</script>

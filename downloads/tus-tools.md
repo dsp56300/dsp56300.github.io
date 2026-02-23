@@ -21,9 +21,9 @@ DSPBridge Downloads Links
 
 DSPBridge Server version 2.1.3:  
   
-[Win](https://dsp56300.com/builds/downloads.html?version=2.1.3&product=DSPBridgeServer&format=All&os=win64) / [Mac](https://dsp56300.com/builds/downloads.html?version=2.1.3&product=DSPBridgeServer&format=All&os=MacOS) / [Linux x64](https://dsp56300.com/builds/downloads.html?version=2.1.3&product=DSPBridgeServer&format=All&os=Linux_x86_64) / [Linux aarch64](https://dsp56300.com/builds/downloads.html?version=2.1.3&product=DSPBridgeServer&format=All&os=Linux_aarch64)  
+[Win](/builds/downloads?version=2.1.3&product=DSPBridgeServer&format=All&os=win64) / [Mac](/builds/downloads?version=2.1.3&product=DSPBridgeServer&format=All&os=MacOS) / [Linux x64](/builds/downloads?version=2.1.3&product=DSPBridgeServer&format=All&os=Linux_x86_64) / [Linux aarch64](/builds/downloads?version=2.1.3&product=DSPBridgeServer&format=All&os=Linux_aarch64)  
 
-For the full list of DSPBridge Server downloads click [here](https://dsp56300.com/builds/downloads.html?version=2.1.3&product=DSPBridgeServer&format=All&os=All).  
+For the full list of DSPBridge Server downloads click [here](/builds/downloads?version=2.1.3&product=DSPBridgeServer&format=All&os=All).  
   
 If you are unable to access these pages, you can also download directly from our [GitHub Releases Page](https://github.com/dsp56300/gearmulator/releases).  
   
