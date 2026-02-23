@@ -2,6 +2,7 @@
 title: "Advanced Setting: DSP overclocking/underclocking"
 date: 2024-03-01
 layout: post
+tags: [clock, dsp, dsp56300, emulation, osirus, ostirus, overclocking, vavra]
 ---
 
 Future emulator releases with versions 1.3.4 or higher allow to modify the DSP clock. This setting is part of a new section called _Advanced Settings_.

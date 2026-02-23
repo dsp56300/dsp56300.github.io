@@ -2,6 +2,7 @@
 title: "OsTIrus / Virus TI with 96 KHz Sample Rate"
 date: 2024-03-11
 layout: post
+tags: [96000, 96khz, dsp56300, rate, samplerate, sampling, ti, virus]
 ---
 
 We have discovered that the Virus TI DSP code can run with sample rates that are higher than what the hardware is capable of. We can use this to our advantage in OsTIrus because we are not limited to the hardware.

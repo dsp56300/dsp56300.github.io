@@ -2,6 +2,7 @@
 title: "Xenia - Wave Editor"
 date: 2025-03-08
 layout: post
+tags: [editor, microwave, mw2, waldorf, wave, xt]
 ---
 
 In version 1.4.4 of Xenia, a new page has been added to the UI, the Wave Editor.

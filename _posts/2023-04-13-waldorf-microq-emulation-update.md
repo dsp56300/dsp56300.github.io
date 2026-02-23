@@ -2,6 +2,7 @@
 title: "Waldorf microQ emulation update"
 date: 2023-04-13
 layout: post
+tags: [microq, vavra, waldorf]
 ---
 
 We recently made a lot of progress with Vavra, the Waldorf microQ emulator, time for an update.

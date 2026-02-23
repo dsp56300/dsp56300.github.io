@@ -2,6 +2,7 @@
 title: "Virus TI technical info / statement"
 date: 2022-04-20
 layout: post
+tags: [access, kemper, snow, ti, virus]
 ---
 
 We have updated our [Technical Info](/technical/osirus-c#virusti) page with some insights about how the multi-DSP setup on the Virus TI works. Also, it has a useful tip for hardware TI owners to maximize voice count in Multi Mode / Sequencer Mode, enjoy! 👍
