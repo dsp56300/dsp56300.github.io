@@ -8,16 +8,38 @@ remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme
 
-header_pages:
-  - downloads/osirus.md
-  - downloads/ostirus.md
-  - downloads/vavra.md
-  - downloads/xenia.md
-  - downloads/je8086.md
-  - downloads/nodalred2x.md
-  - downloads/tus-tools.md
-  - docs/installation-guide.md
-  - docs/faqs.md
-  - docs/demos.md
-  - technical/osirus-c.md
-  - blog.md
+navigation:
+  - title: Downloads
+    children:
+      - title: Osirus (Virus A/B/C)
+        url: /downloads/osirus
+      - title: OsTIrus (Virus TI)
+        url: /downloads/ostirus
+      - title: Vavra (microQ)
+        url: /downloads/vavra
+      - title: Xenia (MW II/XT)
+        url: /downloads/xenia
+      - title: JE8086 (JP-8000)
+        url: /downloads/je8086
+      - title: NodalRed2x (Nord Lead)
+        url: /downloads/nodalred2x
+      - title: TUS Tools
+        url: /downloads/tus-tools
+  - title: Documentation
+    children:
+      - title: Installation Guide
+        url: /docs/installation-guide
+      - title: FAQs
+        url: /docs/faqs
+      - title: Demos
+        url: /docs/demos
+      - title: VSTHost Configuration
+        url: /docs/vsthost-configuration
+      - title: Support Guide
+        url: /docs/support-guide
+  - title: Technical
+    children:
+      - title: Osirus C Technical Info
+        url: /technical/osirus-c
+  - title: Blog
+    url: /blog

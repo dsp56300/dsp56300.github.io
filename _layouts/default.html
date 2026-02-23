@@ -19,12 +19,20 @@
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
-        {% if site.header_pages %}
+        {% if site.navigation %}
         <nav>
-          {% for path in site.header_pages %}
-            {% assign page = site.pages | where: "path", path | first %}
-            {% if page %}
-              <a class="btn" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+          {% for item in site.navigation %}
+            {% if item.children %}
+              <div class="nav-dropdown">
+                <a class="btn nav-dropdown-toggle" href="#">{{ item.title }} ▾</a>
+                <div class="nav-dropdown-menu">
+                  {% for child in item.children %}
+                    <a href="{{ child.url | relative_url }}">{{ child.title }}</a>
+                  {% endfor %}
+                </div>
+              </div>
+            {% else %}
+              <a class="btn" href="{{ item.url | relative_url }}">{{ item.title }}</a>
             {% endif %}
           {% endfor %}
         </nav>

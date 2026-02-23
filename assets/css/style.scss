@@ -14,6 +14,45 @@ nav .btn {
   font-size: 0.85em;
 }
 
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  cursor: pointer;
+}
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 100;
+  background: #151515;
+  border: 1px solid #b5e853;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 0.3em 0;
+}
+
+.nav-dropdown-menu a {
+  display: block;
+  padding: 0.4em 0.8em;
+  color: #b5e853;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 0.85em;
+}
+
+.nav-dropdown-menu a:hover {
+  background: #222;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+  display: block;
+}
+
 .video-container {
   position: relative;
   width: 100%;
