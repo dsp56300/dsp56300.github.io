@@ -43,3 +43,7 @@ navigation:
         url: /technical/osirus-c
   - title: Blog
     url: /blog
+  - title: Discord
+    url: https://discord.gg/WJ9cxySnsM
+  - title: Source
+    url: https://github.com/dsp56300/gearmulator
