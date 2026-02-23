@@ -21,7 +21,7 @@ We understand that questions or issues may come up when using our emulators. Her
 
 **Fully explore our website** [//](//) to find a wealth of information about these emulators such as blog posts, feature-specific articles, installation guides, download links, Changelogs describing fixes and new features added, and other important information.  
   
-**Please ensure you have carefully read and follow the applicable documentation** that has been provided for the emulator(s) to include our [Install Guide](//installation-guide/), [FAQ](//faqs/), [Patch Manager Guide](//2024/02/06/patch-manager-introduction/), and any other specific feature guides. This should be your first stop.
+**Please ensure you have carefully read and follow the applicable documentation** that has been provided for the emulator(s) to include our [Install Guide](/docs/installation-guide), [FAQ](/docs/faqs), [Patch Manager Guide](/2024/02/06/patch-manager-introduction/), and any other specific feature guides. This should be your first stop.
 
 **Read the manufacturer's guides and manuals for the synths themselve**s; this can provide you with nearly everything you need to know about how the synth itself works (aside from our emulator plugin-specific features) and is an essential part of the synth emulation experience. Many of your questions about features are answered within the original manuals and we **_expect_** users to be familiar with how the original synths themselves work.
 
@@ -33,7 +33,7 @@ It is very important to **Learn the Discord Channel layout**. For the best exper
 
 PRO TIP - VIEW ALL THE CHANNELS, PLEASE:   
   
-`It is highly recommended as soon as you join to **_make sure you are viewing all the channels_** in our Discord server so you can know where to look and ask for help with your specific question or issue. Look in our Discord FAQ [HERE](//faqs/#discord-faq) for further help with that.`  
+`It is highly recommended as soon as you join to **_make sure you are viewing all the channels_** in our Discord server so you can know where to look and ask for help with your specific question or issue. Look in our Discord FAQ [HERE](/docs/faqs#discord-faq) for further help with that.`  
   
 As an example - if you are looking for assistance with Osirus, you have a much greater chance of someone seeing and responding to your question if you post in the **#osirus-support** channel (and not in the off-topic **#general-chat** channel or some other totally unrelated channel).
 

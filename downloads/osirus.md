@@ -30,7 +30,7 @@ As the Virus B runs at 108 MHz a result of 108 MIPs or more is needed
 As the Virus A runs at 72 MHz a result of 72 MIPs or more is needed
 
 ## Emulator Downloads Links  
-Please read the [Installation Guide](//installation-guide/) before downloading
+Please read the [Installation Guide](/docs/installation-guide) before downloading
 
 Osirus Emulator for Access Virus A, B, C version 2.1.3:  
   
@@ -49,6 +49,4 @@ If you are unable to access these pages, you can also download directly from our
 
 ### MacOS Catalina+ users, read this
 
-```
-The plugins are not signed, if you get a warning such as "Osirus.xxx cannot be opened because the developer cannot be verified", please ensure you carefully follow the instructions in the Installation Guide to uncompress the plugin download, double-click the provided 'macsetup_Osirus.command' file, then copy the modified plugin file to the applicable plugin folder.
-```
+> The plugins are not signed, if you get a warning such as "Osirus.xxx cannot be opened because the developer cannot be verified", please ensure you carefully follow the instructions in the Installation Guide to uncompress the plugin download, double-click the provided 'macsetup_Osirus.command' file, then copy the modified plugin file to the applicable plugin folder.

@@ -14,14 +14,14 @@ permalink: /docs/faqs
                                  
 ```
 
-1. [General FAQ](//faqs/#general-faq)
-2. [Discord FAQ](//faqs/#discord-faq)
-3. [Osirus VST/AU/CLAP/LV2 FAQ (Access Virus A/B/C)](//faqs/#osirus-vst-au-clap-lv2-faq-access-virus-a-b-c)
-4. [OsTIrus VST/AU/CLAP/LV2 FAQ (Access Virus TI/Snow)](//faqs/#ostirus-vst-au-clap-lv2-faq-access-virus-ti-snow)
-5. [Vavra VST/AU/CLAP/LV2 FAQ (Waldorf microQ)](//faqs/#vavra-vst-au-clap-faq-microq)
-6. [Xenia VST/AU/CLAP/LV2 FAQ (Waldorf microWAVE 2/XT)](//faqs/#xenia-vst-au-clap-faq-microq)
-7. [NodalRed2x VST/AU/CLAP/LV2 FAQ (Clavia Nord Lead 2x)](//faqs/#nodalred2x-vst-au-clap-faq-microq)
-8. [JE8086 VST/AU/CLAP/LV2 FAQ (Roland JP-8000 and soon JP-8080)](//faqs/#je8086-vst-au-clap-faq-microq)
+1. [General FAQ](/docs/faqs#general-faq)
+2. [Discord FAQ](/docs/faqs#discord-faq)
+3. [Osirus VST/AU/CLAP/LV2 FAQ (Access Virus A/B/C)](/docs/faqs#osirus-vst-au-clap-lv2-faq-access-virus-a-b-c)
+4. [OsTIrus VST/AU/CLAP/LV2 FAQ (Access Virus TI/Snow)](/docs/faqs#ostirus-vst-au-clap-lv2-faq-access-virus-ti-snow)
+5. [Vavra VST/AU/CLAP/LV2 FAQ (Waldorf microQ)](/docs/faqs#vavra-vst-au-clap-faq-microq)
+6. [Xenia VST/AU/CLAP/LV2 FAQ (Waldorf microWAVE 2/XT)](/docs/faqs#xenia-vst-au-clap-faq-microq)
+7. [NodalRed2x VST/AU/CLAP/LV2 FAQ (Clavia Nord Lead 2x)](/docs/faqs#nodalred2x-vst-au-clap-faq-microq)
+8. [JE8086 VST/AU/CLAP/LV2 FAQ (Roland JP-8000 and soon JP-8080)](/docs/faqs#je8086-vst-au-clap-faq-microq)
 
 ## General FAQ
 

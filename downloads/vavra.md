@@ -28,7 +28,7 @@ Once you have downloaded the test program, uncompressed it, and placed the firmw
 As the microQ runs at 118 MHz a result of 118 MIPs or more is needed to run it.
 
 ## Emulator Downloads Links  
-Please read the [Installation Guide](//installation-guide/) before downloading
+Please read the [Installation Guide](/docs/installation-guide) before downloading
 
 Vavra Emulator for Waldorf microQ version 2.1.3:  
   
@@ -47,6 +47,4 @@ If you are unable to access these pages, you can also download directly from our
 
 ### MacOS Catalina+ users, read this
 
-```
-The plugins are not signed, if you get a warning such as "Vavra.xxx cannot be opened because the developer cannot be verified", please ensure you carefully follow the instructions in the Installation Guide to uncompress the plugin download, double-click the provided 'macsetup_Vavra.command' file, then copy the modified plugin file to the applicable plugin folder.
-```
+> The plugins are not signed, if you get a warning such as "Vavra.xxx cannot be opened because the developer cannot be verified", please ensure you carefully follow the instructions in the Installation Guide to uncompress the plugin download, double-click the provided 'macsetup_Vavra.command' file, then copy the modified plugin file to the applicable plugin folder.

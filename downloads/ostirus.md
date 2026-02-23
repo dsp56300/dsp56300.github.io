@@ -26,7 +26,7 @@ As the Virus TI runs each DSP at 133 MHz a combined result for both DSPs of 266 
 The Virus TI Snow uses 1 DSP at 163 MHz, so 163 MIPs is needed to run it in Snow mode (currently not a configurable option for the Performance Test utility).
 
 ## Emulator Downloads Links  
-Please read the [Installation Guide](//installation-guide/) before downloading
+Please read the [Installation Guide](/docs/installation-guide) before downloading
 
 OsTIrus Emulator for Access Virus TI/Snow version 2.1.3:  
   
@@ -45,6 +45,4 @@ If you are unable to access these pages, you can also download directly from our
 
 ### MacOS Catalina+ users, read this
 
-```
-The plugins are not signed, if you get a warning such as "OsTIrus.xxx cannot be opened because the developer cannot be verified", please ensure you carefully follow the instructions in the Installation Guide to uncompress the plugin download, double-click the provided 'macsetup_OsTIrus.command' file, then copy the modified plugin file to the applicable plugin folder.
-```
+> The plugins are not signed, if you get a warning such as "OsTIrus.xxx cannot be opened because the developer cannot be verified", please ensure you carefully follow the instructions in the Installation Guide to uncompress the plugin download, double-click the provided 'macsetup_OsTIrus.command' file, then copy the modified plugin file to the applicable plugin folder.

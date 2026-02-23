@@ -13,4 +13,4 @@ OsTIrus supports loading multiple instances, multitimbrality, enhanced voice all
 
 OsTIrus is available for download from our website at the following link:
 
-[//ostirus/](//ostirus/)
+[/downloads/ostirus](/downloads/ostirus)

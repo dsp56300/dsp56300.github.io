@@ -94,20 +94,16 @@ Once the plugin has been correctly installed and is working, it is highly recomm
 
 ****Asking for help****
 
-Please read our Support Guide which can be found [HERE](//support-guide/) to find out how and where to get support and assistance for our emulators.  
+Please read our Support Guide which can be found [HERE](/docs/support-guide) to find out how and where to get support and assistance for our emulators.  
 
-```
-PRO TIP: To avoid frustration, confusion, and running afoul of the rules, it is essential for all users to read our FAQ and Pinned Messages in the the various support channels in the Discord; answers to most of the common questions will be found in those locations. 
-```
+> PRO TIP: To avoid frustration, confusion, and running afoul of the rules, it is essential for all users to read our FAQ and Pinned Messages in the the various support channels in the Discord; answers to most of the common questions will be found in those locations. 
 
   
 ****Notes about ROM/Firmware****:
 
 Our emulator(s) work by executing the original code (ROM/firmware) of the synth it is emulating; it is not capable of generating audio on its own.  Our emulators are intended for use only by legitimate owners of the hardware synth(s).  As such, owners of these synths typically have access to such files through the manufacturer for users entitled to do so, usually in the form of installation packages or OS system updates.  We cannot legally provide you with this ROM/firmware as part of the emulator nor provide any assistance nor accept any responsibility or liability for any illegal usage of these emulators.  Per our **#rules** published on our Discord server, no discussion of how to acquire ROM/Firmware will be tolerated in our community and may result in a ban.
 
-```
-PRO TIP:  Any assistance or information we can provide is typically found in Pinned Messages (possibly called a "ROM Statement") in the appropriate support channels on the Discord.  It is probably a great idea for all users to find and read any such messages (and Pinned Messages in general). 
-```
+> PRO TIP:  Any assistance or information we can provide is typically found in Pinned Messages (possibly called a "ROM Statement") in the appropriate support channels on the Discord.  It is probably a great idea for all users to find and read any such messages (and Pinned Messages in general). 
 
 **ROM/Firmware files (typically found in .BIN or .MID format) should be placed in the \\roms folder inside the main plugin resource folder.** If this is not done correctly the plugin will not operate properly and will present an error screen informing you that it does not detect valid file(s) in the correct location. Most times, if you see this error it means you have either not placed these files into the correct folder or the files themselves are not valid/correct firmware files for that particular emulator. Again we cannot assist with this, so please ensure you are following that step very carefully.
 
