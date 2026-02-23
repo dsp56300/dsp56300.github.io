@@ -28,7 +28,7 @@ Want to be part of the community? Join us on Discord: [https://discord.gg/WJ9cxy
 
 Here is a video of the emulator in action, you can grab a copy of our various emulators from our downloads pages on the menu bar.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t8rfyPpAmlA?si=mHubLLVDGnT0c97L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/t8rfyPpAmlA?si=mHubLLVDGnT0c97L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 # Articles featuring our Project
 
