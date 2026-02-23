@@ -24,46 +24,25 @@ We have since broadened our horizons and are branching out to research and reali
 
 Want to be part of the community? Join us on Discord: [https://discord.gg/WJ9cxySnsM](https://discord.gg/WJ9cxySnsM)
 
-<figure>
-
 ![VSTi User Interface for Virus A, B & C](images/image-2.png)
-
-<figcaption>
-
-VSTi User Interface for Virus A, B & C
-
-</figcaption>
-
-</figure>
 
 Here is a video of the emulator in action, you can grab a copy of our various emulators from our downloads pages on the menu bar.
 
-<figure>
-
-https://www.youtube.com/watch?v=t8rfyPpAmlA
-
-<figcaption>
-
-Comparison: Access Virus TI vs DSP56300 Emulator with Access Virus C ROM
-
-</figcaption>
-
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t8rfyPpAmlA?si=mHubLLVDGnT0c97L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Articles featuring our Project
 
-https://synthanatomy.com/2025/01/the-usual-suspects-nodal-red-2x-free-nord-lead-2-emulation.html
+[https://synthanatomy.com/2025/01/the-usual-suspects-nodal-red-2x-free-nord-lead-2-emulation.html](https://synthanatomy.com/2025/01/the-usual-suspects-nodal-red-2x-free-nord-lead-2-emulation.html)
 
 [https://bedroomproducersblog.com/2024/04/23/ostirus/](https://bedroomproducersblog.com/2024/04/23/ostirus/)
 
 [https://www.matrixsynth.com/2024/04/xenia-waldorf-microwave-xt-emulator.html?m=1](https://www.matrixsynth.com/2024/04/xenia-waldorf-microwave-xt-emulator.html?m=1)
 
-[https://synthanatomy.com/2024/04/dsp56300-xenia-and-ostirus-waldorf-microwave-xt-access-virus-ti-emulators.html](https://synthanatomy.com/2024/04/dsp56300-xenia-and-ostirus-waldorf-microwave-xt-access-virus-ti-emulators.html)
+[https://synthanatomy.com/2024/04/dsp56300-xenia-and-ostirus-waldorf-microwave-xt-access-virus-ti-emulators.html(https://synthanatomy.com/2024/04/dsp56300-xenia-and-ostirus-waldorf-microwave-xt-access-virus-ti-emulators.html)
 
-https://synthanatomy.com/2023/04/the-usual-suspects-vavra-a-waldorf-microq-emulation-using-the-dsp56300-plugin.html
+[https://synthanatomy.com/2023/04/the-usual-suspects-vavra-a-waldorf-microq-emulation-using-the-dsp56300-plugin.html](https://synthanatomy.com/2023/04/the-usual-suspects-vavra-a-waldorf-microq-emulation-using-the-dsp56300-plugin.html)
 
-[https://www.pro-tools-expert.com/production-expert-1/do-you-want-emulations-of-all-your-favourite-digital-synths  
-](https://www.pro-tools-expert.com/production-expert-1/do-you-want-emulations-of-all-your-favourite-digital-synths)
+[https://www.pro-tools-expert.com/production-expert-1/do-you-want-emulations-of-all-your-favourite-digital-synths](https://www.pro-tools-expert.com/production-expert-1/do-you-want-emulations-of-all-your-favourite-digital-synths)
 
 [https://www.matrixsynth.com/2021/07/dsp56300-emulator-to-bring-emulations.html](https://www.matrixsynth.com/2021/07/dsp56300-emulator-to-bring-emulations.html)
 
