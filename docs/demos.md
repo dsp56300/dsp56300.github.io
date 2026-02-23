@@ -29,36 +29,20 @@ Some wavetable fun with Xenia:
 
 Here you can find audio demos that have been made with the Emulator.
 
-https://soundcloud.com/dsp56300/dsp-56300-emu-access-virus-ti-os-517-factory-demo-version-2?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/dsp56300/dsp-56300-emu-access-virus-ti-os-517-factory-demo-version-2&color=%23b5e853&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 
+*Access Virus TI Demo - played by the emulator, Virus TI OS 5.1.7 ROM with two DSPs*
 
-*
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/dsp56300/sets/waldorf-microq&color=%23b5e853&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 
-Access Virus TI Demo - played by the emulator, Virus TI OS 5.1.7 ROM with two DSPs
+*Waldorf microQ - Factory Demos, played by the DSP 56300 Emulator*
 
-*
-https://soundcloud.com/dsp56300/sets/waldorf-microq
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/dsp56300/sets/motorola-dsp-emulator-access&color=%23b5e853&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 
+*Access Virus C Factory Demo + individual presets, played by the emulator using a Virus C OS 6.5 ROM*
 
-*
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/dsp56300/dsp-56300-emu-access-virus-a-os-28-demo&color=%23b5e853&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 
-Waldorf microQ - Factory Demos, played by the DSP 56300 Emulator
+*Access Virus A Factory Demo - played by the emulator using an Access Virus C OS 6.5 ROM*
 
-*
-https://soundcloud.com/dsp56300/sets/motorola-dsp-emulator-access?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
-
-
-*
-
-Access Virus C Factory Demo + individual presets, played by the emulator using a Virus C OS 6.5 ROM
-
-*
-https://soundcloud.com/dsp56300/dsp-56300-emu-access-virus-a-os-28-demo
-
-
-*
-
-Access Virus A Factory Demo - played by the emulator using an Access Virus C OS 6.5 ROM
-
-*
 Visit our [SoundCloud page](https://soundcloud.com/dsp56300) to listen to more audio demos.
