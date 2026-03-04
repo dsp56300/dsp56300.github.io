@@ -106,7 +106,7 @@ The initialization of the DSP follows a well-defined sequence:
 
 ### Phase 1: Hardware Bootstrap
 
-The DSP56362 has a built-in bootstrap ROM at `0xFFFF00`. When released from reset, the bootstrap program reads words from the HDI08 port:
+The DSP56303 has a built-in bootstrap ROM at `0xFFFF00`. When released from reset, the bootstrap program reads words from the HDI08 port:
 
 1. MC68k sends `[length] [address] [data words...]`
 2. Bootstrap loads data into P memory at the specified address
