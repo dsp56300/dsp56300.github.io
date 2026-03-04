@@ -41,6 +41,10 @@ navigation:
     children:
       - title: Osirus C Technical Info
         url: /technical/osirus-c
+      - title: Xenia (MW II/XT) Technical Info
+        url: /technical/xenia
+      - title: Vavra (microQ) Technical Info
+        url: /technical/vavra
   - title: Blog
     url: /blog
   - title: Discord
