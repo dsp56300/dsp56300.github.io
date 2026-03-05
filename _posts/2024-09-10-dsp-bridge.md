@@ -165,7 +165,7 @@ It is highly recommended to use a **wired** local network connection with a spee
 
 Any packet filtering, antivirus software that monitors network traffic or complicated firewall rules may degrade performance, it is recommended to turn these off between the DAW host and the server.
 
-### Latency
+### Latency Information
 
 The latency setting that exists in the plugin UI is used for Remote mode too, i.e. the latency is identical to what is selected in Local mode.
 
@@ -209,7 +209,7 @@ Any latency that is higher than 0 solves this problem. Because if a block of lat
     
 
 - **What is the expected latency?**  
-    The latency can be adjusted, a latency of one block is the preferred setting. A zero latency mode exists also, but is not recommended. For details, see [Latency](#Latency)  
+    The latency can be adjusted, a latency of one block is the preferred setting. A zero latency mode exists also, but is not recommended. For details, see [Latency](#Latency-Information)  
     
 
 - **Can I host a server in the cloud?**  
