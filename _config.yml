@@ -45,6 +45,8 @@ navigation:
         url: /technical/xenia
       - title: Vavra (microQ) Technical Info
         url: /technical/vavra
+      - title: NodalRed2x (Nord Lead 2X) Technical Info
+        url: /technical/nodalred2x
   - title: Blog
     url: /blog
   - title: Discord
