@@ -35,7 +35,7 @@ For this to work, we had to rewrite everything related to the GUI of our existin
     3. [knob](#knob)
 3. [Data Binding](#data-binding)
     1. [plugin](#plugin)
-    2. [partCurrent / part0 - part15](#partcurrent-and-part0-to-part15)
+    2. [partCurrent and part0 to part15](#partcurrent-and-part0-to-part15)
 4. [Parameter Binding](#parameter-binding)
 5. [Built-in data for RmlUI](#built-in-data-for-rmlui)
 6. [Includes](#includes)
