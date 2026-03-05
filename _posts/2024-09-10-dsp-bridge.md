@@ -209,7 +209,7 @@ Any latency that is higher than 0 solves this problem. Because if a block of lat
     
 
 - **What is the expected latency?**  
-    The latency can be adjusted, a latency of one block is the preferred setting. A zero latency mode exists also, but is not recommended. For details, see [Latency](#Latency-Information)  
+    The latency can be adjusted, a latency of one block is the preferred setting. A zero latency mode exists also, but is not recommended. For details, see [Latency Information](#Latency-Information). 
     
 
 - **Can I host a server in the cloud?**  
