@@ -35,7 +35,7 @@ For this to work, we had to rewrite everything related to the GUI of our existin
     3. [knob](#knob)
 3. [Data Binding](#data-binding)
     1. [plugin](#plugin)
-    2. [partCurrent / part0 - part15](#partcurrent-part0-part15)
+    2. [partCurrent / part0 - part15](#partcurrent)
 4. [Parameter Binding](#parameter-binding)
 5. [Built-in data for RmlUI](#built-in-data-for-rmlui)
 6. [Includes](#includes)
@@ -182,7 +182,7 @@ The **plugin** data model has the following attributes that can be used to displ
 | currentPart | Indicates which part is currently selected.   If multi mode is not enabled, this value is 0 | 0 - 15 |
 | today | The date of today in format YYYY-MM-DD | 2025-10-31 |
 
-### partCurrent / part0 - part15
+### partCurrent / part0 - part15 <a id="partCurrent"></a>
 
 The data models **partCurrent** and **part0** - **part15** contain information about every exposed plugin parameter.
 
