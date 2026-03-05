@@ -39,7 +39,7 @@ navigation:
         url: /docs/support-guide
   - title: Technical
     children:
-      - title: Osirus C Technical Info
+      - title: Osirus (Virus A/B/C/TI) Technical Info
         url: /technical/osirus-c
       - title: Xenia (MW II/XT) Technical Info
         url: /technical/xenia
