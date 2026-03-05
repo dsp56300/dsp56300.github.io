@@ -28,7 +28,7 @@ RmlUI, based on CSS2 and html, offers a much greater flexibility:
 
 For this to work, we had to rewrite everything related to the GUI of our existing plugins. Osirus & OsTIrus are the first plugins that are released with the new UI system, the other plugins will follow soon.
 
-1. [Existing Skins](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#existing-skins)
+1. [Existing Skins](#existing-skins)
 2. [Custom Controls](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#custom-controls)
     1. [button](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#button)
     2. [combo](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#combo)
