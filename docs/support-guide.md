@@ -19,11 +19,11 @@ We understand that questions or issues may come up when using our emulators. Her
 
 **Read The Website and Manuals**
 
-**Fully explore our website** [//](//) to find a wealth of information about these emulators such as blog posts, feature-specific articles, installation guides, download links, Changelogs describing fixes and new features added, and other important information.  
+**Fully explore our website** to find a wealth of information about these emulators such as blog posts, feature-specific articles, installation guides, download links, Changelogs describing fixes and new features added, and other important information.  
   
-**Please ensure you have carefully read and follow the applicable documentation** that has been provided for the emulator(s) to include our [Install Guide](/docs/installation-guide), [FAQ](/docs/faqs), [Patch Manager Guide](/2024/02/06/patch-manager-introduction/), and any other specific feature guides. This should be your first stop.
+**Please ensure you have carefully read and follow the applicable documentation** that has been provided for the emulator(s) to include our [Install Guide](/docs/installation-guide), [FAQ](/docs/faqs), [Patch Manager Guide](/_posts/2024-02-06-patch-manager-introduction.md/), and any other specific feature guides. This should be your first stop.
 
-**Read the manufacturer's guides and manuals for the synths themselve**s; this can provide you with nearly everything you need to know about how the synth itself works (aside from our emulator plugin-specific features) and is an essential part of the synth emulation experience. Many of your questions about features are answered within the original manuals and we **_expect_** users to be familiar with how the original synths themselves work.
+**Read the manufacturer's guides and manuals for the synths themselves**; this can provide you with nearly everything you need to know about how the synth itself works (aside from our emulator plugin-specific features) and is an essential part of the synth emulation experience. Many of your questions about features are answered within the original manuals and we **_expect_** users to be familiar with how the original synths themselves work.
 
 ****Join the Discord** Server and Learn How It Works**
 
@@ -31,9 +31,8 @@ We provide support **_only_** though our Discord; you can join [HERE](https://di
 
 It is very important to **Learn the Discord Channel layout**. For the best experience we recommend using the Discord client for your computer or at least viewing it on your computer using your web browser. Discord can be confusing and difficult to navigate, especially on mobile devices. We have many different emulators with more are on the way, and so we have many emulator-specific Categories with channels for specific purposes.
 
-PRO TIP - VIEW ALL THE CHANNELS, PLEASE:   
-  
-`It is highly recommended as soon as you join to **_make sure you are viewing all the channels_** in our Discord server so you can know where to look and ask for help with your specific question or issue. Look in our Discord FAQ [HERE](/docs/faqs#discord-faq) for further help with that.`  
+> **PRO TIP - VIEW ALL THE CHANNELS, PLEASE:**
+  It is highly recommended as soon as you join to **_make sure you are viewing all the channels_** in our Discord server so you can know where to look and ask for help with your specific question or issue. Look in our Discord FAQ [HERE](/docs/faqs#discord-faq) for further help with that. 
   
 As an example - if you are looking for assistance with Osirus, you have a much greater chance of someone seeing and responding to your question if you post in the **#osirus-support** channel (and not in the off-topic **#general-chat** channel or some other totally unrelated channel).
 
@@ -49,7 +48,7 @@ As a rule, we only officially support the most current version of our emulators,
 
 **Guidelines for reporting a bug**:
 
-_**A bug report should contain one and only one issue; do not cram many unrelated issues into one report or it may be deleted**_.
+**_A bug report should contain one and only one issue; do not cram many unrelated issues into one report or it may be deleted._**
 
 - Clear Simple Title
 
