@@ -176,7 +176,7 @@ A2: We realize this is a very popular request and we are currently investigating
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/_posts/2025-08-18-rmlui-new-gui-rendering-engine-skinning-system.md/).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/2025/08/18/rmlui-new-gui-rendering-engine-skinning-system).
 
 ## OsTIrus VST/AU/CLAP/LV2 FAQ (Access Virus TI/Snow)
 
@@ -212,7 +212,7 @@ A: Click next to the ROM LOADED at the bottom of the plugin and select the versi
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/_posts/2025-08-18-rmlui-new-gui-rendering-engine-skinning-system.md/).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/2025/08/18/rmlui-new-gui-rendering-engine-skinning-system).
 
 ## Vavra VST/AU/CLAP/LV2 FAQ (Waldorf microQ)
 
@@ -244,7 +244,7 @@ A2: We realize this is a very popular request and we are currently investigating
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/_posts/2025-08-18-rmlui-new-gui-rendering-engine-skinning-system.md/).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/2025/08/18/rmlui-new-gui-rendering-engine-skinning-system).
 
 ## Xenia VST/AU/CLAP/LV2 FAQ (Waldorf microWAVE 2/XT)
 
@@ -276,7 +276,7 @@ A2: We realize this is a very popular request and we are currently investigating
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/_posts/2025-08-18-rmlui-new-gui-rendering-engine-skinning-system.md/).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/2025/08/18/rmlui-new-gui-rendering-engine-skinning-system).
 
 ## NodalRed2x VST/AU/CLAP/LV2 FAQ (Clavia Nord Lead 2x)
 
@@ -308,7 +308,7 @@ A2: We realize this is a very popular request and we are currently investigating
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/_posts/2025-08-18-rmlui-new-gui-rendering-engine-skinning-system.md/).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/2025/08/18/rmlui-new-gui-rendering-engine-skinning-system).
 
 ## JE8086 VST/AU/CLAP/LV2 FAQ (Roland JP-8000 and soon JP-8080)
 
@@ -340,4 +340,4 @@ A2: We realize this is a very popular request and we are currently investigating
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/_posts/2025-08-18-rmlui-new-gui-rendering-engine-skinning-system.md/).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/2025/08/18/rmlui-new-gui-rendering-engine-skinning-system).

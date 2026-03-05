@@ -28,19 +28,19 @@ RmlUI, based on CSS2 and html, offers a much greater flexibility:
 
 For this to work, we had to rewrite everything related to the GUI of our existing plugins. Osirus & OsTIrus are the first plugins that are released with the new UI system, the other plugins will follow soon.
 
-1. [Existing Skins](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#existing-skins)
-2. [Custom Controls](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#custom-controls)
-    1. [button](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#button)
-    2. [combo](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#combo)
-    3. [knob](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#knob)
-3. [Data Binding](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#data-binding)
-    1. [plugin](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#plugin)
-    2. [partCurrent / part0 - part15](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#partcurrent-part0-part15)
-4. [Parameter Binding](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#parameter-binding)
-5. [Built-in data for RmlUI](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#built-in-data-for-rmlui)
-6. [Includes](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#includes)
-7. [Debugging](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#debugging)
-8. [Use it wisely](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#use-it-wisely)
+1. [Existing Skins](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#existing-skins)
+2. [Custom Controls](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#custom-controls)
+    1. [button](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#button)
+    2. [combo](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#combo)
+    3. [knob](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#knob)
+3. [Data Binding](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#data-binding)
+    1. [plugin](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#plugin)
+    2. [partCurrent / part0 - part15](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#partcurrent-part0-part15)
+4. [Parameter Binding](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#parameter-binding)
+5. [Built-in data for RmlUI](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#built-in-data-for-rmlui)
+6. [Includes](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#includes)
+7. [Debugging](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#debugging)
+8. [Use it wisely](/2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/#use-it-wisely)
 
 ## Existing Skins
 
