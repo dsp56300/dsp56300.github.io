@@ -372,6 +372,38 @@ These latency values were measured on the original hardware. The emulator applie
 | A/B/C | ~324 samples (±61) | 384 samples |
 | TI/TI2/Snow | ~216 samples | 384 samples |
 
+## LFO Display & Logo Animation
+
+The original Virus hardware features LEDs on the front panel that pulse in sync with the LFO rates, and the TI series adds a breathing logo LED. Our emulator replicates this behavior by reading the same DSP timer peripherals that the firmware uses to drive the physical LEDs.
+
+### How the Original Hardware Works
+
+The Virus DSP firmware uses **PWM (Pulse Width Modulation) timers** to drive the front panel LEDs. Each timer's compare register (`TCPR`) is continuously updated by the running firmware to reflect the current LFO phase. The LED brightness is proportional to the PWM duty cycle — as the LFO oscillates, the timer compare value changes, and the LED breathes in sync.
+
+### How We Read It in the Emulator
+
+Since we are emulating the full DSP including its timer peripherals, we can simply read the timer registers during the audio callback:
+
+1. **Read the timer registers** — `TCPR` (Timer Compare) and `TLR` (Timer Load)
+2. **Normalize** — `phase = (TCPR − TLR) / (0xFFFFFF − TLR)` to get a 0.0–1.0 value
+3. **Apply model-specific calibration** — Different models use different PWM ranges (e.g. the TI's LEDs never fully close, operating in a 0.785–0.999 range)
+4. **Transmit to UI** — The phase values are serialized into a custom emulator-only SysEx message (command `0x09`, not part of the original Virus protocol) and sent to the plugin editor
+
+The UI applies a gamma curve (`pow(1 − value, 0.2)`) to make the LED pulsing feel natural, then sets the opacity of the corresponding LED elements in the skin.
+
+### Timer-to-LFO Mapping per Model
+
+| Model | LFO 1 | LFO 2 | LFO 3 | Logo |
+|-------|-------|-------|-------|------|
+| Virus A/B/C | Timer 2 | Timer 1 | Timer 1 | — |
+| Virus TI/TI2 | Timer 1 | Timer 2 | Timer 0 | DSP 2, Timer 0 |
+| Virus TI Snow | — | — | — | BPM via Timer 1 |
+
+**Notes:**
+- On the **A/B/C**, LFO 2 and LFO 3 share a timer (the hardware only has two LED outputs for LFOs)
+- On the **TI/TI2**, the logo animation comes from the second DSP's Timer 0, operating in a narrow PWM range (0.964–1.0) that creates a subtle breathing effect
+- On the **Snow**, the compact hardware has no LFO LEDs — instead, a BPM indicator pulses via Timer 1
+
 * * *
 
 ## Virus TI Specific Architecture
