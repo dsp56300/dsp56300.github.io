@@ -41,6 +41,9 @@ navigation:
         url: /docs/support-guide
   - title: Technical
     children:
+      - title: How the Emulator Works
+        url: /technical/how-it-works
+      - title: ──────────────
       - title: Osirus (Virus A/B/C/TI) Technical Info
         url: /technical/osirus-c
       - title: Xenia (MW II/XT) Technical Info
