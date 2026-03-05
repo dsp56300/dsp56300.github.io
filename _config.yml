@@ -29,6 +29,8 @@ navigation:
     children:
       - title: Installation Guide
         url: /docs/installation-guide
+      - title: Patch Manager Guide
+        url: /docs/patch-manager
       - title: FAQs
         url: /docs/faqs
       - title: Demos

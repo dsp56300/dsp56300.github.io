@@ -90,7 +90,7 @@ The user will need to tell the DAW that new plugins have been added.  This is p
 
 Add the plugin to a track in the DAW and open the plugin UI.  On the first run (only once, for each plugin type) the user will be reminded of the terms of use and prompted to accept and continue.  If a valid ROM/Firmware file is not installed and detected in the **\\roms** subfolder an error message describing this may also be displayed.  Remember, without a valid ROM/Firmware file in place the emulator will not function correctly or make any sound.
 
-Once the plugin has been correctly installed and is working, it is highly recommended to configure the Patch Manager to point to your personal bank/preset location(s) for loading and saving patches.  Please refer to the support article [HERE](/2024/02/06/patch-manager-introduction) for more information about how to use the Patch Manager.
+Once the plugin has been correctly installed and is working, it is highly recommended to configure the Patch Manager to point to your personal bank/preset location(s) for loading and saving patches.  Please refer to the support article [HERE](/docs/patch-manager) for more information about how to use the Patch Manager.
 
 ****Asking for help****
 
