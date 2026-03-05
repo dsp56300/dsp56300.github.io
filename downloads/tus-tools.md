@@ -28,4 +28,4 @@ For the full list of DSPBridge Server downloads click [here](/builds/downloads?v
 If you are unable to access these pages, you can also download directly from our [GitHub Releases Page](https://github.com/dsp56300/gearmulator/releases).  
   
 
-For further information about how to configure and use DSPBridge, please refer to the blog post about DSPBridge [here](//2024/09/10/dsp-bridge/) as well as the further instructions found in the #emutils-support channel in our Discord.
+For further information about how to configure and use DSPBridge, please refer to the blog post about DSPBridge [here](/2024/09/10/dsp-bridge) as well as the further instructions found in the #emutils-support channel in our Discord.
