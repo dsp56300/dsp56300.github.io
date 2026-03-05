@@ -45,7 +45,7 @@ All A/B/C models share the same 12 MHz crystal oscillator. The DSP clock frequen
 | DSP Memory | 256 KB (0x40000 words) | 1 MB (0x100000 words) | 1 MB × 2 (0x100000 per DSP) |
 | External Mem Start | 0x020000 | 0x020000 | 0x020000 |
 | Crystal | 12 MHz | — | — |
-| DSP Clock | 72 MHz (A) / 108 MHz (B) / 136 MHz (C) | 133 MHz | 133 MHz (up to 153 MHz) |
+| DSP Clock | 72 MHz (A) / 108 MHz (B) / 136 MHz (C) | 163 MHz (OC from 150 MHz) | 133 MHz (up to 153 MHz) |
 | Sample Rate | 12 MHz / 256 = **46,875 Hz** | 32 – 96 kHz (variable) | 32 – 96 kHz (variable) |
 | Audio Interface | ESSI (A) / ESAI (B/C) | ESAI | ESAI + ESAI_1 |
 | Multi Parts | 16 | 4 | 16 |
