@@ -21,7 +21,7 @@ We understand that questions or issues may come up when using our emulators. Her
 
 **Fully explore our website** to find a wealth of information about these emulators such as blog posts, feature-specific articles, installation guides, download links, Changelogs describing fixes and new features added, and other important information.  
   
-**Please ensure you have carefully read and follow the applicable documentation** that has been provided for the emulator(s) to include our [Install Guide](/docs/installation-guide), [FAQ](/docs/faqs), [Patch Manager Guide](/_posts/2024-02-06-patch-manager-introduction.md/), and any other specific feature guides. This should be your first stop.
+**Please ensure you have carefully read and follow the applicable documentation** that has been provided for the emulator(s) to include our [Install Guide](/docs/installation-guide), [FAQ](/docs/faqs), [Patch Manager Guide](/2024/02/06/patch-manager-introduction), and any other specific feature guides. This should be your first stop.
 
 **Read the manufacturer's guides and manuals for the synths themselves**; this can provide you with nearly everything you need to know about how the synth itself works (aside from our emulator plugin-specific features) and is an essential part of the synth emulation experience. Many of your questions about features are answered within the original manuals and we **_expect_** users to be familiar with how the original synths themselves work.
 
