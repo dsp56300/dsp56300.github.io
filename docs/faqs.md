@@ -157,7 +157,11 @@ A: Plugins on MacOS need to be signed manually after installation. To do so, we 
 Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for Osirus is shown below:
 
 ```
-sudo xattr -cr /Library/Audio/Plug-Ins/VST3/Osirus.vst3sudo xattr -cr /Library/Audio/Plug-Ins/VST/Osirus.vstsudo xattr -cr /Library/Audio/Plug-Ins/Components/Osirus.componentsudo xattr -cr /Library/Audio/Plug-Ins/CLAP/Osirus.clapsudo xattr -cr /Library/Audio/Plug-Ins/lv2/Osirus.lv2
+sudo xattr -cr /Library/Audio/Plug-Ins/VST3/Osirus.vst3
+sudo xattr -cr /Library/Audio/Plug-Ins/VST/Osirus.vst
+sudo xattr -cr /Library/Audio/Plug-Ins/Components/Osirus.component
+sudo xattr -cr /Library/Audio/Plug-Ins/CLAP/Osirus.clap
+sudo xattr -cr /Library/Audio/Plug-Ins/lv2/Osirus.lv2
 ```
 
 **Q: When controlling the plugin via my Master Keyboard, I get weird behavior such as volume changes / sound changes etc**
@@ -172,7 +176,7 @@ A2: We realize this is a very popular request and we are currently investigating
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/_posts/2025-08-18-rmlui-new-gui-rendering-engine-skinning-system.md/).
 
 ## OsTIrus VST/AU/CLAP/LV2 FAQ (Access Virus TI/Snow)
 
@@ -185,7 +189,11 @@ A: Plugins on MacOS need to be signed manually after installation. To do so, we 
 Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for OsTIrus is shown below:
 
 ```
-sudo xattr -cr /Library/Audio/Plug-Ins/VST3/OsTIrus.vst3sudo xattr -cr /Library/Audio/Plug-Ins/VST/OsTIrus.vstsudo xattr -cr /Library/Audio/Plug-Ins/Components/OsTIrus.componentsudo xattr -cr /Library/Audio/Plug-Ins/CLAP/OsTIrus.clapsudo xattr -cr /Library/Audio/Plug-Ins/lv2/OsTIrus.lv2
+sudo xattr -cr /Library/Audio/Plug-Ins/VST3/OsTIrus.vst3
+sudo xattr -cr /Library/Audio/Plug-Ins/VST/OsTIrus.vst
+sudo xattr -cr /Library/Audio/Plug-Ins/Components/OsTIrus.component
+sudo xattr -cr /Library/Audio/Plug-Ins/CLAP/OsTIrus.clap
+sudo xattr -cr /Library/Audio/Plug-Ins/lv2/OsTIrus.lv2
 ```
 
 **Q: When controlling the plugin via my Master Keyboard, I get weird behavior such as volume changes / sound changes etc**
@@ -204,7 +212,7 @@ A: Click next to the ROM LOADED at the bottom of the plugin and select the versi
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/_posts/2025-08-18-rmlui-new-gui-rendering-engine-skinning-system.md/).
 
 ## Vavra VST/AU/CLAP/LV2 FAQ (Waldorf microQ)
 
@@ -217,7 +225,11 @@ A: Plugins on MacOS need to be signed manually after installation. To do so, we 
 Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for Vavra is shown below:
 
 ```
-sudo xattr -cr /Library/Audio/Plug-Ins/VST3/Vavra.vst3sudo xattr -cr /Library/Audio/Plug-Ins/VST/Vavra.vstsudo xattr -cr /Library/Audio/Plug-Ins/Components/Vavra.componentsudo xattr -cr /Library/Audio/Plug-Ins/CLAP/Vavra.clapsudo xattr -cr /Library/Audio/Plug-Ins/LV2/Vavra.lv2
+sudo xattr -cr /Library/Audio/Plug-Ins/VST3/Vavra.vst3
+sudo xattr -cr /Library/Audio/Plug-Ins/VST/Vavra.vst
+sudo xattr -cr /Library/Audio/Plug-Ins/Components/Vavra.component
+sudo xattr -cr /Library/Audio/Plug-Ins/CLAP/Vavra.clap
+sudo xattr -cr /Library/Audio/Plug-Ins/LV2/Vavra.lv2
 ```
 
 **Q: When controlling the plugin via my Master Keyboard, I get weird behavior such as volume changes / sound changes etc**
@@ -232,7 +244,7 @@ A2: We realize this is a very popular request and we are currently investigating
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/_posts/2025-08-18-rmlui-new-gui-rendering-engine-skinning-system.md/).
 
 ## Xenia VST/AU/CLAP/LV2 FAQ (Waldorf microWAVE 2/XT)
 
@@ -245,7 +257,11 @@ A: Plugins on MacOS need to be signed manually after installation. To do so, we 
 Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for Vavra is shown below:
 
 ```
-sudo xattr -cr /Library/Audio/Plug-Ins/VST3/Xenia.vst3sudo xattr -cr /Library/Audio/Plug-Ins/VST/Xenia.vstsudo xattr -cr /Library/Audio/Plug-Ins/Components/Xenia.componentsudo xattr -cr /Library/Audio/Plug-Ins/CLAP/Xenia.clapsudo xattr -cr /Library/Audio/Plug-Ins/LV2/Xenia.lv2
+sudo xattr -cr /Library/Audio/Plug-Ins/VST3/Xenia.vst3
+sudo xattr -cr /Library/Audio/Plug-Ins/VST/Xenia.vst
+sudo xattr -cr /Library/Audio/Plug-Ins/Components/Xenia.component
+sudo xattr -cr /Library/Audio/Plug-Ins/CLAP/Xenia.clap
+sudo xattr -cr /Library/Audio/Plug-Ins/LV2/Xenia.lv2
 ```
 
 **Q: When controlling the plugin via my Master Keyboard, I get weird behavior such as volume changes / sound changes etc**
@@ -260,7 +276,7 @@ A2: We realize this is a very popular request and we are currently investigating
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/_posts/2025-08-18-rmlui-new-gui-rendering-engine-skinning-system.md/).
 
 ## NodalRed2x VST/AU/CLAP/LV2 FAQ (Clavia Nord Lead 2x)
 
@@ -273,7 +289,11 @@ A: Plugins on MacOS need to be signed manually after installation. To do so, we 
 Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for Vavra is shown below:
 
 ```
-sudo xattr -cr /Library/Audio/Plug-Ins/VST3/NodalRed2x.vst3sudo xattr -cr /Library/Audio/Plug-Ins/VST/NodalRed2x.vstsudo xattr -cr /Library/Audio/Plug-Ins/Components/NodalRed2x.componentsudo xattr -cr /Library/Audio/Plug-Ins/CLAP/NodalRed2x.clapsudo xattr -cr /Library/Audio/Plug-Ins/LV2/NodalRed2x.lv2
+sudo xattr -cr /Library/Audio/Plug-Ins/VST3/NodalRed2x.vst3
+sudo xattr -cr /Library/Audio/Plug-Ins/VST/NodalRed2x.vst
+sudo xattr -cr /Library/Audio/Plug-Ins/Components/NodalRed2x.component
+sudo xattr -cr /Library/Audio/Plug-Ins/CLAP/NodalRed2x.clap
+sudo xattr -cr /Library/Audio/Plug-Ins/LV2/NodalRed2x.lv2
 ```
 
 **Q: When controlling the plugin via my Master Keyboard, I get weird behavior such as volume changes / sound changes etc**
@@ -286,6 +306,10 @@ A: The Nord Lead 2x hardware already has plenty of control changes mapped to mod
 
 A2: We realize this is a very popular request and we are currently investigating a way to add this into our emulators.
 
+**Q: How can I develop my own skin for the plugin?**
+
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/_posts/2025-08-18-rmlui-new-gui-rendering-engine-skinning-system.md/).
+
 ## JE8086 VST/AU/CLAP/LV2 FAQ (Roland JP-8000 and soon JP-8080)
 
 This is the FAQ specific for the JE8086 plugin, which emulates the Roland JP-8000 (and soon the JP-8080).
@@ -297,7 +321,11 @@ A: Plugins on MacOS need to be signed manually after installation. To do so, we 
 Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for Vavra is shown below:
 
 ```
-sudo xattr -cr /Library/Audio/Plug-Ins/VST3/JE8086.vst3sudo xattr -cr /Library/Audio/Plug-Ins/VST/JE8086.vstsudo xattr -cr /Library/Audio/Plug-Ins/Components/JE8086.componentsudo xattr -cr /Library/Audio/Plug-Ins/CLAP/JE8086.clapsudo xattr -cr /Library/Audio/Plug-Ins/LV2/JE8086.lv2
+sudo xattr -cr /Library/Audio/Plug-Ins/VST3/JE8086.vst3
+sudo xattr -cr /Library/Audio/Plug-Ins/VST/JE8086.vst
+sudo xattr -cr /Library/Audio/Plug-Ins/Components/JE8086.component
+sudo xattr -cr /Library/Audio/Plug-Ins/CLAP/JE8086.clap
+sudo xattr -cr /Library/Audio/Plug-Ins/LV2/JE8086.lv2
 ```
 
 **Q: When controlling the plugin via my Master Keyboard, I get weird behavior such as volume changes / sound changes etc**
@@ -312,4 +340,4 @@ A2: We realize this is a very popular request and we are currently investigating
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](//2025/08/19/rmlui-new-gui-rendering-engine-skinning-system/).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/_posts/2025-08-18-rmlui-new-gui-rendering-engine-skinning-system.md/).
