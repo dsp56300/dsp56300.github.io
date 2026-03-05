@@ -4,6 +4,21 @@ layout: default
 permalink: /docs/patch-manager
 ---
 
+```
+██████╗  █████╗ ████████╗ ██████╗██╗  ██╗
+██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██║  ██║
+██████╔╝███████║   ██║   ██║     ███████║
+██╔═══╝ ██╔══██║   ██║   ██║     ██╔══██║
+██║     ██║  ██║   ██║   ╚██████╗██║  ██║
+╚═╝     ╚═╝  ╚═╝   ╚═╝    ╚═════╝╚═╝  ╚═╝
+███╗   ███╗ █████╗ ███╗   ██╗ █████╗  ██████╗ ███████╗██████╗
+████╗ ████║██╔══██╗████╗  ██║██╔══██╗██╔════╝ ██╔════╝██╔══██╗
+██╔████╔██║███████║██╔██╗ ██║███████║██║  ███╗█████╗  ██████╔╝
+██║╚██╔╝██║██╔══██║██║╚██╗██║██╔══██║██║   ██║██╔══╝  ██╔══██╗
+██║ ╚═╝ ██║██║  ██║██║ ╚████║██║  ██║╚██████╔╝███████╗██║  ██║
+╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
+```
+
 # Patch Manager
 
 The **Patch Manager** is the central hub for organizing, browsing, and managing presets across all Gearmulator emulations. It replaces the earlier Preset Browser with a modern database-driven approach — instead of navigating banks and files on disk, you work with **categories**, **tags**, and **favourites** to find and organize your sounds.
