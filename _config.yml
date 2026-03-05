@@ -47,6 +47,8 @@ navigation:
         url: /technical/vavra
       - title: NodalRed2x (Nord Lead 2X) Technical Info
         url: /technical/nodalred2x
+      - title: JE-8086 (JP-8000) Technical Info
+        url: /technical/je8086
   - title: Blog
     url: /blog
   - title: Discord
