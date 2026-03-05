@@ -28,7 +28,7 @@ All Virus models from A through TI2 and Snow are fully emulated by Gearmulator, 
 | 1999 | **Virus B** | 1× Motorola DSP 56311 @ 108 MHz | SAB 80C535-N (i8051) | Added 3rd oscillator (OS4+), ~24 voices |
 | 2002 | **Virus C** | 1× Freescale DSP 56362 @ 136 MHz | SAF 80C515-L24N (i8051) | 3-band EQ, improved effects, ~32 voices |
 | 2005 | **Virus TI** | 2× Freescale DSP 56367 @ 133 MHz | ST UPSD3212CV | USB audio, Total Integration, ~80 voices |
-| 2008 | **Virus TI Snow** | 1× Freescale DSP 56367 | ST UPSD3212CV | Compact desktop, 4 parts, ~40 voices |
+| 2008 | **Virus TI Snow** | 1× Freescale DSP 56367 @ 163 MHz | ST UPSD3212CV | Compact desktop, 4 parts, ~40 voices |
 | 2009 | **Virus TI2** | 2× Freescale DSP 56367 @ 133 MHz (overclockable) | ST UPSD3212CV | Higher polyphony, revised design |
 
 Available hardware configurations include desktop/rack modules and keyboard versions (KB, Indigo, Indigo2, TI Keyboard, TI Polar).
@@ -504,7 +504,7 @@ A summary where each selected output ends up on the audio bus can be found below
 ### Virus TI Snow
 
 The Snow is a compact single-DSP variant of the TI:
-- Uses 1× DSP56367 with the same 1 MB memory configuration as the TI
+- Uses 1× DSP56367 @ 163 MHz (overclocked from 150 MHz stock) with the same 1 MB memory configuration as the TI
 - Limited to 4 multitimbral parts (vs. 16 on the full TI)
 - 4 analog outputs (2× stereo), 6 USB outputs (3× stereo)
 - Same ESAI audio interface, same preset format
