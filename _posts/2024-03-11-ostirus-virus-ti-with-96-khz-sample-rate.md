@@ -65,4 +65,4 @@ You can imagine that it was very tempting to see what the DSP does if we send so
 
 It turned out that the DSPs react to higher numbers by adjusting the pitch, LFO rates etc. to match even higher sample rates. 👍
 
-For higher sample rates, the DSP does not seem to expect a different EXTAL clock and still adjusts the DSP to 133 MHz. That is why we expect that higher sample rates result in less voices, but feel free to try! Also, you might be able to reach a higher voice count if you [overclock the DSP](//2024/03/01/advanced-setting-dsp-overclocking-underclocking/).
+For higher sample rates, the DSP does not seem to expect a different EXTAL clock and still adjusts the DSP to 133 MHz. That is why we expect that higher sample rates result in less voices, but feel free to try! Also, you might be able to reach a higher voice count if you [overclock the DSP](/2024/03/01/advanced-setting-dsp-overclocking-underclocking).
