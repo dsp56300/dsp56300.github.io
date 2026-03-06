@@ -32,17 +32,23 @@ Here is a video of our JE8086 emulator in action, you can grab a copy of our var
 
 # Examples of Media about our Project
 
+[JE-8086: Roland DSP emulator insights and the Supersaw is no longer a mystery](https://synthanatomy.com/2026/01/je-8086-roland-dsp-emulator-insights-and-the-supersaw-is-no-longer-a-mystery.html)
+
+[YouTube: 39C3 - From Silicon to Darude Sand-storm: breaking famous synthesizer DSPs](https://www.youtube.com/watch?v=XM_q5T7wTpQ&t=1s)
+
+[JE-8086 by The Usual Suspects - A Roland JP-8000 Emulator](https://produceralley.com/je-8086-by-the-usual-suspects-a-roland-jp-8000-emulator/)
+
 [The Usual Suspects Nodal Red 2x, free Nord Lead 2 emulation using the DSP56300 plugin, now in public beta](https://synthanatomy.com/2025/01/the-usual-suspects-nodal-red-2x-free-nord-lead-2-emulation.html)
 
 [OsTIrus Is A FREE Virus Ti Emulator By The Usual Suspects](https://bedroomproducersblog.com/2024/04/23/ostirus/)
 
-[Youtube - The truth about OsTirus (DSP56300)](https://www.youtube.com/watch?v=m2qu3ORelH4)
+[Youtube: The truth about OsTirus (DSP56300)](https://www.youtube.com/watch?v=m2qu3ORelH4)
 
 [Xenia (Waldorf Microwave XT Emulator) Coming from DSP56300](https://www.matrixsynth.com/2024/04/xenia-waldorf-microwave-xt-emulator.html?m=1)
 
 [DSP56300 Xenia and OsTirus, new Waldorf Microwave XT, and Access Virus TI Synthesizer emulators are coming soon to your DAW.](https://synthanatomy.com/2024/04/dsp56300-xenia-and-ostirus-waldorf-microwave-xt-access-virus-ti-emulators.html)
 
-[Youtube - Classic Synths for FREE???](https://www.youtube.com/watch?v=2Mf2bWSbjh0)
+[Youtube: Classic Synths for FREE???](https://www.youtube.com/watch?v=2Mf2bWSbjh0)
 
 [The Usual Suspects Vavra, a Waldorf microQ emulation using the DSP56300 plugin](https://synthanatomy.com/2023/04/the-usual-suspects-vavra-a-waldorf-microq-emulation-using-the-dsp56300-plugin.html)
 
