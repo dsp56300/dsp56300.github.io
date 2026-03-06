@@ -28,7 +28,7 @@ Want to be part of the community? Join us on Discord: [https://discord.gg/WJ9cxy
 
 Here is a video of our JE8086 emulator in action, you can grab a copy of our various emulators from our downloads pages on the menu bar.
 
-<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/7VPrG5RHwGg?si=RD7VPrG5RHwGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="video-container"><iframe width="1000" height="563" src="https://www.youtube.com/embed/7VPrG5RHwGg" title="The Usual Suspects - JE-8086 Emulator Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 # Articles featuring our Project
 
