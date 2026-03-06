@@ -10,6 +10,7 @@ plugins:
 
 navigation:
   - title: Downloads
+    url: /downloads
     children:
       - title: Osirus (Virus A/B/C)
         url: /downloads/osirus
@@ -26,6 +27,7 @@ navigation:
       - title: TUS Tools
         url: /downloads/tus-tools
   - title: Documentation
+    url: /docs
     children:
       - title: Installation Guide
         url: /docs/installation-guide
@@ -40,6 +42,7 @@ navigation:
       - title: Support Guide
         url: /docs/support-guide
   - title: Technical
+    url: /technical
     children:
       - title: How the Emulator Works
         url: /technical/how-it-works

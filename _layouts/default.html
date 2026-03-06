@@ -24,7 +24,7 @@
           {% for item in site.navigation %}
             {% if item.children %}
               <div class="nav-dropdown">
-                <a class="btn nav-dropdown-toggle" href="#">{{ item.title }} ▾</a>
+                <a class="btn nav-dropdown-toggle" href="{{ item.url | relative_url }}">{{ item.title }} ▾</a>
                 <div class="nav-dropdown-menu">
                   {% for child in item.children %}
                     <a href="{{ child.url | relative_url }}">{{ child.title }}</a>
