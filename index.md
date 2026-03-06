@@ -30,23 +30,27 @@ Here is a video of our JE8086 emulator in action, you can grab a copy of our var
 
 <div class="video-container"><iframe width="1000" height="563" src="https://www.youtube.com/embed/7VPrG5RHwGg" title="The Usual Suspects - JE-8086 Emulator Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
-# Articles featuring our Project
+# Examples of Media about our Project
 
-[https://synthanatomy.com/2025/01/the-usual-suspects-nodal-red-2x-free-nord-lead-2-emulation.html](https://synthanatomy.com/2025/01/the-usual-suspects-nodal-red-2x-free-nord-lead-2-emulation.html)
+[The Usual Suspects Nodal Red 2x, free Nord Lead 2 emulation using the DSP56300 plugin, now in public beta](https://synthanatomy.com/2025/01/the-usual-suspects-nodal-red-2x-free-nord-lead-2-emulation.html)
 
-[https://bedroomproducersblog.com/2024/04/23/ostirus/](https://bedroomproducersblog.com/2024/04/23/ostirus/)
+[OsTIrus Is A FREE Virus Ti Emulator By The Usual Suspects](https://bedroomproducersblog.com/2024/04/23/ostirus/)
 
-[https://www.matrixsynth.com/2024/04/xenia-waldorf-microwave-xt-emulator.html?m=1](https://www.matrixsynth.com/2024/04/xenia-waldorf-microwave-xt-emulator.html?m=1)
+[Youtube - The truth about OsTirus (DSP56300)](https://www.youtube.com/watch?v=m2qu3ORelH4)
 
-[https://synthanatomy.com/2024/04/dsp56300-xenia-and-ostirus-waldorf-microwave-xt-access-virus-ti-emulators.html](https://synthanatomy.com/2024/04/dsp56300-xenia-and-ostirus-waldorf-microwave-xt-access-virus-ti-emulators.html)
+[Xenia (Waldorf Microwave XT Emulator) Coming from DSP56300](https://www.matrixsynth.com/2024/04/xenia-waldorf-microwave-xt-emulator.html?m=1)
 
-[https://synthanatomy.com/2023/04/the-usual-suspects-vavra-a-waldorf-microq-emulation-using-the-dsp56300-plugin.html](https://synthanatomy.com/2023/04/the-usual-suspects-vavra-a-waldorf-microq-emulation-using-the-dsp56300-plugin.html)
+[DSP56300 Xenia and OsTirus, new Waldorf Microwave XT, and Access Virus TI Synthesizer emulators are coming soon to your DAW.](https://synthanatomy.com/2024/04/dsp56300-xenia-and-ostirus-waldorf-microwave-xt-access-virus-ti-emulators.html)
 
-[https://www.pro-tools-expert.com/production-expert-1/do-you-want-emulations-of-all-your-favourite-digital-synths](https://www.pro-tools-expert.com/production-expert-1/do-you-want-emulations-of-all-your-favourite-digital-synths)
+[Youtube - Classic Synths for FREE???](https://www.youtube.com/watch?v=2Mf2bWSbjh0)
 
-[https://www.matrixsynth.com/2021/07/dsp56300-emulator-to-bring-emulations.html](https://www.matrixsynth.com/2021/07/dsp56300-emulator-to-bring-emulations.html)
+[The Usual Suspects Vavra, a Waldorf microQ emulation using the DSP56300 plugin](https://synthanatomy.com/2023/04/the-usual-suspects-vavra-a-waldorf-microq-emulation-using-the-dsp56300-plugin.html)
 
-[https://www.musicradar.com/news/synth-emulator-plugin](https://www.musicradar.com/news/synth-emulator-plugin)
+[Do You Want Emulations Of All Your Favourite Digital Synths?](https://www.pro-tools-expert.com/production-expert-1/do-you-want-emulations-of-all-your-favourite-digital-synths)
+
+[DSP56300 Emulator to Bring Emulations of Classic Access, Clavia, Waldorf, and Novation Synths](https://www.matrixsynth.com/2021/07/dsp56300-emulator-to-bring-emulations.html)
+
+[This ‘synth emulator’ plugin could bring the Access Virus, Nord Lead and Waldorf Q to your DAW, but there is a catch](https://www.musicradar.com/news/synth-emulator-plugin)
 
 # Donations
 
