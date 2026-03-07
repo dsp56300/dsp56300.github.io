@@ -4,6 +4,17 @@ layout: default
 permalink: /technical/nodalred2x
 ---
 
+```
+███╗   ██╗ ██████╗ ██████╗  █████╗ ██╗     ██████╗ ███████╗██████╗ ██████╗ ██╗  ██╗
+████╗  ██║██╔═══██╗██╔══██╗██╔══██╗██║     ██╔══██╗██╔════╝██╔══██╗╚════██╗╚██╗██╔╝
+██╔██╗ ██║██║   ██║██║  ██║███████║██║     ██████╔╝█████╗  ██║  ██║ █████╔╝ ╚███╔╝
+██║╚██╗██║██║   ██║██║  ██║██╔══██║██║     ██╔══██╗██╔══╝  ██║  ██║██╔═══╝  ██╔██╗
+██║ ╚████║╚██████╔╝██████╔╝██║  ██║███████╗██║  ██║███████╗██████╔╝███████╗██╔╝ ██╗
+╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═════╝ ╚══════╝╚═╝  ╚═╝
+```
+
+# nodalred2x Technical Information
+
 All technical information we discovered on the architecture of the Clavia Nord Lead 2X synthesizer is documented here. This information was gathered through PCB analysis, firmware disassembly, and the process of building a cycle-accurate emulator.
 
 ## Hardware Overview

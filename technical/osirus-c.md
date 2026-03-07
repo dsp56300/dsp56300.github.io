@@ -4,6 +4,17 @@ layout: default
 permalink: /technical/osirus-c
 ---
 
+```
+ ██████╗ ███████╗██╗██████╗ ██╗   ██╗███████╗
+██╔═══██╗██╔════╝██║██╔══██╗██║   ██║██╔════╝
+██║   ██║███████╗██║██████╔╝██║   ██║███████╗
+██║   ██║╚════██║██║██╔══██╗██║   ██║╚════██║
+╚██████╔╝███████║██║██║  ██║╚██████╔╝███████║
+ ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+```
+
+# osirus-c Technical Information
+
 All technical information we discovered on the architecture of the Access Virus synthesizer series is documented here. The Access Virus was the first synthesizer we emulated, and all further emulation work in the Gearmulator project is built upon the foundations laid by this effort.
 
 See the [access_virus](https://github.com/dsp563c/dsp563c-tools/tree/master/access_virus) directory for a guide on how to use the tools and for additional information on specific hardware versions.

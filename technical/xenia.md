@@ -4,6 +4,17 @@ layout: default
 permalink: /technical/xenia
 ---
 
+```
+██╗  ██╗███████╗███╗   ██╗██╗ █████╗
+╚██╗██╔╝██╔════╝████╗  ██║██║██╔══██╗
+ ╚███╔╝ █████╗  ██╔██╗ ██║██║███████║
+ ██╔██╗ ██╔══╝  ██║╚██╗██║██║██╔══██║
+██╔╝ ██╗███████╗██║ ╚████║██║██║  ██║
+╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
+```
+
+# xenia Technical Information
+
 All technical information we discovered on the architecture of the Waldorf Microwave II and Microwave XT synthesizer series is documented here. This information was gathered through PCB analysis, firmware disassembly, and the process of building a cycle-accurate emulator.
 
 ## Hardware Overview
