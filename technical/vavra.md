@@ -13,7 +13,7 @@ permalink: /technical/vavra
   ╚═══╝  ╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝
 ```
 
-# vavra Technical Information
+# Vavra (Waldorf microQ) Technical Information
 
 All technical information we discovered on the architecture of the Waldorf microQ synthesizer is documented here. This information was gathered through PCB analysis, firmware disassembly, bootloader reverse engineering, and the process of building a cycle-accurate emulator. Much of the voice expansion protocol was uncovered by dumping the DSP bootloader and meticulously tracing the ESAI synchronization handshake.
 

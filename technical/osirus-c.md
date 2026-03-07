@@ -13,7 +13,7 @@ permalink: /technical/osirus-c
  ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝
 ```
 
-# osirus-c Technical Information
+# Osirus Technical Information
 
 All technical information we discovered on the architecture of the Access Virus synthesizer series is documented here. The Access Virus was the first synthesizer we emulated, and all further emulation work in the Gearmulator project is built upon the foundations laid by this effort.
 
