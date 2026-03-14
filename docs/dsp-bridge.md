@@ -1,8 +1,17 @@
 ---
 title: "DSP Bridge"
-date: 2024-09-10
-layout: post
+layout: default
+permalink: /docs/dsp-bridge
 ---
+
+```
+██████╗ ███████╗██████╗     ██████╗ ██████╗ ██╗██████╗  ██████╗ ███████╗
+██╔══██╗██╔════╝██╔══██╗    ██╔══██╗██╔══██╗██║██╔══██╗██╔════╝ ██╔════╝
+██║  ██║███████╗██████╔╝    ██████╔╝██████╔╝██║██║  ██║██║  ███╗█████╗
+██║  ██║╚════██║██╔═══╝     ██╔══██╗██╔══██╗██║██║  ██║██║   ██║██╔══╝
+██████╔╝███████║██║         ██████╔╝██║  ██║██║██████╔╝╚██████╔╝███████╗
+╚═════╝ ╚══════╝╚═╝         ╚═════╝ ╚═╝  ╚═╝╚═╝╚═════╝  ╚═════╝ ╚══════╝
+```
 
 ## Introduction
 
@@ -143,7 +152,7 @@ In the block of Properties containing the rest of the lines, add the following l
 <VALUE name="supportDspBridge" val="1"/>
 ```
 
-![](/images/posts/dsp-bridge/supportdspbridge.png)
+![](/images/docs/dsp-bridge/supportdspbridge.png)
 
 Save the File when finished.
 
@@ -153,7 +162,7 @@ Once you have completed the server and client configuration as explained in the 
 
 In the plugin UI, right click anywhere and select _Device Type_. In the _Device Type_ submenu, select the IP address of the desired _Remote Server_.
 
-![](/images/posts/dsp-bridge/image.png)
+![](/images/docs/dsp-bridge/image.png)
 
 The plugin will attempt to find and connect to a server that is in reach in the local network. If the connection fails, an error message will be displayed.
 
@@ -169,7 +178,7 @@ Any packet filtering, antivirus software that monitors network traffic or compli
 
 The latency setting that exists in the plugin UI is used for Remote mode too, i.e. the latency is identical to what is selected in Local mode.
 
-![](/images/posts/dsp-bridge/image-1.png)
+![](/images/docs/dsp-bridge/image-1.png)
 
 The selected number is the number of audio blocks of latency, i.e. if your audio driver runs at a block size of 128 samples and your select 2, the total latency will be 256 samples.
 

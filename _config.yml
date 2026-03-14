@@ -39,6 +39,8 @@ navigation:
         url: /docs/demos
       - title: VSTHost Configuration
         url: /docs/vsthost-configuration
+      - title: DSP Bridge
+        url: /docs/dsp-bridge
       - title: Support Guide
         url: /docs/support-guide
   - title: Technical
