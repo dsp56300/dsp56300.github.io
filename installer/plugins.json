@@ -1,0 +1,1655 @@
+{
+  "schemaVersion": 1,
+  "plugins": [
+    {
+      "id": "Osirus",
+      "name": "Osirus",
+      "description": "Access Virus A/B/C Emulator",
+      "thumbnail": "https://theusualsuspects.io/installer/Osirus_thumbnail.png",
+      "image": "https://theusualsuspects.io/installer/Osirus_screenshot.png",
+      "versions": [
+        {
+          "version": "2.1.4",
+          "releaseType": "stable",
+          "formats": {
+            "vst2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "vst3": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST3-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST3-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST3-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST3-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST3-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST3-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST3-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-VST3-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "clap": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-CLAP-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-CLAP-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-CLAP-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-CLAP-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-CLAP-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-CLAP-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-CLAP-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-CLAP-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "lv2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-LV2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-LV2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-LV2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-LV2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-LV2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-LV2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-LV2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-LV2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "au": [
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Osirus-AU-2.1.4-MacOS.zip"
+                }
+              }
+            ]
+          },
+          "fxFormats": {
+            "vst2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "vst3": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST3-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST3-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST3-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST3-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST3-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST3-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST3-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-VST3-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "clap": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-CLAP-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-CLAP-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-CLAP-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-CLAP-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-CLAP-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-CLAP-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-CLAP-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-CLAP-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "lv2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-LV2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-LV2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-LV2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-LV2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-LV2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-LV2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-LV2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-LV2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "au": [
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusFX-AU-2.1.4-MacOS.zip"
+                }
+              }
+            ]
+          },
+          "testConsole": [
+            {
+              "os": "linux",
+              "arch": "aarch64",
+              "packages": {
+                "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusTestConsole-2.1.4-Linux_aarch64.deb",
+                "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusTestConsole-2.1.4-Linux_aarch64.rpm",
+                "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusTestConsole-2.1.4-Linux_aarch64.zip"
+              }
+            },
+            {
+              "os": "linux",
+              "arch": "x86_64",
+              "packages": {
+                "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusTestConsole-2.1.4-Linux_x86_64.deb",
+                "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusTestConsole-2.1.4-Linux_x86_64.rpm",
+                "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusTestConsole-2.1.4-Linux_x86_64.zip"
+              }
+            },
+            {
+              "os": "macos",
+              "arch": "universal",
+              "packages": {
+                "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusTestConsole-2.1.4-MacOS.zip"
+              }
+            },
+            {
+              "os": "windows",
+              "arch": "x86_64",
+              "packages": {
+                "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsirusTestConsole-2.1.4-win64.zip"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OsTIrus",
+      "name": "OsTIrus",
+      "description": "Access Virus TI/TI2/Snow Emulator",
+      "thumbnail": "https://theusualsuspects.io/installer/OsTIrus_thumbnail.png",
+      "image": "https://theusualsuspects.io/installer/OsTIrus_screenshot.png",
+      "versions": [
+        {
+          "version": "2.1.4",
+          "releaseType": "stable",
+          "formats": {
+            "vst2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "vst3": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST3-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST3-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST3-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST3-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST3-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST3-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST3-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-VST3-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "clap": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-CLAP-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-CLAP-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-CLAP-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-CLAP-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-CLAP-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-CLAP-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-CLAP-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-CLAP-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "lv2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-LV2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-LV2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-LV2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-LV2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-LV2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-LV2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-LV2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-LV2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "au": [
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrus-AU-2.1.4-MacOS.zip"
+                }
+              }
+            ]
+          },
+          "fxFormats": {
+            "vst2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "vst3": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST3-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST3-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST3-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST3-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST3-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST3-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST3-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-VST3-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "clap": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-CLAP-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-CLAP-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-CLAP-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-CLAP-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-CLAP-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-CLAP-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-CLAP-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-CLAP-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "lv2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-LV2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-LV2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-LV2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-LV2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-LV2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-LV2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-LV2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-LV2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "au": [
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusFX-AU-2.1.4-MacOS.zip"
+                }
+              }
+            ]
+          },
+          "testConsole": [
+            {
+              "os": "linux",
+              "arch": "aarch64",
+              "packages": {
+                "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusTestConsole-2.1.4-Linux_aarch64.deb",
+                "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusTestConsole-2.1.4-Linux_aarch64.rpm",
+                "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusTestConsole-2.1.4-Linux_aarch64.zip"
+              }
+            },
+            {
+              "os": "linux",
+              "arch": "x86_64",
+              "packages": {
+                "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusTestConsole-2.1.4-Linux_x86_64.deb",
+                "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusTestConsole-2.1.4-Linux_x86_64.rpm",
+                "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusTestConsole-2.1.4-Linux_x86_64.zip"
+              }
+            },
+            {
+              "os": "macos",
+              "arch": "universal",
+              "packages": {
+                "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusTestConsole-2.1.4-MacOS.zip"
+              }
+            },
+            {
+              "os": "windows",
+              "arch": "x86_64",
+              "packages": {
+                "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-OsTIrusTestConsole-2.1.4-win64.zip"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Vavra",
+      "name": "Vavra",
+      "description": "Waldorf microQ Emulator",
+      "thumbnail": "https://theusualsuspects.io/installer/Vavra_thumbnail.png",
+      "image": "https://theusualsuspects.io/installer/Vavra_screenshot.png",
+      "versions": [
+        {
+          "version": "2.1.4",
+          "releaseType": "stable",
+          "formats": {
+            "vst2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "vst3": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST3-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST3-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST3-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST3-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST3-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST3-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST3-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-VST3-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "clap": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-CLAP-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-CLAP-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-CLAP-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-CLAP-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-CLAP-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-CLAP-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-CLAP-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-CLAP-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "lv2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-LV2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-LV2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-LV2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-LV2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-LV2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-LV2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-LV2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-LV2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "au": [
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Vavra-AU-2.1.4-MacOS.zip"
+                }
+              }
+            ]
+          },
+          "fxFormats": {
+            "vst2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "vst3": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST3-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST3-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST3-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST3-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST3-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST3-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST3-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-VST3-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "clap": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-CLAP-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-CLAP-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-CLAP-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-CLAP-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-CLAP-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-CLAP-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-CLAP-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-CLAP-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "lv2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-LV2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-LV2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-LV2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-LV2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-LV2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-LV2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-LV2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-LV2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "au": [
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-VavraFX-AU-2.1.4-MacOS.zip"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "Xenia",
+      "name": "Xenia",
+      "description": "Waldorf Microwave II/XT Emulator",
+      "thumbnail": "https://theusualsuspects.io/installer/Xenia_thumbnail.png",
+      "image": "https://theusualsuspects.io/installer/Xenia_screenshot.png",
+      "versions": [
+        {
+          "version": "2.1.4",
+          "releaseType": "stable",
+          "formats": {
+            "vst2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "vst3": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST3-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST3-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST3-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST3-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST3-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST3-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST3-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-VST3-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "clap": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-CLAP-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-CLAP-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-CLAP-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-CLAP-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-CLAP-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-CLAP-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-CLAP-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-CLAP-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "lv2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-LV2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-LV2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-LV2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-LV2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-LV2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-LV2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-LV2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-LV2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "au": [
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-Xenia-AU-2.1.4-MacOS.zip"
+                }
+              }
+            ]
+          },
+          "fxFormats": {
+            "vst2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "vst3": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST3-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST3-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST3-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST3-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST3-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST3-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST3-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-VST3-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "clap": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-CLAP-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-CLAP-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-CLAP-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-CLAP-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-CLAP-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-CLAP-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-CLAP-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-CLAP-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "lv2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-LV2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-LV2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-LV2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-LV2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-LV2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-LV2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-LV2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-LV2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "au": [
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-XeniaFX-AU-2.1.4-MacOS.zip"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "NodalRed2x",
+      "name": "Nodal Red 2x",
+      "description": "Clavia Nord Lead/Rack 2x Emulator",
+      "thumbnail": "https://theusualsuspects.io/installer/NodalRed2x_thumbnail.png",
+      "image": "https://theusualsuspects.io/installer/NodalRed2x_screenshot.png",
+      "versions": [
+        {
+          "version": "2.1.4",
+          "releaseType": "stable",
+          "formats": {
+            "vst2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "vst3": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST3-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST3-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST3-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST3-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST3-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST3-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST3-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-VST3-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "clap": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-CLAP-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-CLAP-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-CLAP-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-CLAP-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-CLAP-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-CLAP-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-CLAP-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-CLAP-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "lv2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-LV2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-LV2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-LV2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-LV2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-LV2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-LV2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-LV2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-LV2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "au": [
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-NodalRed2x-AU-2.1.4-MacOS.zip"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "JE8086",
+      "name": "JE-8086",
+      "description": "Roland JP-8000 Emulator",
+      "thumbnail": "https://theusualsuspects.io/installer/JE8086_thumbnail.png",
+      "image": "https://theusualsuspects.io/installer/JE8086_screenshot.png",
+      "versions": [
+        {
+          "version": "2.1.4",
+          "releaseType": "stable",
+          "formats": {
+            "vst2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "vst3": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST3-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST3-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST3-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST3-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST3-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST3-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST3-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-VST3-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "clap": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-CLAP-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-CLAP-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-CLAP-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-CLAP-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-CLAP-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-CLAP-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-CLAP-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-CLAP-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "lv2": [
+              {
+                "os": "linux",
+                "arch": "aarch64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-LV2-2.1.4-Linux_aarch64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-LV2-2.1.4-Linux_aarch64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-LV2-2.1.4-Linux_aarch64.zip"
+                }
+              },
+              {
+                "os": "linux",
+                "arch": "x86_64",
+                "packages": {
+                  "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-LV2-2.1.4-Linux_x86_64.deb",
+                  "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-LV2-2.1.4-Linux_x86_64.rpm",
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-LV2-2.1.4-Linux_x86_64.zip"
+                }
+              },
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-LV2-2.1.4-MacOS.zip"
+                }
+              },
+              {
+                "os": "windows",
+                "arch": "x86_64",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-LV2-2.1.4-win64.zip"
+                }
+              }
+            ],
+            "au": [
+              {
+                "os": "macos",
+                "arch": "universal",
+                "packages": {
+                  "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086-AU-2.1.4-MacOS.zip"
+                }
+              }
+            ]
+          },
+          "testConsole": [
+            {
+              "os": "linux",
+              "arch": "aarch64",
+              "packages": {
+                "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086TestConsole-2.1.4-Linux_aarch64.deb",
+                "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086TestConsole-2.1.4-Linux_aarch64.rpm",
+                "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086TestConsole-2.1.4-Linux_aarch64.zip"
+              }
+            },
+            {
+              "os": "linux",
+              "arch": "x86_64",
+              "packages": {
+                "deb": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086TestConsole-2.1.4-Linux_x86_64.deb",
+                "rpm": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086TestConsole-2.1.4-Linux_x86_64.rpm",
+                "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086TestConsole-2.1.4-Linux_x86_64.zip"
+              }
+            },
+            {
+              "os": "macos",
+              "arch": "universal",
+              "packages": {
+                "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086TestConsole-2.1.4-MacOS.zip"
+              }
+            },
+            {
+              "os": "windows",
+              "arch": "x86_64",
+              "packages": {
+                "zip": "https://github.com/dsp56300/gearmulator/releases/download/2.1.4/TheUsualSuspects-JE8086TestConsole-2.1.4-win64.zip"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
