@@ -33,6 +33,8 @@ navigation:
         url: /docs/installation-guide
       - title: Patch Manager Guide
         url: /docs/patch-manager
+      - title: MIDI Learn Guide
+        url: /docs/midi-learn
       - title: FAQs
         url: /docs/faqs
       - title: Demos
