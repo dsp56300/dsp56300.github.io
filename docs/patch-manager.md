@@ -134,6 +134,68 @@ If you intend to export a User Bank to the actual hardware synth, consider limit
 - **Program changes** via MIDI are reflected in the Patch Manager — the selected patch updates automatically
 - On multi-part synths, each part tracks its own active patch independently
 
+## MIDI Bank Assignment
+
+The **MIDI Bank Assignment** feature allows you to assign MIDI bank numbers to data sources in the Patch Manager. Once assigned, you can select patches from that data source by sending standard **MIDI Bank Select + Program Change** messages — enabling hardware controllers, DAW automation, or external MIDI sequencers to recall any patch in your library without touching the plugin UI.
+
+### How It Works
+
+Each data source in the Patch Manager can be assigned a unique MIDI bank number (0–16383). When the plugin receives a MIDI Bank Select message (CC #0 / CC #32) followed by a Program Change, it checks whether a data source is assigned to that bank number. If a match is found, the corresponding patch is loaded automatically from that data source.
+
+If no data source is assigned to the received bank number, the message is passed through to the emulated device as usual.
+
+### Assigning a MIDI Bank
+
+![](/images/docs/patch-manager/bank-assignment-context-menu.png)
+
+1. In the Patch Manager tree, **right-click** on the data source you want to assign
+2. Select **"Assign MIDI Bank..."** from the context menu
+3. Enter a bank number (0–16383) in the text field that appears
+4. Press **Enter** to confirm
+
+The data source now displays its bank assignment as a suffix, for example: **"Factory Patches [Bank 5]"**
+
+![](/images/docs/patch-manager/bank-assignment-indicator.png)
+
+Each bank number can only be assigned to one data source at a time. If you enter a number that is already in use, the assignment will not be applied.
+
+### Changing or Clearing an Assignment
+
+To **change** a bank assignment, right-click the data source and select **"Change MIDI Bank (Bank N)..."**, then enter the new number.
+
+To **remove** a bank assignment, right-click and select **"Clear MIDI Bank (Bank N)"**.
+
+### MIDI Banks Group
+
+![](/images/docs/patch-manager/midi-banks-group.png)
+
+All data sources with assigned bank numbers appear in a dedicated **MIDI Banks** group in the Patch Manager tree, sorted by bank number. This gives you a quick overview of your current bank layout without having to navigate through the full data source tree.
+
+### MIDI Message Format
+
+Bank selection uses the standard MIDI Bank Select mechanism:
+
+| Message | CC | Purpose |
+| --- | --- | --- |
+| Bank Select MSB | CC #0 | Upper 7 bits of bank number |
+| Bank Select LSB | CC #32 | Lower 7 bits of bank number |
+| Program Change | — | Selects the patch within the bank |
+
+The bank number is calculated as **(MSB × 128) + LSB**. For example, to select Bank 5, send CC #0 = 0 and CC #32 = 5, then send a Program Change for the desired patch number.
+
+### Example Setup
+
+A typical setup might look like this:
+
+| Bank Number | Data Source |
+| --- | --- |
+| 0 | Factory Patches |
+| 1 | User Creations |
+| 2 | Rob Papen Soundset |
+| 3 | Templates |
+
+Sending **Bank Select 2 → Program Change 15** would load the 16th patch from the "Rob Papen Soundset" data source.
+
 ## Technical Information
 
 ### Storage Format
