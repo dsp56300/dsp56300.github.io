@@ -33,12 +33,16 @@ navigation:
         url: /docs/installation-guide
       - title: Patch Manager Guide
         url: /docs/patch-manager
+      - title: MIDI Learn Guide
+        url: /docs/midi-learn
       - title: FAQs
         url: /docs/faqs
       - title: Demos
         url: /docs/demos
       - title: VSTHost Configuration
         url: /docs/vsthost-configuration
+      - title: DSP Bridge
+        url: /docs/dsp-bridge
       - title: Support Guide
         url: /docs/support-guide
   - title: Technical

@@ -254,7 +254,7 @@ This is the FAQ specific for the Xenia plugin, which emulates the Waldorf microW
 
 A: Plugins on MacOS need to be signed manually after installation. To do so, we have included a script called 'macsetup_Xenia.command' packaged with the MacOS plugin downloads. Simply extract the plugin archive, double-click the .command file, then copy the plugin to the desired plugin folder.
 
-Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for Vavra is shown below:
+Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for Xenia is shown below:
 
 ```
 sudo xattr -cr /Library/Audio/Plug-Ins/VST3/Xenia.vst3
@@ -286,7 +286,7 @@ This is the FAQ specific for the NodalRed2x plugin, which emulates the Clavia No
 
 A: Plugins on MacOS need to be signed manually after installation. To do so, we have included a script called 'macsetup_NodalRed2x.command' packaged with the MacOS plugin downloads. Simply extract the plugin archive, double-click the .command file, then copy the plugin to the desired plugin folder.
 
-Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for Vavra is shown below:
+Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for NodalRed2x is shown below:
 
 ```
 sudo xattr -cr /Library/Audio/Plug-Ins/VST3/NodalRed2x.vst3
@@ -318,7 +318,7 @@ This is the FAQ specific for the JE8086 plugin, which emulates the Roland JP-800
 
 A: Plugins on MacOS need to be signed manually after installation. To do so, we have included a script called 'macsetup_je8086.command' packaged with the MacOS plugin downloads. Simply extract the plugin archive, double-click the .command file, then copy the plugin to the desired plugin folder.
 
-Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for Vavra is shown below:
+Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for JE8086 is shown below:
 
 ```
 sudo xattr -cr /Library/Audio/Plug-Ins/VST3/JE8086.vst3
