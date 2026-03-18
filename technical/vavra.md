@@ -19,7 +19,7 @@ All technical information we discovered on the architecture of the Waldorf micro
 
 ## Hardware Overview
 
-The Waldorf microQ (1999) is a virtual analog synthesizer that shares its core architecture with the Microwave II/XT series but adds significant advances in the DSP communication fabric. Like its predecessor, it is built around a **Motorola MC68331 microcontroller** and one or more **Motorola DSP56362 digital signal processors**. However, the inter-DSP bus was redesigned from the simpler ESSI ring topology of the Microwave II/XT to a sophisticated **ESAI network mode** bus, enabling much higher throughput and more flexible routing.
+The Waldorf microQ (1999) is a virtual analog synthesizer that shares its core architecture with the Microwave II/XT series but adds significant advances in the DSP communication fabric. Like its predecessor, it is built around a **Motorola MC68331 microcontroller** and one or more **Motorola DSP56362 digital signal processors**. The inter-DSP bus uses the **ESAI in network mode** with a ring topology similar to the Microwave II/XT's ESSI ring, but with much higher throughput thanks to TDM framing with 20 active time slots per frame.
 
 ### Hardware Versions
 
@@ -247,21 +247,21 @@ The 20 active ESAI slots correspond to the microQ's internal audio bus architect
 
 ## Voice Expansion: 3-DSP ESAI Sync Protocol
 
-The microQ's voice expansion protocol is significantly more sophisticated than the Microwave II/XT's ESSI ring. Where the XT uses a simple ring topology with host-driven boot pumping, the microQ implements a **bus topology** with DMA-driven synchronization, per-DSP role assignment through firmware patching, and GPIO clock detection.
+The microQ's voice expansion protocol is significantly more sophisticated than the Microwave II/XT's ESSI ring. While both use a ring topology, the microQ implements its ring using the **ESAI in TDM network mode** with DMA-driven synchronization, per-DSP role assignment through firmware patching, and GPIO clock detection.
 
 ### Network Topology
 
-Unlike the XT's ring (DSP→DSP→DSP→DSP), the microQ uses a **bus topology** where all three DSPs share the ESAI network:
+Like the XT, the microQ uses a **ring topology** where audio data flows from one DSP to the next:
 
 ```
-       ESAI Network Bus (33.87 MHz bit clock, TDM 32 slots)
-    ═══════════════╤══════════════════╤═══════════════════
-                   │                  │                   │
-              ┌────┴────┐       ┌────┴────┐        ┌────┴────┐
-              │  DSP A  │       │  DSP B  │        │  DSP C  │
-              │  Clock  │       │  Sync   │        │  Relay  │
-              │  Master │       │  Master │        │  Slave  │
-              └─────────┘       └─────────┘        └─────────┘
+     ┌──────────────────────────────────────────────────────────┐
+     │                                                          │
+     ▼                                                          │
+┌─────────┐  ESAI TX   ┌─────────┐  ESAI TX   ┌─────────┐  ESAI TX
+│  DSP B  │ ─────────→ │  DSP C  │ ─────────→ │  DSP A  │ ────────┘
+│  Sync   │            │  Relay  │            │  Clock  │
+│  Master │            │  Slave  │            │  Master │
+└─────────┘            └─────────┘            └─────────┘
 ```
 
 ### Per-DSP Roles
@@ -374,29 +374,6 @@ Once synchronization is confirmed, the magic value is never used again — the E
 | Mode | Auto-refill (circular) | Triggered |
 | Direction | Memory → Peripheral | Peripheral → Peripheral |
 
-## Comparison: microQ vs Microwave II/XT
-
-| Feature | Microwave II/XT (Xenia) | microQ (Vavra) |
-|---------|-------------------------|----------------|
-| **DSP Model** | DSP56303 (ESSI) | DSP56362 (ESAI) |
-| **Audio Rate** | 40 kHz | 44.1 kHz |
-| **DSP Clock** | 10.24 MHz external | 33.87 MHz external (101.6 MHz core) |
-| **Inter-DSP Bus** | ESSI (simple serial) | ESAI (advanced TDM) |
-| **Bus Topology** | Ring: DSP→DSP→DSP→DSP | Bus: shared network |
-| **Slots/Frame** | 8 | 32 (20 active) |
-| **Data Rate** | 320 kHz (8× audio rate) | 21.17 Mbit/s |
-| **Sync Mechanism** | Host-driven boot pump | DMA + GPIO + magic value |
-| **Sync Value** | `$535400` | `$654300` |
-| **Boot Protocol** | Direct register writes | DMA-driven autonomous |
-| **Boot Firmware** | Same for all DSPs | Per-DSP patches at P:$131A |
-| **HDI08 A Address** | `0xFE000` | `0xFD000` |
-| **HDI08 B Address** | `0xFC000` | `0xFB000` |
-| **HDI08 C Address** | `0xFD000` | `0xFC000` |
-| **Voices (1 DSP)** | 10 | 25 |
-| **Voices (3 DSPs)** | 30 | 75 |
-
-The microQ represents a significant architectural evolution: the ESAI network mode provides over 60× the inter-DSP bandwidth compared to the XT's ESSI ring, while the DMA-driven sync protocol eliminates the need for host-driven boot pumping.
-
 ## Peripherals
 
 ### LCD Display
@@ -443,10 +420,10 @@ The 3-DSP ESAI sync protocol was reverse-engineered through:
 5. **GPIO trace** — identifying PDRC bit 4 as the clock detection signal
 6. **ESAI register decode** — mapping TCCR/RCCR values to determine clock master/slave roles
 
-### Key Differences from Microwave II/XT
+### Emulation Challenges
 
-- The microQ's ESAI is significantly more complex to emulate than the XT's ESSI
+- The ESAI is significantly more complex to emulate than simpler serial interfaces
 - DMA-driven sync means the emulator must support DMA↔ESAI TX integration
 - GPIO clock detection requires modeling PDRC bit 4 state transitions
-- The bus topology requires full ESAI network mode support (slot masking, TDM framing)
+- The ring topology requires full ESAI network mode support (slot masking, TDM framing)
 - Per-DSP firmware patching adds complexity to the boot sequence emulation

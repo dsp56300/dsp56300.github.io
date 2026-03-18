@@ -368,22 +368,6 @@ The emulator uses ESAI frame timing to synchronize the MC68k thread with the DSP
 
 This synchronization ensures accurate timing between the microcontroller and DSPs, which is critical for sample-accurate MIDI processing.
 
-## Architectural Comparison
-
-| Feature | Nord Lead 2X | Waldorf MW II/XT | Waldorf microQ |
-|---------|-------------|------------------|----------------|
-| **DSP Model** | DSP56362 (×2) | DSP56303 (×1–3) | DSP56362 (×1–3) |
-| **DSP Topology** | Fixed dual (split voices) | Optional ring expansion | Optional bus expansion |
-| **Sample Rate** | 98.2 kHz | 40 kHz | 44.1 kHz |
-| **Audio Interface** | ESAI | ESSI | ESAI |
-| **Voice Expansion** | No (fixed dual DSP) | Yes (up to 3 DSPs) | Yes (up to 3 DSPs) |
-| **Multitimbral** | 4 parts (Slots A–D) | — | — |
-| **Manufacturer** | Clavia (Sweden) | Waldorf (Germany) | Waldorf (Germany) |
-| **Sysex Mfr ID** | `$33` (Clavia) | `$3E` (Waldorf) | `$3E` (Waldorf) |
-| **Flash Storage** | I²C EEPROM (64 KB) | On-chip flash (512 KB) | On-chip flash (512 KB) |
-| **Display** | 3× seven-segment LCD | Character LCD | Character LCD |
-| **External Clock** | 3.33 MHz | 10.24 MHz | 33.87 MHz |
-
 ## Reverse Engineering Notes
 
 ### Dual-DSP Discovery

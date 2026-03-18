@@ -145,7 +145,7 @@ After all firmware data is loaded, the MC68k sends a jump command (command 4) to
 
 ## Audio Interface (ESSI)
 
-The DSP56303 uses the **Enhanced Synchronous Serial Interface (ESSI)** for audio I/O — a simpler serial peripheral compared to the ESAI found in the DSP56362 used by the later microQ.
+The DSP56303 uses the **Enhanced Synchronous Serial Interface (ESSI)** for audio I/O.
 
 ### ESSI0 — Audio DAC/ADC Interface
 
