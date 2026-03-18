@@ -87,7 +87,7 @@ The matrix allows selective routing of different MIDI event types (notes, CCs, S
 
 Internal messages (LCD content, LFO phases, LED states) are routed exclusively between Device and Editor and are never forwarded to the Host or Physical ports.
 
-Users can customize the routing matrix to fit their setup — for example, disabling note routing from the editor to avoid double triggers, or enabling physical MIDI output to drive external hardware alongside the emulation.
+Users can customize the routing matrix to fit their setup — for example, enabling physical MIDI input to control the emulation from a remote MIDI controller, or enabling physical MIDI output to drive external hardware alongside the emulation.
 
 ## Rendering
 
