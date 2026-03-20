@@ -28,7 +28,7 @@ permalink: /docs/faqs
 
 A: The goal of this project is to preserve various digital musical instruments and effects processors through the emulation of the DSP processors utilized by musical instrument manufacturers from the 1990s through the late 2000s.
 
-**Here is a list of synths we are potentially working towards emulation of:**
+**Here is a list of devices we are potentially working towards emulation of:**
 
 | Device | DSP | Quantity | Status |
 | --- | --- | --- | --- |
@@ -126,7 +126,7 @@ MacOS users: Use a DAW that runs natively on Apple Silicon (M-series CPUs) as a 
 
 **Q: Why is there no 32 bit support?**
 
-A: 32 bit CPUs offer much less registers and are furthermore a limiting factor when it comes to DSP math calculations, as the DSP ALU registers are 56 bit wide and therefore do not fit into 32 bit host CPU registers. It does not make any sense to support these CPUs because even if the recompiler got ported to this architecture, it most likely won't be realtime capable.
+A: 32 bit CPUs offer fewer registers and are furthermore a limiting factor when it comes to DSP math calculations, as the DSP ALU registers are 56 bit wide and therefore do not fit into 32 bit host CPU registers. It does not make any sense to support these CPUs because even if the recompiler got ported to this architecture, it most likely won't be realtime capable.
 
 ## Discord FAQ
 
