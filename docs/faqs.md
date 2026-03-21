@@ -170,7 +170,7 @@ A: The Virus hardware has control changes mapped to preset parameter changes. It
 
 **Q: Why isn't there a Midi Learn function?**
 
-As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn.md).
+As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn).
 
 **Q: How can I develop my own skin for the plugin?**
 
@@ -200,7 +200,7 @@ A: The Virus hardware has control changes mapped to preset parameter changes. It
 
 **Q: Why isn't there a Midi Learn function?**
 
-As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn.md).
+As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn).
 
 **Q: How can I use the plugin in Snow mode?**
 
@@ -234,7 +234,7 @@ A: The microQ hardware has control changes mapped to preset parameter changes. I
 
 **Q: Why isn't there a Midi Learn function?**
 
-As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn.md).
+As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn).
 
 **Q: How can I develop my own skin for the plugin?**
 
@@ -264,7 +264,7 @@ A: The microWAVE 2/XT hardware has control changes mapped to preset parameter ch
 
 **Q: Why isn't there a Midi Learn function?**
 
-As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn.md).
+As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn).
 
 **Q: How can I develop my own skin for the plugin?**
 
@@ -294,7 +294,7 @@ A: The Nord Lead 2x hardware has control changes mapped to preset parameter chan
 
 **Q: Why isn't there a Midi Learn function?**
 
-As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn.md).
+As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn).
 
 **Q: How can I develop my own skin for the plugin?**
 
@@ -324,7 +324,7 @@ A: The Roland JP-8000/8080 hardware has control changes mapped to preset paramet
 
 **Q: Why isn't there a Midi Learn function?**
 
-As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn.md).
+As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn).
 
 **Q: How can I develop my own skin for the plugin?**
 
