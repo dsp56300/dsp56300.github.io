@@ -232,6 +232,5 @@ Feedback always sends **absolute** values, even for parameters mapped in relativ
 - **One controller, one parameter** — Each MIDI controller (same type + channel + CC number) can only control one parameter at a time. Assigning it to a new parameter automatically removes the old mapping
 - **Encoder detection** — If your encoder isn't detected correctly, you can manually change the mode in the mappings table
 - **Channel and part defaults** — New mappings use All/Auto by default. You only need to set specific values if you have a multi-controller or multi-part setup
-- **Backward compatible** — Presets saved with older versions are loaded with Channel = All and Part = Auto, preserving their original behavior
-- **Preset portability** — Presets are saved as JSON files in the plugin's configuration directory and can be shared between instances
+- **Preset portability**— Presets are saved as JSON files in the plugin's configuration directory and can be shared between instances
 - **Auto-save** — You don't need to manually save after learning. Mappings are saved automatically after every change
