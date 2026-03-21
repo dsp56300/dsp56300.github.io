@@ -170,9 +170,7 @@ A: The Virus hardware has control changes mapped to preset parameter changes. It
 
 **Q: Why isn't there a Midi Learn function?**
 
-A: The Virus hardware already has plenty of control changes mapped to modify presets at runtime. Changing this behavior would mean that other external controllers or editors that are designed for the Virus would stop functioning. Check the official Virus A/B/C documentation to see how the controllers are mapped  
-  
-A2: We realize this is a very popular request and we are currently investigating a way to add this into our emulators.
+As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn.md).
 
 **Q: How can I develop my own skin for the plugin?**
 
@@ -202,9 +200,7 @@ A: The Virus hardware has control changes mapped to preset parameter changes. It
 
 **Q: Why isn't there a Midi Learn function?**
 
-A: The Virus hardware already has plenty of control changes mapped to modify presets at runtime. Changing this behavior would mean that other external controllers or editors that are designed for the Virus would stop functioning. Check the official Virus TI documentation to see how the controllers are mapped
-
-A2: We realize this is a very popular request and we are currently investigating a way to add this into our emulators.
+As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn.md).
 
 **Q: How can I use the plugin in Snow mode?**
 
@@ -238,9 +234,7 @@ A: The microQ hardware has control changes mapped to preset parameter changes. I
 
 **Q: Why isn't there a Midi Learn function?**
 
-A: The microQ hardware already has plenty of control changes mapped to modify presets at runtime. Changing this behavior would mean that other external controllers or editors that are designed for the microQ would stop functioning. Check the official microQ documentation to see how the controllers are mapped
-
-A2: We realize this is a very popular request and we are currently investigating a way to add this into our emulators.
+As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn.md).
 
 **Q: How can I develop my own skin for the plugin?**
 
@@ -270,9 +264,7 @@ A: The microWAVE 2/XT hardware has control changes mapped to preset parameter ch
 
 **Q: Why isn't there a Midi Learn function?**
 
-A: The microWAVE 2/XT hardware already has plenty of control changes mapped to modify presets at runtime. Changing this behavior would mean that other external controllers or editors that are designed for the microWAVE 2/XT would stop functioning. Check the official microWAVE 2/XT documentation to see how the controllers are mapped
-
-A2: We realize this is a very popular request and we are currently investigating a way to add this into our emulators.
+As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn.md).
 
 **Q: How can I develop my own skin for the plugin?**
 
@@ -302,9 +294,7 @@ A: The Nord Lead 2x hardware has control changes mapped to preset parameter chan
 
 **Q: Why isn't there a Midi Learn function?**
 
-A: The Nord Lead 2x hardware already has plenty of control changes mapped to modify presets at runtime. Changing this behavior would mean that other external controllers or editors that are designed for the Nord Lead 2x would stop functioning. Check the official Nord Lead 2x documentation to see how the controllers are mapped
-
-A2: We realize this is a very popular request and we are currently investigating a way to add this into our emulators.
+As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn.md).
 
 **Q: How can I develop my own skin for the plugin?**
 
@@ -334,9 +324,7 @@ A: The Roland JP-8000/8080 hardware has control changes mapped to preset paramet
 
 **Q: Why isn't there a Midi Learn function?**
 
-A: The Roland JP-8000/8080 hardware already has plenty of control changes mapped to modify presets at runtime. Changing this behavior would mean that other external controllers or editors that are designed for the Nord Lead 2x would stop functioning. Check the official Roland JP-8000/8080 documentation to see how the controllers are mapped
-
-A2: We realize this is a very popular request and we are currently investigating a way to add this into our emulators.
+As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators. Please read the guide [HERE](/docs/midi-learn.md).
 
 **Q: How can I develop my own skin for the plugin?**
 
