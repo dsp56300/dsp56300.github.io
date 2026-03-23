@@ -17,7 +17,6 @@ Key features:
 - **Automatic detection** — Simply move a controller and the plugin figures out the MIDI message type and mode
 - **Multiple MIDI types** — Supports Control Change (CC), Pitch Bend, Channel Pressure (Aftertouch), and Poly Pressure
 - **Relative encoder support** — Two relative modes for endless rotary encoders
-- **Channel and part filtering** — Restrict mappings to a specific MIDI channel or synth part, or use the defaults to respond to all channels and auto-resolve parts
 - **Preset management** — Save and recall different controller mappings for different hardware setups
 - **Auto-save** — Mappings are automatically saved and restored when you reopen the plugin
 - **MIDI feedback** — Send parameter values back to your controller for motorized faders or LED rings
@@ -25,7 +24,7 @@ Key features:
 
 ## Quick Start
 
-1. **Right-click** anywhere on the plugin UI and select **"MIDI Learn Mode"**
+1. **Right-click** on a control on the plugin UI and select **"MIDI Learn Mode"**
 2. Colored **overlays** appear on every parameter — red for unmapped, green for already mapped
 3. **Left-click** an overlay to start learning — it turns amber and shows "..."
 4. **Move** the MIDI controller you want to assign (turn a knob, move a fader)
@@ -159,50 +158,13 @@ The mappings table shows all active MIDI-to-parameter assignments:
 | Column | Description |
 |--------|-------------|
 | **Type** | MIDI message type (CC, Pitch Bend, Chan Press, Poly Press) |
-| **Channel** | MIDI channel filter (dropdown, editable — see [Channel and Part](#channel-and-part) below) |
-| **Part** | Target synth part (dropdown, editable — see [Channel and Part](#channel-and-part) below) |
+| **Channel** | MIDI channel (1–16) |
 | **Controller** | CC number or note number (shown as "-" for Pitch Bend and Channel Pressure) |
 | **Mode** | Absolute, Relative Signed, or Relative Offset (dropdown, editable) |
 | **Parameter** | Target parameter name |
 | **Remove** | Delete this individual mapping |
 
-You can change the **Mode**, **Channel**, and **Part** of any mapping directly in the table by clicking the respective dropdown. This is useful if the auto-detection picked the wrong mode for your controller, or if you want to fine-tune which MIDI channel a mapping responds to and which synth part it controls.
-
-### Channel and Part
-
-Each MIDI Learn mapping has a **Channel** and a **Part** setting that control how incoming MIDI messages are filtered and which synth part is affected.
-
-#### Channel
-
-The **Channel** dropdown determines which MIDI channel the mapping responds to:
-
-| Value | Behavior |
-|-------|----------|
-| **All** (default) | The mapping responds to MIDI messages on **any** channel (1–16) |
-| **1–16** | The mapping only responds to messages on the specified MIDI channel |
-
-New mappings default to **All**, meaning they will react to the mapped controller regardless of which MIDI channel it arrives on. Set a specific channel if you have multiple controllers on different channels and want independent control.
-
-#### Part
-
-The **Part** dropdown determines which synth part the mapping affects. This is particularly useful for multi-timbral setups where the synth has multiple parts:
-
-| Value | Behavior |
-|-------|----------|
-| **Auto** (default) | The target part is automatically resolved from the incoming MIDI channel. The plugin uses its internal channel-to-part routing to determine which part(s) to control. |
-| **1–N** | The mapping always targets the specified part, regardless of which MIDI channel the message arrives on. N is the total number of parts available in the synth. |
-
-New mappings default to **Auto**, which is the right choice for most setups — the same MIDI channel that plays notes on a part will also control that part's parameters via MIDI Learn.
-
-#### Overlay Filtering
-
-When MIDI Learn mode is active, the overlays respect the channel and part settings. Overlays are only shown for parts that match the mapping's channel and part configuration. Similarly, right-clicking to unlearn a mapping only removes it for the relevant part.
-
-#### Examples
-
-- **Simple setup (defaults):** Channel = All, Part = Auto. Your controller works on any channel and automatically targets the correct part. This is how mappings have always worked and remains the default.
-- **Multi-controller setup:** You have two MIDI controllers — one on channel 1, one on channel 2. Set Channel = 1 on mappings for the first controller and Channel = 2 for the second. Both can map the same CC number to different parameters without conflict.
-- **Fixed part control:** You always want a specific fader to control Part 3's filter cutoff, regardless of which MIDI channel is active. Set Part = 3 on that mapping.
+You can change the **Mode** of any mapping directly in the table by clicking the dropdown. This is useful if the auto-detection picked the wrong mode for your controller.
 
 ### MIDI Input
 
@@ -231,6 +193,5 @@ Feedback always sends **absolute** values, even for parameters mapped in relativ
 - **Multiple mappings per parameter** — You can map the same parameter to multiple MIDI controllers
 - **One controller, one parameter** — Each MIDI controller (same type + channel + CC number) can only control one parameter at a time. Assigning it to a new parameter automatically removes the old mapping
 - **Encoder detection** — If your encoder isn't detected correctly, you can manually change the mode in the mappings table
-- **Channel and part defaults** — New mappings use All/Auto by default. You only need to set specific values if you have a multi-controller or multi-part setup
-- **Preset portability**— Presets are saved as JSON files in the plugin's configuration directory and can be shared between instances
+- **Preset portability** — Presets are saved as JSON files in the plugin's configuration directory and can be shared between instances
 - **Auto-save** — You don't need to manually save after learning. Mappings are saved automatically after every change
