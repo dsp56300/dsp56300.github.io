@@ -43,6 +43,8 @@ navigation:
         url: /docs/vsthost-configuration
       - title: DSP Bridge
         url: /docs/dsp-bridge
+      - title: Lua Scripting Guide
+        url: /docs/lua-scripting
       - title: Support Guide
         url: /docs/support-guide
   - title: Technical
