@@ -66,7 +66,7 @@ It is highly recommended to keep your patches and banks located on disk **separa
 
 ### An important note about memory (RAM) usage
 
-**Each patch that is included and indexed within a DataSource impacts RAM memory usage for each instance of the plugin**.  This utilizes 512 bytes per preset plus a little extra overhead in general for the patchmanager itself.  If you have HUGE numbers of patches specified in your DataSource folder(s) each instance of the emulator will "cost more RAM".  Be considerate of how many patches you keep "live" in your DataSorces if RAM usage is a concern for you, especially if you are using multiple instances of a plugin in a project; this can add up quickly.
+**Each patch that is included and indexed within a DataSource impacts RAM memory usage for each instance of the plugin**.  This utilizes 512 bytes per preset plus a little extra overhead in general for the patchmanager itself.  If you have HUGE numbers of patches specified in your DataSource folder(s) each instance of the emulator will "cost more RAM".  Be considerate of how many patches you keep "live" in your DataSources if RAM usage is a concern for you, especially if you are using multiple instances of a plugin in a project; this can add up quickly.
 
 ## Categories, Tags & Favourites
 
