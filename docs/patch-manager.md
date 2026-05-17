@@ -135,12 +135,15 @@ If you intend to export a User Bank to the actual hardware synth, consider limit
 ## Patch Navigation
 
 - **Previous / Next** patch navigation is available per part
-- **Program changes** via MIDI are reflected in the Patch Manager — the selected patch updates automatically
+- **Program changes** via MIDI are reflected in the Patch Manager — the selected patch updates automatically (read below for further configuration instructions)
 - On multi-part synths, each part tracks its own active patch independently
+
 
 ## MIDI Bank Assignment
 
-The **MIDI Bank Assignment** feature allows you to assign MIDI bank numbers to data sources in the Patch Manager. Once assigned, you can select patches from that data source by sending standard **MIDI Bank Select + Program Change** messages — enabling hardware controllers, DAW automation, or external MIDI sequencers to recall any patch in your library without touching the plugin UI.
+The **MIDI Bank Assignment** feature allows you to assign MIDI bank numbers to data sources in the Patch Manager. Once assigned, you can select patches from that data source by sending standard **MIDI Bank Select + Program Change** messages — enabling hardware controllers, DAW automation, or external MIDI sequencers to recall any patch in your library without touching the plugin UI.  
+
+**Please be aware that the standard MIDI Bank Select + Program Change approach described below does not work for VST3 format plugins (regardless of OS) at this time due to differences and limitations in functionality provided from Steinberg via the VST3 specification/SDK, and we are not the only plugin provider that is hampered by these issues.  We are investigating ways to overcome/work around these issues but for now this is not possible with VST3.**
 
 ### How It Works
 
