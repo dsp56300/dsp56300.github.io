@@ -143,7 +143,7 @@ If you intend to export a User Bank to the actual hardware synth, consider limit
 
 The **MIDI Bank Assignment** feature allows you to assign MIDI bank numbers to data sources in the Patch Manager. Once assigned, you can select patches from that data source by sending standard **MIDI Bank Select + Program Change** messages — enabling hardware controllers, DAW automation, or external MIDI sequencers to recall any patch in your library without touching the plugin UI.  
 
-**Please be aware that the standard MIDI Bank Select + Program Change approach described below does not work for VST3 format plugins (regardless of OS) at this time due to differences and limitations in functionality provided from Steinberg via the VST3 specification/SDK, and we are not the only plugin provider that is hampered by these issues.  We are investigating ways to overcome/work around these issues but for now this is not possible with VST3.**
+> Please be aware that the standard MIDI Bank Select + Program Change approach described below does NOT work for VST3 format plugins (regardless of OS) at this time due to differences and limitations in functionality provided from Steinberg via the VST3 specification/SDK, and we are not the only plugin provider that is hampered by these issues.  We are investigating ways to overcome/work around these issues but for now this is not possible with VST3.
 
 ### How It Works
 
