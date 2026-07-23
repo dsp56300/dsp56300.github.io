@@ -10,7 +10,9 @@ Gearmulator supports Lua scripting in plugin skins, giving skin authors the powe
 
 This feature is aimed at skin designers who want to go beyond static layouts and build things like custom visualizations, conditional UI logic, animated controls, or parameter-driven display elements.
 
-Gearmulator uses [Lua 5.4](https://www.lua.org/manual/5.4/) embedded in the [RmlUi](https://mikke89.github.io/RmlUi/) skin framework. If you're new to RmlUi, check the [official RmlUi documentation](https://mikke89.github.io/RmlUi/) for details on RML elements, RCSS properties, data bindings, and events.
+Gearmulator uses [Lua 5.4](https://www.lua.org/manual/5.4/) embedded in the [RmlUi](https://mikke89.github.io/RmlUi/) skin framework. If you're new to RmlUi, check the [official RmlUi documentation](https://mikke89.github.io/RmlUi/) for details on RML elements, RCSS properties, data bindings, and events. For an overview of the skinning system itself, see the [Skinning Guide](/docs/rmlui-skinning).
+
+> **Drawing custom graphics?** To render raster graphics (shapes, meters, scopes) on a `<canvas>` element from Lua using an HTML5-style 2D drawing API, see the [Canvas Scripting Guide](/docs/canvas-scripting).
 
 ## Quick Start
 

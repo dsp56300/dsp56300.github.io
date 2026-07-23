@@ -43,8 +43,12 @@ navigation:
         url: /docs/vsthost-configuration
       - title: DSP Bridge
         url: /docs/dsp-bridge
+      - title: Skinning Guide
+        url: /docs/rmlui-skinning
       - title: Lua Scripting Guide
         url: /docs/lua-scripting
+      - title: Canvas Scripting Guide
+        url: /docs/canvas-scripting
       - title: Support Guide
         url: /docs/support-guide
   - title: Technical

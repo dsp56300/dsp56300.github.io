@@ -1,8 +1,10 @@
 ---
-title: "RmlUI - New GUI rendering engine &amp; skinning system"
-date: 2025-08-18
-layout: post
+title: "Skinning Guide"
+layout: default
+permalink: /docs/rmlui-skinning
 ---
+
+# RmlUI – New GUI Rendering Engine & Skinning System
 
 Version 2.0 of our plugins come with a completely new GUI rendering and skinning system: [RmlUI](https://mikke89.github.io/RmlUiDoc/)
 
@@ -27,6 +29,8 @@ RmlUI, based on CSS2 and html, offers a much greater flexibility:
 - The cascading style sheets allows skin designers to apply their vision of a great UI to our plugins at a much larger extent. Hardware accelerated rendering on all platforms and an integrated animation system are the fundamentals for a modern and flexible UI.
 
 For this to work, we had to rewrite everything related to the GUI of our existing plugins. Osirus & OsTIrus are the first plugins that are released with the new UI system, the other plugins will follow soon.
+
+> **Related guides:** For scripting your skins with Lua, see the [Lua Scripting Guide](/docs/lua-scripting). To draw custom, data-driven graphics on a `<canvas>` element from Lua, see the [Canvas Scripting Guide](/docs/canvas-scripting).
 
 1. [Existing Skins](#existing-skins)
 2. [Custom Controls](#custom-controls)

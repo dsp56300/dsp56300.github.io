@@ -174,7 +174,7 @@ As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/2025/08/18/rmlui-new-gui-rendering-engine-skinning-system).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the [Skinning Guide](/docs/rmlui-skinning).
 
 ## OsTIrus VST/AU/CLAP/LV2 FAQ (Access Virus TI/Snow)
 
@@ -208,7 +208,7 @@ A: Click next to the ROM LOADED at the bottom of the plugin and select the versi
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/2025/08/18/rmlui-new-gui-rendering-engine-skinning-system).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the [Skinning Guide](/docs/rmlui-skinning).
 
 ## Vavra VST/AU/CLAP/LV2 FAQ (Waldorf microQ)
 
@@ -238,7 +238,7 @@ As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/2025/08/18/rmlui-new-gui-rendering-engine-skinning-system).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the [Skinning Guide](/docs/rmlui-skinning).
 
 ## Xenia VST/AU/CLAP/LV2 FAQ (Waldorf microWAVE 2/XT)
 
@@ -268,7 +268,7 @@ As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/2025/08/18/rmlui-new-gui-rendering-engine-skinning-system).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the [Skinning Guide](/docs/rmlui-skinning).
 
 ## NodalRed2x VST/AU/CLAP/LV2 FAQ (Clavia Nord Lead 2x)
 
@@ -298,7 +298,7 @@ As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/2025/08/18/rmlui-new-gui-rendering-engine-skinning-system).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the [Skinning Guide](/docs/rmlui-skinning).
 
 ## JE8086 VST/AU/CLAP/LV2 FAQ (Roland JP-8000 and soon JP-8080)
 
@@ -328,4 +328,4 @@ As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators
 
 **Q: How can I develop my own skin for the plugin?**
 
-A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the blog post [HERE](/2025/08/18/rmlui-new-gui-rendering-engine-skinning-system).
+A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the [Skinning Guide](/docs/rmlui-skinning).
