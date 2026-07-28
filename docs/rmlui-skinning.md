@@ -30,7 +30,7 @@ RmlUI, based on CSS2 and html, offers a much greater flexibility:
 
 For this to work, we had to rewrite everything related to the GUI of our existing plugins. Osirus & OsTIrus are the first plugins that are released with the new UI system, the other plugins will follow soon.
 
-> **Related guides:** For scripting your skins with Lua, see the [Lua Scripting Guide](/docs/lua-scripting). To draw custom, data-driven graphics on a `<canvas>` element from Lua, see the [Canvas Scripting Guide](/docs/canvas-scripting).
+> **Related guides:** For scripting your skins with Lua, see the [Lua Scripting Guide](/docs/lua-scripting).{% comment %} Hidden until the RmlUi canvas feature is released: To draw custom, data-driven graphics on a `<canvas>` element from Lua, see the [Canvas Scripting Guide](/docs/canvas-scripting).{% endcomment %}
 
 1. [Existing Skins](#existing-skins)
 2. [Custom Controls](#custom-controls)

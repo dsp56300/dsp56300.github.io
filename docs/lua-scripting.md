@@ -12,7 +12,9 @@ This feature is aimed at skin designers who want to go beyond static layouts and
 
 Gearmulator uses [Lua 5.4](https://www.lua.org/manual/5.4/) embedded in the [RmlUi](https://mikke89.github.io/RmlUi/) skin framework. If you're new to RmlUi, check the [official RmlUi documentation](https://mikke89.github.io/RmlUi/) for details on RML elements, RCSS properties, data bindings, and events. For an overview of the skinning system itself, see the [Skinning Guide](/docs/rmlui-skinning).
 
+{% comment %} Hidden until the RmlUi canvas feature is released — remove these tags to restore:
 > **Drawing custom graphics?** To render raster graphics (shapes, meters, scopes) on a `<canvas>` element from Lua using an HTML5-style 2D drawing API, see the [Canvas Scripting Guide](/docs/canvas-scripting).
+{% endcomment %}
 
 ## Quick Start
 
