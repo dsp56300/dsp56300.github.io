@@ -47,9 +47,8 @@ navigation:
         url: /docs/rmlui-skinning
       - title: Lua Scripting Guide
         url: /docs/lua-scripting
-      # Hidden until the RmlUi canvas feature is released — uncomment to restore:
-      # - title: Canvas Scripting Guide
-      #   url: /docs/canvas-scripting
+      - title: Canvas Scripting Guide
+        url: /docs/canvas-scripting
       - title: Support Guide
         url: /docs/support-guide
   - title: Technical
