@@ -159,12 +159,25 @@ The mappings table shows all active MIDI-to-parameter assignments:
 |--------|-------------|
 | **Type** | MIDI message type (CC, Pitch Bend, Chan Press, Poly Press) |
 | **Channel** | MIDI channel (1–16) |
+| **Part** | Target part, or *Auto* to resolve it from the MIDI channel (dropdown, editable) |
 | **Controller** | CC number or note number (shown as "-" for Pitch Bend and Channel Pressure) |
 | **Mode** | Absolute, Relative Signed, or Relative Offset (dropdown, editable) |
+| **Invert** | Reverse the direction of the mapping (checkbox) |
 | **Parameter** | Target parameter name |
 | **Remove** | Delete this individual mapping |
 
 You can change the **Mode** of any mapping directly in the table by clicking the dropdown. This is useful if the auto-detection picked the wrong mode for your controller.
+
+#### Invert
+
+Ticking **Invert** reverses the direction of a mapping, which is handy for a fader that is
+mounted upside down, or when you simply want a knob to work the other way round:
+
+- **Absolute** — the controller's range is flipped: 0 sets the parameter to its maximum, 127 to its minimum
+- **Relative Signed** and **Relative Offset** — the increment and decrement values swap, so turning the encoder clockwise counts down
+
+Feedback follows the mapping, so a motorized fader or an LED ring stays in sync with the
+inverted mapping rather than fighting it.
 
 ### MIDI Input
 
