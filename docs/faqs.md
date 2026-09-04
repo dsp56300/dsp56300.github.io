@@ -13,14 +13,14 @@ permalink: /docs/faqs
 ╚═╝     ╚═╝  ╚═╝ ╚══▀▀═╝ ╚══════╝
 ```
 
-1. [General FAQ](#general-faq)
-2. [Discord FAQ](#discord-faq)
-3. [Osirus VST/AU/CLAP/LV2 FAQ (Access Virus A/B/C)](#osirus-vstauclaplv2-faq-access-virus-abc)
-4. [OsTIrus VST/AU/CLAP/LV2 FAQ (Access Virus TI/Snow)](#ostirus-vstauclaplv2-faq-access-virus-tisnow)
-5. [Vavra VST/AU/CLAP/LV2 FAQ (Waldorf microQ)](#vavra-vstauclaplv2-faq-waldorf-microq)
-6. [Xenia VST/AU/CLAP/LV2 FAQ (Waldorf microWAVE 2/XT)](#xenia-vstauclaplv2-faq-waldorf-microwave-2xt)
-7. [NodalRed2x VST/AU/CLAP/LV2 FAQ (Clavia Nord Lead 2x)](#nodalred2x-vstauclaplv2-faq-clavia-nord-lead-2x)
-8. [JE8086 VST/AU/CLAP/LV2 FAQ (Roland JP-8000 and soon JP-8080)](#je8086-vstauclaplv2-faq-roland-jp-8000-and-soon-jp-8080)
+- [General FAQ](#general-faq)
+- [Discord FAQ](#discord-faq)
+- [Osirus VST/AU/CLAP/LV2 FAQ (Access Virus A/B/C)](#osirus-vstauclaplv2-faq-access-virus-abc)
+- [OsTIrus VST/AU/CLAP/LV2 FAQ (Access Virus TI/Snow)](#ostirus-vstauclaplv2-faq-access-virus-tisnow)
+- [Vavra VST/AU/CLAP/LV2 FAQ (Waldorf microQ)](#vavra-vstauclaplv2-faq-waldorf-microq)
+- [Xenia VST/AU/CLAP/LV2 FAQ (Waldorf microWAVE 2/XT)](#xenia-vstauclaplv2-faq-waldorf-microwave-2xt)
+- [NodalRed2x VST/AU/CLAP/LV2 FAQ (Clavia Nord Lead 2x)](#nodalred2x-vstauclaplv2-faq-clavia-nord-lead-2x)
+- [JE8086 VST/AU/CLAP/LV2 FAQ (Roland JP-8000 and soon JP-8080)](#je8086-vstauclaplv2-faq-roland-jp-8000-and-soon-jp-8080)
 
 ## General FAQ
 
@@ -32,37 +32,50 @@ A: The goal of this project is to preserve various digital musical instruments a
 
 | Device | DSP | Quantity | Status |
 | --- | --- | --- | --- |
-| Waldorf MW2/XT | Motorola 56303 | x1 | released |
-| Waldorf microQ | Motorola 56362 | x1 | released |
-| Waldorf Q | 3x Motorola 56362   (2x synth, 1x FX) | x3 | research |
-| Clavia Micro Modular | Motorola 56303 | x1 |  |
-| Clavia Nord Modular | Motorola 56303 | x4 |  |
-| Clavia Nord Lead 2X | Motorola 56362 @ 120 Mhz | x2 | released |
-| Clavia Nord Lead 3 | Motorola 56362 | x6 | research |
-| Novation SuperNova II | 8x Motorola 56362   1x Motorola 56303 | x9 | development |
-| Novation SuperNova | Motorola 56303 | x8 | research |
-| Novation Nova | 5x Motorola 56362   1x Motorola 56303 | x6 | research |
-| Korg MS2000 | Motorola 56362 | x1 |  |
-| Korg Microkorg | Motorola 56362 | x1 |  |
 | Access Virus A | Motorola 56303 | x1 | released |
 | Access Virus B | 1st rev "S" = Motorola 56303   2nd rev "T" = Motorola 56311 | x1 | released |
 | Access Virus C  | Motorola 56362 | x1 | released |
 | Access Virus TI Snow | Freescale 56367 | x1 | released |
 | Access Virus TI & TI2 | Freescale 56367 | x2 | released |
+| Waldorf Q | 3x Motorola 56362   (2x synth, 1x FX) | x3 | development |
+| Waldorf microQ | Motorola 56362 | x1 | released |
+| Waldorf MW2/XT | Motorola 56303 | x1 | released |
+| Clavia Micro Modular | Motorola 56303 | x1 |  |
+| Clavia Nord Modular | Motorola 56303 | x4 |  |
+| Clavia Nord Lead 2X | Motorola 56362 @ 120 Mhz | x2 | released |
+| Clavia Nord Lead 3 | Motorola 56362 | x6 | development |
+| Novation SuperNova II | 8x Motorola 56362   1x Motorola 56303 | x9 | development |
+| Novation SuperNova | Motorola 56303 | x8 | research |
+| Novation Nova | 5x Motorola 56362   1x Motorola 56303 | x6 | research |
+| Korg MS2000 | Motorola 56362 | x1 |  |
+| Korg Microkorg | Motorola 56362 | x1 |  |
 | Roland JP8000 | Roland ESP | x4 | released |
 | Roland JP8080 | Roland ESP | x5 | development |
+| Roland JD-990 | 1x Roland EP   1x Roland TVF   2x Roland CSP | x4 | alpha release |
 | Roland SDX/SRV/SDE-330 | Roland CSP | x2 | development |
+| Roland SC-88/Pro/8850 | Roland XP | x1 | development |
+| Roland JV-2080 | Roland XP + Roland CSP | x2 | development |
+| Roland XV-3080 | 2x Roland XP | x2 | development |
+| Roland D-110 | Roland LA32 | x2 | development |
+| Roland MT-32 | Roland LA32 | x2 | development |
 | Roland U-220 | 1x Roland LP   1x Roland RCC | x2 | research |
 | Roland D-70 | 1x Roland LP   1x Roland TVF   1x Roland RCC | x3 | research |
-| Roland JD-990 | 1x Roland EP   1x Roland TVF   2x Roland CSP | x4 | research |
-| Roland SC-88Pro | Roland XP | x1 | research |
+| Roland V-Synth | Roland ESP | x1 | research |
+| Roland VP-9000 | Roland ESP + Motorola 56362 | x2 | research |
+| Roland RSP-550 | Roland DSP | x2 | research |
+| Roland RSS-10 | Roland ESP | x1 | research |
 | BOSS SE-70 | Roland CSP | x1 | development |
 | BOSS SX-700 | Roland ESP | x1 | development |
-| BOSS GT-5 | Roland ESP | x1 | development |
+| BOSS GT-5 | Roland ESP | x1 | research |
+| BOSS VF-5 | Roland ESP | x1 | research |
 | Ensoniq VFX/VFXsd/SD-1 | 1x Ensoniq OTIS   1x Ensoniq ES5510 | x2 | development |
 | Ensoniq DP/4 DP/4+ | Ensoniq ES5510 | x4 | development |
 | Ensoniq TS-10/12 | 1x Ensoniq OTTO   1x Ensoniq ES5510 | x2 | development |
-| Ensoniq MR-Rack | 2x Ensoniq OTTO   1x Ensoniq ES5511 | x3 | research |
+| Ensoniq MR-Rack | 2x Ensoniq OTTO   1x Ensoniq ES5511 | x3 | development |
+| Yamaha VL-1 | Yamaha DSP-V |  | research |
+| Yamaha EX-5 | Yamaha SWP30 |  | research |
+| Yamaha SY-99 |  |  | research |
+| Yamaha AN1x | Yamaha VOP + MEG |  | research |
 
 
 *
