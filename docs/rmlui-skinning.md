@@ -30,21 +30,22 @@ RmlUI, based on CSS2 and html, offers a much greater flexibility:
 
 For this to work, we had to rewrite everything related to the GUI of our existing plugins. Osirus & OsTIrus are the first plugins that are released with the new UI system, the other plugins will follow soon.
 
-> **Related guides:** For scripting your skins with Lua, see the [Lua Scripting Guide](/docs/lua-scripting).{% comment %} Hidden until the RmlUi canvas feature is released: To draw custom, data-driven graphics on a `<canvas>` element from Lua, see the [Canvas Scripting Guide](/docs/canvas-scripting).{% endcomment %}
+> **Related guides:** For scripting your skins with Lua, see the [Lua Scripting Guide](/docs/lua-scripting). To draw custom, data-driven graphics on a `<canvas>` element from Lua, see the [Canvas Scripting Guide](/docs/canvas-scripting).
 
 1. [Existing Skins](#existing-skins)
 2. [Custom Controls](#custom-controls)
     1. [button](#button)
     2. [combo](#combo)
     3. [knob](#knob)
-3. [Data Binding](#data-binding)
+3. [Vector Images](#vector-images)
+4. [Data Binding](#data-binding)
     1. [plugin](#plugin)
     2. [partCurrent and part0 to part15](#partcurrent-and-part0-to-part15)
-4. [Parameter Binding](#parameter-binding)
-5. [Built-in data for RmlUI](#built-in-data-for-rmlui)
-6. [Includes](#includes)
-7. [Debugging](#debugging)
-8. [Use it wisely](#use-it-wisely)
+5. [Parameter Binding](#parameter-binding)
+6. [Built-in data for RmlUI](#built-in-data-for-rmlui)
+7. [Includes](#includes)
+8. [Debugging](#debugging)
+9. [Use it wisely](#use-it-wisely)
 
 ## Existing Skins
 
@@ -155,6 +156,44 @@ RML
 <knob class="mySmallKnob" data-model="partCurrent" param="Lfo3 Rate"/>
 ...
 ```
+
+## Vector Images
+
+Besides the usual bitmaps, skins can use SVG images through the `svg` element:
+
+```
+<svg src="logo.svg" class="jucePos" style="left: 20dp; top: 20dp; width: 200dp; height: 60dp;"/>
+```
+
+Drop the `.svg` file into your skin folder next to the PNGs, it is bundled with the skin like
+any other asset.
+
+The image is rasterized at the size the element is actually drawn at, and rasterized again
+whenever that size changes. A vector logo or icon therefore stays sharp at every GUI scale,
+where a PNG has to be authored at the largest size you expect and is resampled everywhere
+else. That makes SVG a good fit for logos, icons and panel lettering, while spritesheet-based
+controls like knobs remain bitmaps.
+
+`width` and `height` attributes on the element (not the style) set the intrinsic size that
+layout uses when you do not size the element yourself:
+
+```
+<svg src="logo.svg" width="200" height="60"/>
+```
+
+The `image-color` and `opacity` properties apply to an `svg` element the same way they apply
+to an `img`, so a single monochrome file can be tinted per skin or per state:
+
+```
+svg:hover
+{
+	image-color: #ffcc00;
+}
+```
+
+Note that only the element exists, there is no `svg()` decorator - to use a vector image as a
+background, place the `svg` element behind your content rather than decorating a container
+with it.
 
 ## Data Binding
 
