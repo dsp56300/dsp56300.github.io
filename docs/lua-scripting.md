@@ -54,6 +54,7 @@ These globals are available in all Lua scripts and event handlers:
 | `params` | table | Parameter API for reading/writing synth parameters and subscribing to changes. |
 | `Log` | table | RmlUi logging. Use `Log.Message(Log.logtype.info, "message")`. |
 | `rmlui` | table | RmlUi core API (contexts, font loading, etc.). |
+| `skinvars` | table | Storage for the skin's own state, per instance or shared by all of them. |
 
 ## Parameter API
 
@@ -130,6 +131,91 @@ local id = params.onPartChanged(function(newPart)
   -- newPart: 0-based part number
 end)
 ```
+
+## Frame Events
+
+Anything that has to keep moving by itself --- an oscilloscope, a VU meter, a scrolling marquee --- needs a clock, because parameter callbacks only fire when a value changes. A document receives a `frame` event once per rendered frame if, and only if, it declares an `onframe` handler on its `<body>`:
+
+```html
+<body onframe="onFrame(event)">
+```
+
+```lua
+function onFrame(event)
+  local time  = event.parameters['time']   -- seconds since the editor was opened
+  local delta = event.parameters['delta']  -- seconds since the previous frame event
+
+  local needle = document:GetElementById("needle")
+  needle.style.left = tostring(200 + 180 * math.sin(time * 2)) .. "dp"
+end
+```
+
+Drive movement from `delta` or `time` rather than counting frames --- the rate is not guaranteed and differs per machine.
+
+To use `AddEventListener` instead of an inline handler, declare an empty attribute --- `<body onframe="">` --- because the attribute is what opts the document in:
+
+```lua
+document:AddEventListener("frame", function(event)
+  -- ...
+end)
+```
+
+A few things worth knowing:
+
+- The event does not bubble and cannot be interrupted; it is dispatched on the document.
+- Frame events stop while the editor is hidden or minimized and resume when it comes back. `delta` reports the real interval between two events, so an animation driven by it continues where it should instead of jumping.
+- The rate is capped at 60 Hz. Setting `refreshRateLimitHz` in the plugin's config XML lowers or raises that limit, up to 300, and paces the whole user interface with it.
+- A skin that does not declare `onframe` costs nothing but an attribute lookup per frame.
+
+## Skin Variables
+
+State that belongs to the skin rather than to the synth --- which knobs a skin has linked together, which of its own pages was open --- has nowhere to live in the parameter set, and a plain Lua variable is gone as soon as the editor closes. The `skinvars` table is a small store for exactly that, in two scopes:
+
+| Scope | Stored in | Survives |
+|-------|-----------|----------|
+| `"instance"` | the plugin state | saving and loading the host project, per instance |
+| `"global"` | the plugin config file | every instance and every project, until changed |
+
+```lua
+skinvars.set("oscLink", 1)                  -- instance scope, the default
+skinvars.set("theme", "dark", "global")     -- shared by every instance
+
+local link  = skinvars.get("oscLink")       -- instance first, then global, nil if neither
+local theme = skinvars.get("theme", "global")
+```
+
+Values are numbers or strings, and the type survives storage, so `"7"` and `7` stay apart. Booleans are accepted and stored as 1 and 0.
+
+**Reading without a scope answers from the instance first and falls back to the global.** That is what makes a skin-wide default work: ship the default in the global scope and let a project override it for one instance without disturbing the others.
+
+### Reacting to Changes
+
+```lua
+local id = skinvars.onChange("oscLink", function(value, scope)
+  -- scope is "instance" or "global"
+end)
+
+skinvars.removeListener(id)
+```
+
+A third argument limits the callback to one scope:
+
+```lua
+skinvars.onChange("theme", onThemeChanged, "global")
+```
+
+A callback registered without a scope fires for both, and the value it receives is what a plain `get()` would answer --- so if an instance value shadows the global one, a change to the global still reports the instance value. Name the scope explicitly when that matters.
+
+Loading a project reports every instance-scope variable it carries as a change, so a skin that rebuilds its UI in the callback picks up a restored project on its own.
+
+### Removing
+
+```lua
+skinvars.remove("oscLink")            -- instance scope
+skinvars.remove("theme", "global")
+```
+
+Global variables are written to the plugin's config XML as soon as they change, one key per variable, prefixed `skinvar_`.
 
 ## DOM Manipulation
 
