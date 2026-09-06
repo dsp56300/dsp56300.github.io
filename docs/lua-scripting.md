@@ -52,6 +52,9 @@ These globals are available in all Lua scripts and event handlers:
 |--------|------|-------------|
 | `document` | ElementDocument | The current RML document. Use for DOM access like `document:GetElementById()`. |
 | `params` | table | Parameter API for reading/writing synth parameters and subscribing to changes. |
+{% comment %} Hidden until 2.2.17 is released — remove these tags to restore:
+| `midi` | table | Live note on/off events. |
+{% endcomment %}
 | `Log` | table | RmlUi logging. Use `Log.Message(Log.logtype.info, "message")`. |
 | `rmlui` | table | RmlUi core API (contexts, font loading, etc.). |
 {% comment %} Hidden until 2.2.17 is released — remove these tags to restore:
@@ -168,6 +171,36 @@ A few things worth knowing:
 - Frame events stop while the editor is hidden or minimized and resume when it comes back. `delta` reports the real interval between two events, so an animation driven by it continues where it should instead of jumping.
 - The rate is capped at 60 Hz. Setting `refreshRateLimitHz` in the plugin's config XML lowers or raises that limit, up to 300, and paces the whole user interface with it.
 - A skin that does not declare `onframe` costs nothing but an attribute lookup per frame.
+
+{% comment %} Hidden until 2.2.17 is released — remove these tags to restore:
+## MIDI Notes
+
+Notes played into the plugin never reach the parameter API --- they go straight to the emulated hardware --- so a skin cannot draw a keyboard from `params` alone. The `midi` table reports them as they arrive:
+
+```lua
+midi.onNoteOn(function(note, velocity, channel)
+  -- note 0-127, velocity 1-127, channel 1-16
+  local key = document:GetElementById("key" .. note)
+  if key then key:SetClass("pressed", true) end
+end)
+
+midi.onNoteOff(function(note, channel)
+  local key = document:GetElementById("key" .. note)
+  if key then key:SetClass("pressed", false) end
+end)
+```
+
+Both return an id for `midi.removeListener(id)`.
+
+Notes are reported whatever their source --- the host, a connected controller, or the plugin's own editor --- and before MIDI Learn or program change routing can consume them, so a key mapped to something else still lights up.
+
+**A note on with velocity 0 arrives as a note off**, which is how a lot of gear and many DAWs release a note. Handling it any other way leaves keys stuck down, so `onNoteOff` fires for it and `onNoteOn` does not.
+
+Callbacks run on the UI thread even though the notes arrive on the audio thread, so a callback can touch the DOM directly. A skin that registers no note callbacks costs nothing per event.
+
+Only note on and note off are reported. Control changes, pitch bend and aftertouch are not, because a mod wheel or an automation lane produces them by the thousand and a skin cannot keep up with that on the UI thread.
+
+{% endcomment %}
 
 {% comment %} Hidden until 2.2.17 is released — remove these tags to restore:
 ## Skin Variables
