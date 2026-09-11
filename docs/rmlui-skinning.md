@@ -236,11 +236,12 @@ The parameter definition for each plugin is a json file that is included in the 
 
 | Plugin | Link |
 | --- | --- |
-| Osirus | [https://github.com/dsp56300/gearmulator/blob/main/source/osirusJucePlugin/parameterDescriptions_C.json](https://github.com/dsp56300/gearmulator/blob/main/source/osirusJucePlugin/parameterDescriptions_C.json) |
-| OsTIrus | [https://github.com/dsp56300/gearmulator/blob/main/source/osTIrusJucePlugin/parameterDescriptions_TI.json](https://github.com/dsp56300/gearmulator/blob/main/source/osTIrusJucePlugin/parameterDescriptions_TI.json) |
-| Vavra | [https://github.com/dsp56300/gearmulator/blob/main/source/mqJucePlugin/parameterDescriptions_mq.json](https://github.com/dsp56300/gearmulator/blob/main/source/mqJucePlugin/parameterDescriptions_mq.json) |
-| Xenia | [https://github.com/dsp56300/gearmulator/blob/main/source/xtJucePlugin/parameterDescriptions_xt.json](https://github.com/dsp56300/gearmulator/blob/main/source/xtJucePlugin/parameterDescriptions_xt.json) |
-| Nodal Red 2X | [https://github.com/dsp56300/gearmulator/blob/main/source/nord/n2x/n2xJucePlugin/parameterDescriptions_n2x.json](https://github.com/dsp56300/gearmulator/blob/main/source/nord/n2x/n2xJucePlugin/parameterDescriptions_n2x.json) |
+| Osirus | [https://github.com/dsp56300/gearmulator/blob/main/source/axel/osirusJucePlugin/parameterDescriptions_C.json](https://github.com/dsp56300/gearmulator/blob/main/source/axel/osirusJucePlugin/parameterDescriptions_C.json) |
+| OsTIrus | [https://github.com/dsp56300/gearmulator/blob/main/source/axel/osTIrusJucePlugin/parameterDescriptions_TI.json](https://github.com/dsp56300/gearmulator/blob/main/source/axel/osTIrusJucePlugin/parameterDescriptions_TI.json) |
+| Vavra | [https://github.com/dsp56300/gearmulator/blob/main/source/waldi/microq/mqJucePlugin/parameterDescriptions_mq.json](https://github.com/dsp56300/gearmulator/blob/main/source/waldi/microq/mqJucePlugin/parameterDescriptions_mq.json) |
+| Xenia | [https://github.com/dsp56300/gearmulator/blob/main/source/waldi/xt/xtJucePlugin/parameterDescriptions_xt.json](https://github.com/dsp56300/gearmulator/blob/main/source/waldi/xt/xtJucePlugin/parameterDescriptions_xt.json) |
+| Nodal Red 2X | [https://github.com/dsp56300/gearmulator/blob/main/source/claudia/n2x/n2xJucePlugin/parameterDescriptions_n2x.json](https://github.com/dsp56300/gearmulator/blob/main/source/claudia/n2x/n2xJucePlugin/parameterDescriptions_n2x.json) |
+| JE-8086 | [https://github.com/dsp56300/gearmulator/blob/main/source/ronaldo/je8086/jeJucePlugin/parameterDescriptions_je.json](https://github.com/dsp56300/gearmulator/blob/main/source/ronaldo/je8086/jeJucePlugin/parameterDescriptions_je.json) |
 
 As an example, we use the parameter **Filter1 Mode** from Osirus. Due to the nature of rml, the parameter name is modified to result in a valid variable name. Therefore, all spaces are replaced by underscores.
 
