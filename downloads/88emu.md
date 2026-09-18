@@ -10,8 +10,7 @@ permalink: /downloads/88emu
 ╚█████╔╝╚█████╔╝█████╗  ██╔████╔██║██║   ██║
 ██╔══██╗██╔══██╗██╔══╝  ██║╚██╔╝██║██║   ██║
 ╚█████╔╝╚█████╔╝███████╗██║ ╚═╝ ██║╚██████╔╝
- ╚════╝  ╚════╝ ╚══════╝╚═╝     ╚═╝ ╚═════╝ 
-                                            
+ ╚════╝  ╚════╝ ╚══════╝╚═╝     ╚═╝ ╚═════╝                                             
 ```
 
 Please read these instructions carefully to save our Discord Server from being overloaded with questions regarding the setup of the emulator.
