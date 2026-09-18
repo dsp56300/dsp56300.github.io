@@ -24,6 +24,10 @@ navigation:
         url: /downloads/je8086
       - title: NodalRed2x (Nord Lead)
         url: /downloads/nodalred2x
+#      - title: 88Emu (Sound Canvas and related)
+#        url: /downloads/88emu
+#      - title: 88EmuPlayer (Sound Canvas and related)
+#        url: /downloads/88emuplayer     
       - title: TUS Tools
         url: /downloads/tus-tools
   - title: Documentation
