@@ -53,6 +53,27 @@ nav .btn {
   display: block;
 }
 
+h2 {
+  margin-top: 2em;
+}
+
+h3 {
+  margin-top: 1em;
+}
+
+li + li {
+  margin-top: 1em;
+}
+
+blockquote {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+body {
+  padding-bottom: 10em;
+}
+
 .video-container {
   position: relative;
   width: 100%;
@@ -66,4 +87,89 @@ nav .btn {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.banner-video {
+  display: block;
+  width: 100%;
+  max-width: 512px;
+  height: auto;
+  margin: 2em auto 4em;
+}
+
+/* Centers the art as one block, so its lines stay aligned to each other */
+.ascii-banner pre {
+  text-align: center;
+}
+
+.ascii-banner code {
+  display: inline-block;
+  text-align: left;
+}
+
+/* Drawn as a mask so the icon takes the colour of the text next to it */
+.os-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  margin-right: 0.3em;
+  background-color: currentColor;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+/* Accent the icon in notices, where it labels the note rather than a button */
+blockquote .os-icon {
+  color: #b5e853;
+}
+
+.os-icon-windows {
+  -webkit-mask-image: url("/images/icons/windows.svg");
+  mask-image: url("/images/icons/windows.svg");
+}
+
+.os-icon-macos {
+  -webkit-mask-image: url("/images/icons/macos.svg");
+  mask-image: url("/images/icons/macos.svg");
+}
+
+.os-icon-linux {
+  -webkit-mask-image: url("/images/icons/linux.svg");
+  mask-image: url("/images/icons/linux.svg");
+}
+
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin: 1em 0 1.5em;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  background: linear-gradient(#3a5320, #243a12);
+  border: 1px solid #6d9a2c;
+  color: #fff;
+  box-shadow: none;
+}
+
+.download-btn:hover {
+  background: linear-gradient(#4a6a29, #2e4a17);
+  border-color: #b5e853;
+  color: #fff;
+}
+
+.ui-screenshot {
+  max-width: 800px;
+  width: 100%;
+  display: block;
+  height: auto;
+  margin: 3em auto 3em auto;
 }
