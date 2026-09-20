@@ -124,10 +124,10 @@ Older versions can be found on our [GitHub Releases Page](https://github.com/dsp
 ## Usage Guide
 
 The zip files you can download contains two executable files/apps:
-- **88emuPlayer**: Double click on this one if you want to use the software to play with a MIDI keyboard, playback MIDI files or use it to play retro video games;
+- **88EmuPlayer**: Double click on this one if you want to use the software to play with a MIDI keyboard, playback MIDI files or use it to play retro video games;
 - **88EmuCli**: if you want to quickly convert MIDI files into WAV files, without having to wait for the time of the song to pass in real time. This is a console application, so you probably want to run it from your terminal.
 
-> <span class="inline-icon inline-icon-macos" aria-hidden="true"></span> **MacOS users:** macOS quarantines programs downloaded from the internet and can refuse to open 88emuPlayer or 88EmuCli the first time, saying it could not verify them. Open *System Settings → Privacy & Security*, scroll down to *Security*, click *Open Anyway* next to the message about the program, and confirm. This is needed once per program; for 88EmuCli, run it once in Terminal first so that the message appears. On macOS 14 and earlier, Control-clicking the app in Finder and choosing *Open* also works.
+> <span class="inline-icon inline-icon-macos" aria-hidden="true"></span> **MacOS users:** macOS quarantines programs downloaded from the internet and can refuse to open 88EmuPlayer or 88EmuCli the first time, saying it could not verify them. Open *System Settings → Privacy & Security*, scroll down to *Security*, click *Open Anyway* next to the message about the program, and confirm. This is needed once per program; for 88EmuCli, run it once in Terminal first so that the message appears. On macOS 14 and earlier, Control-clicking the app in Finder and choosing *Open* also works.
 
 Once you run the application, you can select with device you want to emulate, like the SC-88 or the SC55mkII. Once you click on the device, a dialog will appear helping you correctly installing the necessary ROM files into the emulator.
 
