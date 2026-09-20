@@ -2,6 +2,24 @@
 title: "88EmuPlayer Downloads"
 layout: default
 permalink: /downloads/88emuplayer
+# Bump this when a new 88EmuPlayer release ships; the download buttons point
+# straight at that release's files on GitHub. The package is named after its
+# CPack component and holds both 88emuPlayer and 88EmuCli.
+release: 2.2.24
+package: TheUsualSuspects-88emuPlayer-Standalone
+downloads:
+  - label: Windows
+    icon: windows
+    file: win64.zip
+  - label: macOS
+    icon: macos
+    file: MacOS.zip
+  - label: Linux x64
+    icon: linux
+    file: Linux_x86_64.zip
+  - label: Linux aarch64
+    icon: linux
+    file: Linux_aarch64.zip
 ---
 
 ```
@@ -33,15 +51,14 @@ Not at the moment, but we are working on it.
 88EmuPlayer (Roland Sound Canvas and related synths), latest version:  
   
 <div class="download-buttons">
-  <a class="btn download-btn" href="/builds/downloads?product=88emuplayer&amp;format=All&amp;os=win64"><span class="os-icon os-icon-windows" aria-hidden="true"></span>Windows</a>
-  <a class="btn download-btn" href="/builds/downloads?product=88emuplayer&amp;format=All&amp;os=MacOS"><span class="os-icon os-icon-macos" aria-hidden="true"></span>macOS</a>
-  <a class="btn download-btn" href="/builds/downloads?product=88emuplayer&amp;format=All&amp;os=Linux_x86_64"><span class="os-icon os-icon-linux" aria-hidden="true"></span>Linux x64</a>
-  <a class="btn download-btn" href="/builds/downloads?product=88emuplayer&amp;format=All&amp;os=Linux_aarch64"><span class="os-icon os-icon-linux" aria-hidden="true"></span>Linux aarch64</a>
+{%- for d in page.downloads %}
+  <a class="btn download-btn" href="https://github.com/dsp56300/gearmulator/releases/download/{{ page.release }}/{{ page.package }}-{{ page.release }}-{{ d.file }}"><span class="os-icon os-icon-{{ d.icon }}" aria-hidden="true"></span>{{ d.label }}</a>
+{%- endfor %}
 </div>
 
-For the full list of 88Emu downloads click [here](/builds/downloads?product=88emuplayer&format=All&os=All).  
+Other package formats (`.deb`, `.rpm`) for this version are on its [release page](https://github.com/dsp56300/gearmulator/releases/tag/{{ page.release }}).  
   
-If you are unable to access these pages, you can also download directly from our [GitHub Releases Page](https://github.com/dsp56300/gearmulator/releases).
+Older versions can be found on our [GitHub Releases Page](https://github.com/dsp56300/gearmulator/releases).
 
 **For further information, resources, discussion, and support of our plugins including the absolute latest beta versions (including the most current features and fixes) please visit our [Discord](https://discord.com/invite/WJ9cxySnsM).**
 
@@ -65,7 +82,7 @@ You can then configure your MIDI inputs and audio outputs in Settings, open/drag
 
 You can use 88EmuPlayer for playing older games that use General MIDI or GS music. Experimental support for MT-32 and CM-64 compatible games is still partial (CM-32P only for now).
 
-To achieve this you will need to route the MIDI output of your game or emulator (such as DOSBox, ScummVM or Neko Project) into 88EmuPlayer. If you are in a MacOS or Linux system, an option is available to create a "Virtual MIDI port", so that 88EmuPlayer can already show up as available option in the MIDI configuration of your emulator. If you are in a Windows based system, though, you will need to use a 3rd party software for that, such as [LoopBe1](https://www.nerds.de/en/loopbe1.html).
+To achieve this you will need to route the MIDI output of your game or emulator (such as DOSBox, ScummVM or Neko Project) into 88EmuPlayer. If you are in a MacOS or Linux system, an option is available to create a "Virtual MIDI port", so that 88EmuPlayer can already show up as available option in the MIDI configuration of your emulator. If you are in a Windows based system, though, you will need to use a 3rd party software for that, such as [LoopBe1](https://www.nerds.de/en/loopbe1.html) or [loopmidi](https://www.tobias-erichsen.de/software/loopmidi.html).
 
 ## Asking for help
 
