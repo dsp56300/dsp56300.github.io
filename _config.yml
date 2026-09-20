@@ -26,8 +26,8 @@ navigation:
         url: /downloads/nodalred2x
 #      - title: 88Emu (Sound Canvas and related)
 #        url: /downloads/88emu
-#      - title: 88EmuPlayer (Sound Canvas and related)
-#        url: /downloads/88emuplayer     
+     - title: 88EmuPlayer (Sound Canvas and related)
+       url: /downloads/88emuplayer
       - title: TUS Tools
         url: /downloads/tus-tools
   - title: Documentation
