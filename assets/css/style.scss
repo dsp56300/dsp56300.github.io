@@ -108,7 +108,7 @@ body {
 }
 
 /* Drawn as a mask so the icon takes the colour of the text next to it */
-.os-icon {
+.inline-icon {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -124,23 +124,28 @@ body {
 }
 
 /* Accent the icon in notices, where it labels the note rather than a button */
-blockquote .os-icon {
+blockquote .inline-icon {
   color: #b5e853;
 }
 
-.os-icon-windows {
+.inline-icon-windows {
   -webkit-mask-image: url("/images/icons/windows.svg");
   mask-image: url("/images/icons/windows.svg");
 }
 
-.os-icon-macos {
+.inline-icon-macos {
   -webkit-mask-image: url("/images/icons/macos.svg");
   mask-image: url("/images/icons/macos.svg");
 }
 
-.os-icon-linux {
+.inline-icon-linux {
   -webkit-mask-image: url("/images/icons/linux.svg");
   mask-image: url("/images/icons/linux.svg");
+}
+
+.inline-icon-download {
+  -webkit-mask-image: url("/images/icons/download.svg");
+  mask-image: url("/images/icons/download.svg");
 }
 
 .download-buttons {

@@ -2,9 +2,6 @@
 title: "88EmuPlayer Downloads"
 layout: default
 permalink: /downloads/88emuplayer
-# The buttons below look up the newest release that carries these packages, so
-# no version is pinned here. The package name is the CPack component name, and
-# one package holds both 88emuPlayer and 88EmuCli.
 package: TheUsualSuspects-88emuPlayer-Standalone
 downloads:
   - label: Windows
@@ -39,19 +36,19 @@ downloads:
 
 88EmuPlayer is NOT a DAW-compatible plugin, but instead a standalone application for playing MIDI files and using those devices from a MIDI keyboard, sequencer or game. 88EmuCli uses the same emulation to render files to WAV offline using a command line interface, without having to wait for the song to play in real time.
 
-Please read the provided README and these instructions carefully to save our Discord Server from being overloaded with questions regarding the setup of the emulator.
+Please read the provided [README](https://github.com/dsp56300/gearmulator/blob/main/doc/88emu_readme.md) and these instructions carefully to save our Discord Server from being overloaded with questions regarding the setup of the emulator.
 
 > Is 88Emu ever gonna be released as DAW plugin?
 
 Not at the moment, but we are working on it.
 
-## Emulator Downloads Links  
+## <span class="inline-icon inline-icon-download" aria-hidden="true"></span>Emulator Downloads Links  
 
-88EmuPlayer (Roland Sound Canvas and related synths), latest version <span data-release-version></span>:  
+88EmuPlayer (Roland Sound Canvas and related synths), latest version<span data-release-version></span>:  
   
 <div class="download-buttons" data-package="{{ page.package }}">
 {%- for d in page.downloads %}
-  <a class="btn download-btn" data-file="{{ d.file }}" href="https://github.com/dsp56300/gearmulator/releases"><span class="os-icon os-icon-{{ d.icon }}" aria-hidden="true"></span>{{ d.label }}</a>
+  <a class="btn download-btn" data-file="{{ d.file }}" href="https://github.com/dsp56300/gearmulator/releases"><span class="inline-icon inline-icon-{{ d.icon }}" aria-hidden="true"></span>{{ d.label }}</a>
 {%- endfor %}
 </div>
 
@@ -84,7 +81,7 @@ Older versions can be found on our [GitHub Releases Page](https://github.com/dsp
       link.href = 'https://github.com/dsp56300/gearmulator/releases/tag/' + release.tag;
     });
     Array.prototype.forEach.call(document.querySelectorAll('[data-release-version]'), function (el) {
-      el.textContent = release.tag;
+      el.textContent = ' ' + release.tag;
     });
   }
 
@@ -130,7 +127,7 @@ The zip files you can download contains two executable files/apps:
 - **88emuPlayer**: Double click on this one if you want to use the software to play with a MIDI keyboard, playback MIDI files or use it to play retro video games;
 - **88EmuCli**: if you want to quickly convert MIDI files into WAV files, without having to wait for the time of the song to pass in real time. This is a console application, so you probably want to run it from your terminal.
 
-> <span class="os-icon os-icon-macos" aria-hidden="true"></span> **MacOS users:** macOS quarantines programs downloaded from the internet and can refuse to open 88emuPlayer or 88EmuCli the first time, saying it could not verify them. Open *System Settings → Privacy & Security*, scroll down to *Security*, click *Open Anyway* next to the message about the program, and confirm. This is needed once per program; for 88EmuCli, run it once in Terminal first so that the message appears. On macOS 14 and earlier, Control-clicking the app in Finder and choosing *Open* also works.
+> <span class="inline-icon inline-icon-macos" aria-hidden="true"></span> **MacOS users:** macOS quarantines programs downloaded from the internet and can refuse to open 88emuPlayer or 88EmuCli the first time, saying it could not verify them. Open *System Settings → Privacy & Security*, scroll down to *Security*, click *Open Anyway* next to the message about the program, and confirm. This is needed once per program; for 88EmuCli, run it once in Terminal first so that the message appears. On macOS 14 and earlier, Control-clicking the app in Finder and choosing *Open* also works.
 
 Once you run the application, you can select with device you want to emulate, like the SC-88 or the SC55mkII. Once you click on the device, a dialog will appear helping you correctly installing the necessary ROM files into the emulator.
 
@@ -138,7 +135,7 @@ You can then configure your MIDI inputs and audio outputs in Settings, open/drag
 
 <img class="ui-screenshot" src="/images/pages/88emuplayer/ui_annotated.jpg" alt="88EmuPlayer User Interface">
 
-**Please refer to the included README for the rest of the options, features, gotchas, and configuration.**
+**Please refer to the included [README](https://github.com/dsp56300/gearmulator/blob/main/doc/88emu_readme.md) for the rest of the options, features, gotchas, and configuration.**
 
 ### Usage for Retro-Gaming
 
@@ -150,7 +147,7 @@ To achieve this you will need to route the MIDI output of your game or emulator 
 
 Please read our Support Guide which can be found [HERE](/docs/support-guide) to find out how and where to get support and assistance for our emulators.  
 
-> PRO TIP: To avoid frustration, confusion, and running afoul of the rules, it is essential for all users to read our FAQ and Pinned Messages in the the various support channels in the Discord; answers to most of the common questions will be found in those locations.
+> PRO TIP: To avoid frustration, confusion, and running afoul of the rules, it is essential for all users to read the provided [README](https://github.com/dsp56300/gearmulator/blob/main/doc/88emu_readme.md) and our FAQ and Pinned Messages in the the various support channels in the Discord; answers to most of the common questions will be found in those locations.
 
 ### Notes about ROM/Firmware
 
