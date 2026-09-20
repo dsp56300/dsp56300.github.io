@@ -63,6 +63,8 @@ VST3:    /usr/local/lib/vst3/
 CLAP:    /usr/local/lib/clap/  
 LV2:     /usr/local/lib/lv2/**
 
+On Linux you can skip the manual copying altogether and install from our package repositories instead, which also keeps the plugins updated: see [Linux: install and update with our package repositories](#linux-install-and-update-with-our-package-repositories) below.
+
 After you install the emulator plugin and run it for the first time it will create the following folders for the various resources required for our emulators to operate. If an emulator also has an "FX" version, this centralized resource location will be shared with the Instrument version of the plugin to eliminate duplication. These plugin resource folders are located as follows (where \[synthname\] is the name of the emulator such as Osirus, OsTIrus, Vavra, Xenia, etc):
 
 Windows: **C:\\Users\\\[username\]\\Documents\\The Usual Suspects\\\[synthname\]\\**
@@ -91,6 +93,125 @@ The user will need to tell the DAW that new plugins have been added.  This is p
 Add the plugin to a track in the DAW and open the plugin UI.  On the first run (only once, for each plugin type) the user will be reminded of the terms of use and prompted to accept and continue.  If a valid ROM/Firmware file is not installed and detected in the **\\roms** subfolder an error message describing this may also be displayed.  Remember, without a valid ROM/Firmware file in place the emulator will not function correctly or make any sound.
 
 Once the plugin has been correctly installed and is working, it is highly recommended to configure the Patch Manager to point to your personal bank/preset location(s) for loading and saving patches.  Please refer to the support article [HERE](/docs/patch-manager) for more information about how to use the Patch Manager.
+
+## Linux: install and update with our package repositories
+
+On Linux there is an alternative to downloading and unpacking an archive for every release: our package repositories, which are built and hosted for us by the openSUSE Build Service. Add the repository once, install the emulators you want, and from then on your package manager updates them along with the rest of your system.
+
+There is one package per emulator, each containing that emulator's VST2, VST3, CLAP and LV2 plugin:
+
+| Package | Emulator |
+| --- | --- |
+| `theusualsuspects-osirus` | Osirus (Virus A/B/C) |
+| `theusualsuspects-ostirus` | OsTIrus (Virus TI) |
+| `theusualsuspects-vavra` | Vavra (microQ) |
+| `theusualsuspects-xenia` | Xenia (Microwave II/XT) |
+| `theusualsuspects-nodalred2x` | NodalRed2x (Nord Lead 2x) |
+| `theusualsuspects-je8086` | JE-8086 (Roland JP-8000) |
+| `theusualsuspects-88emu` | 88emuPlayer and 88EmuCli, which are programs rather than plugins |
+
+The packages put the plugins into **/usr/lib/vst**, **/usr/lib/vst3**, **/usr/lib/clap** and **/usr/lib/lv2**, which nearly every DAW scans by default; if yours does not, add those folders to its plugin search paths. **If you have installed our plugins by hand before, delete your copies under /usr/local/lib/ first**, otherwise your DAW finds each emulator twice and may keep loading the old one.
+
+Everything else on this page still applies. The packages contain no ROM/firmware, and each emulator still keeps its ROMs, skins and settings in **~/.local/share/The Usual Suspects/\[synthname\]/**.
+
+### Which repository do I use?
+
+Most distributions are built on one of the systems we build for and use that repository. Match the release exactly: from Ubuntu 24.04 and Debian 13 onwards the packages need `libasound2t64`, which older releases do not have.
+
+| Your system | Repository name |
+| --- | --- |
+| Debian 13, Debian 12 | `Debian_13`, `Debian_12` |
+| Ubuntu 22.04, 24.04, 26.04, including Kubuntu, Xubuntu, Lubuntu and Ubuntu Studio | `xUbuntu_22.04`, `xUbuntu_24.04`, `xUbuntu_26.04` |
+| Linux Mint | the Ubuntu LTS it is built on: Mint 21 uses `xUbuntu_22.04`, Mint 22 uses `xUbuntu_24.04` |
+| Pop!\_OS, elementary OS, Zorin OS, KDE neon | the Ubuntu LTS it is built on, for example Pop!\_OS 22.04 uses `xUbuntu_22.04` |
+| LMDE, MX Linux, AV Linux | the Debian release it is built on, for example LMDE 6 uses `Debian_12` |
+| Fedora 43, 44, including Nobara and Ultramarine | `Fedora_43`, `Fedora_44` |
+| openSUSE Tumbleweed | `openSUSE_Tumbleweed` |
+| openSUSE Leap 16.0 | `16.0` |
+| Arch, including EndeavourOS, CachyOS and Garuda | `Arch` |
+
+All repositories are 64-bit Intel/AMD. ARM (aarch64) packages exist for Debian 13, Fedora 43 and 44, openSUSE Leap 16.0 and Tumbleweed, so a Raspberry Pi 4 or 5 running Debian 13 or Fedora is covered; other ARM systems should use the portable Linux aarch64 downloads. Manjaro holds Arch updates back for a few weeks, so a fresh package there can occasionally want a library that Manjaro has not shipped yet.
+
+### Debian, Ubuntu and derivatives
+
+Replace `Debian_13` with your repository from the table above, in both commands:
+
+```
+curl -fsSL https://download.opensuse.org/repositories/home:/theusualsuspects/Debian_13/Release.key | sudo gpg --dearmor -o /usr/share/keyrings/theusualsuspects.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/theusualsuspects.gpg] https://download.opensuse.org/repositories/home:/theusualsuspects/Debian_13/ /" | sudo tee /etc/apt/sources.list.d/theusualsuspects.list
+
+sudo apt update
+sudo apt install theusualsuspects-osirus
+```
+
+### Fedora
+
+```
+sudo dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:/theusualsuspects/Fedora_44/home:theusualsuspects.repo
+
+sudo dnf install theusualsuspects-osirus
+```
+
+On older Fedora releases the first command is `sudo dnf config-manager --add-repo <url>`.
+
+### openSUSE
+
+```
+sudo zypper addrepo https://download.opensuse.org/repositories/home:/theusualsuspects/openSUSE_Tumbleweed/home:theusualsuspects.repo
+
+sudo zypper refresh
+sudo zypper install theusualsuspects-osirus
+```
+
+On Leap 16.0, replace `openSUSE_Tumbleweed` with `16.0`.
+
+### Arch
+
+Trust our signing key, then add the repository:
+
+```
+curl -fsSL https://download.opensuse.org/repositories/home:/theusualsuspects/Arch/x86_64/home_theusualsuspects_Arch.key | sudo pacman-key --add -
+
+sudo pacman-key --lsign-key 6F616D60DB991ED61A6F29B0006C0F47711C6743
+```
+
+Add these two lines at the end of **/etc/pacman.conf**:
+
+```
+[home_theusualsuspects_Arch]
+Server = https://download.opensuse.org/repositories/home:/theusualsuspects/Arch/$arch
+```
+
+Then install:
+
+```
+sudo pacman -Sy theusualsuspects-osirus
+```
+
+### Updating
+
+This is the point of the whole exercise: new releases arrive with your normal system updates, and nothing has to be downloaded or copied by hand.
+
+```
+sudo apt update && sudo apt upgrade          # Debian, Ubuntu
+sudo dnf upgrade                             # Fedora
+sudo zypper refresh && sudo zypper update    # openSUSE
+sudo pacman -Syu                             # Arch
+```
+
+Your ROMs, skins, settings and patch manager database live in your home folder and are untouched by an update. The repositories follow our public releases; the newest beta builds are announced on our [Discord](https://discord.com/invite/WJ9cxySnsM) and are not part of them.
+
+### Removing
+
+Removing a package takes the plugins with it and leaves your home folder alone:
+
+```
+sudo apt remove theusualsuspects-osirus      # Debian, Ubuntu
+sudo dnf remove theusualsuspects-osirus      # Fedora
+sudo zypper remove theusualsuspects-osirus   # openSUSE
+sudo pacman -R theusualsuspects-osirus       # Arch
+```
 
 ****Asking for help****
 
