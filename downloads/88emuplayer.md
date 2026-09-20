@@ -2,10 +2,9 @@
 title: "88EmuPlayer Downloads"
 layout: default
 permalink: /downloads/88emuplayer
-# Bump this when a new 88EmuPlayer release ships; the download buttons point
-# straight at that release's files on GitHub. The package is named after its
-# CPack component and holds both 88emuPlayer and 88EmuCli.
-release: 2.2.24
+# The buttons below look up the newest release that carries these packages, so
+# no version is pinned here. The package name is the CPack component name, and
+# one package holds both 88emuPlayer and 88EmuCli.
 package: TheUsualSuspects-88emuPlayer-Standalone
 downloads:
   - label: Windows
@@ -48,17 +47,80 @@ Not at the moment, but we are working on it.
 
 ## Emulator Downloads Links  
 
-88EmuPlayer (Roland Sound Canvas and related synths), latest version:  
+88EmuPlayer (Roland Sound Canvas and related synths), latest version <span data-release-version></span>:  
   
-<div class="download-buttons">
+<div class="download-buttons" data-package="{{ page.package }}">
 {%- for d in page.downloads %}
-  <a class="btn download-btn" href="https://github.com/dsp56300/gearmulator/releases/download/{{ page.release }}/{{ page.package }}-{{ page.release }}-{{ d.file }}"><span class="os-icon os-icon-{{ d.icon }}" aria-hidden="true"></span>{{ d.label }}</a>
+  <a class="btn download-btn" data-file="{{ d.file }}" href="https://github.com/dsp56300/gearmulator/releases"><span class="os-icon os-icon-{{ d.icon }}" aria-hidden="true"></span>{{ d.label }}</a>
 {%- endfor %}
 </div>
 
-Other package formats (`.deb`, `.rpm`) for this version are on its [release page](https://github.com/dsp56300/gearmulator/releases/tag/{{ page.release }}).  
+Other package formats (`.deb`, `.rpm`) are on the <a data-release-page href="https://github.com/dsp56300/gearmulator/releases">release page</a>.  
   
 Older versions can be found on our [GitHub Releases Page](https://github.com/dsp56300/gearmulator/releases).
+
+<script>
+// Point the buttons at the newest release that actually carries these packages,
+// so a new version needs no edit here. Until the lookup answers - or if it
+// fails - the buttons fall back to the releases page.
+(function () {
+  var buttons = document.querySelector('.download-buttons[data-package]');
+  if (!buttons) return;
+
+  var prefix = buttons.getAttribute('data-package') + '-';
+  var cacheKey = 'tus-release-' + prefix;
+  var maxAge = 60 * 60 * 1000;
+
+  function apply(release) {
+    Array.prototype.forEach.call(buttons.querySelectorAll('[data-file]'), function (button) {
+      var suffix = '-' + button.getAttribute('data-file');
+      var asset = release.assets.filter(function (a) {
+        return a.name.slice(-suffix.length) === suffix;
+      })[0];
+      // A release that skips a platform hides that button rather than 404ing
+      if (asset) button.href = asset.url; else button.hidden = true;
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-release-page]'), function (link) {
+      link.href = 'https://github.com/dsp56300/gearmulator/releases/tag/' + release.tag;
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-release-version]'), function (el) {
+      el.textContent = release.tag;
+    });
+  }
+
+  try {
+    var cached = JSON.parse(localStorage.getItem(cacheKey));
+    if (cached && Date.now() - cached.time < maxAge) {
+      apply(cached);
+      return;
+    }
+  } catch (e) { /* no cache, ask GitHub */ }
+
+  fetch('https://api.github.com/repos/dsp56300/gearmulator/releases?per_page=30')
+    .then(function (response) {
+      if (!response.ok) throw new Error(response.status);
+      return response.json();
+    })
+    .then(function (releases) {
+      var found = null;
+      releases.some(function (release) {
+        if (release.draft) return false;
+        var assets = release.assets.filter(function (a) { return a.name.indexOf(prefix) === 0; });
+        if (!assets.length) return false;
+        found = {
+          tag: release.tag_name,
+          time: Date.now(),
+          assets: assets.map(function (a) { return { name: a.name, url: a.browser_download_url }; })
+        };
+        return true;
+      });
+      if (!found) return;
+      try { localStorage.setItem(cacheKey, JSON.stringify(found)); } catch (e) { /* not fatal */ }
+      apply(found);
+    })
+    .catch(function () { /* keep the fallback links */ });
+})();
+</script>
 
 **For further information, resources, discussion, and support of our plugins including the absolute latest beta versions (including the most current features and fixes) please visit our [Discord](https://discord.com/invite/WJ9cxySnsM).**
 
