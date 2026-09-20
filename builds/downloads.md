@@ -18,7 +18,7 @@ permalink: /builds/downloads
 
 <script>
 const REPO = 'dsp56300/gearmulator';
-const VALID_FORMATS = new Set(['AU','CLAP','LV2','VST2','VST3']);
+const VALID_FORMATS = new Set(['AU','CLAP','LV2','VST2','VST3','Standalone']);
 
 async function fetchVersionList() {
     // 1. Try local cached versions.json
