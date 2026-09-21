@@ -42,6 +42,10 @@ Please read the provided [README](https://github.com/dsp56300/gearmulator/blob/m
 
 Not at the moment, but we are working on it.
 
+## Demo Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LFDmDiaVk8o?si=VaIKvNQEK_FElAU9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 3em auto; display: block"></iframe>
+
 ## <span class="inline-icon inline-icon-download" aria-hidden="true"></span>Emulator Downloads Links  
 
 88EmuPlayer (Roland Sound Canvas and related synths), latest version<span data-release-version></span>:  
@@ -120,6 +124,8 @@ Older versions can be found on our [GitHub Releases Page](https://github.com/dsp
 </script>
 
 **For further information, resources, discussion, and support of our plugins including the absolute latest beta versions (including the most current features and fixes) please visit our [Discord](https://discord.com/invite/WJ9cxySnsM).**
+
+> *This software wouldn't have been possible without the previous efforts of NukeYKT (LA32 and GP chip core, LCD emulator), MAME (reference CPU cores) and many other people that collaborated in the reverse engineering, development and testing effort. Thanks!*
 
 ## Usage Guide
 
