@@ -37,14 +37,14 @@ A: The goal of this project is to preserve various digital musical instruments a
 | Access Virus C  | Motorola 56362 | x1 | released |
 | Access Virus TI Snow | Freescale 56367 | x1 | released |
 | Access Virus TI & TI2 | Freescale 56367 | x2 | released |
-| Waldorf Q | 3x Motorola 56362   (2x synth, 1x FX) | x3 | development |
+| Waldorf Q | 3x Motorola 56362   (2x synth, 1x FX) | x3 | alpha release |
 | Waldorf microQ | Motorola 56362 | x1 | released |
 | Waldorf MW2/XT | Motorola 56303 | x1 | released |
 | Clavia Micro Modular | Motorola 56303 | x1 |  |
 | Clavia Nord Modular | Motorola 56303 | x4 |  |
 | Clavia Nord Lead 2X | Motorola 56362 @ 120 Mhz | x2 | released |
 | Clavia Nord Lead 3 | Motorola 56362 | x6 | development |
-| Novation SuperNova II | 8x Motorola 56362   1x Motorola 56303 | x9 | development |
+| Novation SuperNova II | 8x Motorola 56362   1x Motorola 56303 | x9 | alpha release |
 | Novation SuperNova | Motorola 56303 | x8 | research |
 | Novation Nova | 5x Motorola 56362   1x Motorola 56303 | x6 | research |
 | Korg MS2000 | Motorola 56362 | x1 |  |
@@ -53,11 +53,11 @@ A: The goal of this project is to preserve various digital musical instruments a
 | Roland JP8080 | Roland ESP | x5 | development |
 | Roland JD-990 | 1x Roland EP   1x Roland TVF   2x Roland CSP | x4 | alpha release |
 | Roland SDX/SRV/SDE-330 | Roland CSP | x2 | development |
-| Roland SC-88/Pro/8850 | Roland XP | x1 | development |
+| Roland SC-88/Pro/8850 | Roland XP | x1 | released |
 | Roland JV-2080 | Roland XP + Roland CSP | x2 | development |
-| Roland XV-3080 | 2x Roland XP | x2 | development |
+| Roland XV-3080 | 2x Roland XP | x2 | released |
 | Roland D-110 | Roland LA32 | x2 | development |
-| Roland MT-32 | Roland LA32 | x2 | development |
+| Roland MT-32/CM-64 | Roland LA32 | x2 | development |
 | Roland U-220 | 1x Roland LP   1x Roland RCC | x2 | research |
 | Roland D-70 | 1x Roland LP   1x Roland TVF   1x Roland RCC | x3 | research |
 | Roland V-Synth | Roland ESP | x1 | research |
