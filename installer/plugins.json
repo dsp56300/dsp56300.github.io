@@ -1652,6 +1652,12 @@
       ]
     },
     {
+      "id": "88emuPlayer",
+      "name": "88EmuPlayer",
+      "description": "Roland Sound Canvas Emulator, a standalone player rather than a plugin",
+      "thumbnail": "https://theusualsuspects.io/installer/88emuPlayer_thumbnail.png"
+    },
+    {
       "id": "DSPBridgeServer",
       "name": "DSP Bridge Server",
       "description": "Runs plugin DSP emulation in another process or on another machine"
