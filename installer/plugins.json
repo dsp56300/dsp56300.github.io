@@ -1654,7 +1654,7 @@
     {
       "id": "88emuPlayer",
       "name": "88EmuPlayer",
-      "description": "Roland Sound Canvas Emulator, a standalone player rather than a plugin",
+      "description": "Roland LA/Sound Canvas Emulator, standalone player and CLI",
       "thumbnail": "https://theusualsuspects.io/installer/88emuPlayer_thumbnail.png"
     },
     {
