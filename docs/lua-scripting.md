@@ -52,14 +52,10 @@ These globals are available in all Lua scripts and event handlers:
 |--------|------|-------------|
 | `document` | ElementDocument | The current RML document. Use for DOM access like `document:GetElementById()`. |
 | `params` | table | Parameter API for reading/writing synth parameters and subscribing to changes. |
-{% comment %} Hidden until 2.2.17 is released — remove these tags to restore:
 | `midi` | table | Live note on/off events. |
-{% endcomment %}
 | `Log` | table | RmlUi logging. Use `Log.Message(Log.logtype.info, "message")`. |
 | `rmlui` | table | RmlUi core API (contexts, font loading, etc.). |
-{% comment %} Hidden until 2.2.17 is released — remove these tags to restore:
 | `skinvars` | table | Storage for the skin's own state, per instance or shared by all of them. |
-{% endcomment %}
 
 ## Parameter API
 
@@ -172,7 +168,6 @@ A few things worth knowing:
 - The rate is capped at 60 Hz. Setting `refreshRateLimitHz` in the plugin's config XML lowers or raises that limit, up to 300, and paces the whole user interface with it.
 - A skin that does not declare `onframe` costs nothing but an attribute lookup per frame.
 
-{% comment %} Hidden until 2.2.17 is released — remove these tags to restore:
 ## MIDI Notes
 
 Notes played into the plugin never reach the parameter API --- they go straight to the emulated hardware --- so a skin cannot draw a keyboard from `params` alone. The `midi` table reports them as they arrive:
@@ -200,9 +195,7 @@ Callbacks run on the UI thread even though the notes arrive on the audio thread,
 
 Only note on and note off are reported. Control changes, pitch bend and aftertouch are not, because a mod wheel or an automation lane produces them by the thousand and a skin cannot keep up with that on the UI thread.
 
-{% endcomment %}
 
-{% comment %} Hidden until 2.2.17 is released — remove these tags to restore:
 ## Skin Variables
 
 State that belongs to the skin rather than to the synth --- which knobs a skin has linked together, which of its own pages was open --- has nowhere to live in the parameter set, and a plain Lua variable is gone as soon as the editor closes. The `skinvars` table is a small store for exactly that, in two scopes:
@@ -253,7 +246,6 @@ skinvars.remove("theme", "global")
 
 Global variables are written to the plugin's config XML as soon as they change, one key per variable, prefixed `skinvar_`.
 
-{% endcomment %}
 
 ## DOM Manipulation
 

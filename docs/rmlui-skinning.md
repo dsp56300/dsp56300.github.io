@@ -38,14 +38,15 @@ For this to work, we had to rewrite everything related to the GUI of our existin
     2. [combo](#combo)
     3. [knob](#knob)
 3. [Vector Images](#vector-images)
-4. [Data Binding](#data-binding)
+4. [Window Size](#window-size)
+5. [Data Binding](#data-binding)
     1. [plugin](#plugin)
     2. [partCurrent and part0 to part15](#partcurrent-and-part0-to-part15)
-5. [Parameter Binding](#parameter-binding)
-6. [Built-in data for RmlUI](#built-in-data-for-rmlui)
-7. [Includes](#includes)
-8. [Debugging](#debugging)
-9. [Use it wisely](#use-it-wisely)
+6. [Parameter Binding](#parameter-binding)
+7. [Built-in data for RmlUI](#built-in-data-for-rmlui)
+8. [Includes](#includes)
+9. [Debugging](#debugging)
+10. [Use it wisely](#use-it-wisely)
 
 ## Existing Skins
 
@@ -194,6 +195,81 @@ svg:hover
 Note that only the element exists, there is no `svg()` decorator - to use a vector image as a
 background, place the `svg` element behind your content rather than decorating a container
 with it.
+
+## Window Size
+
+The size of the plugin window comes from the skin. The `<body>` element needs an explicit size, and its
+`rootScale` attribute sets how large that size is shown at a GUI scale of 100%:
+
+```
+<body id="Root" rootScale="0.5" style="left: 0dp; top: 0dp; width: 2518dp; height: 1024dp;">
+```
+
+This skin opens at 1259 x 512 pixels. The window keeps the aspect ratio of the body: resizing it, or picking a
+GUI scale from the context menu, scales the whole skin up or down.
+
+{% comment %} Hidden until 2.2.26 is released — remove these tags to restore:
+### Changing the Size at Runtime
+
+A skin may change the size of its body while it is running, for example to fold away an editing panel and
+leave only the front panel on screen. The window follows: it takes on the new size and aspect ratio at the
+same GUI scale, so nothing gets larger or smaller, there is just more or less of the skin.
+
+Only an explicit size counts. A body sized with `auto` or a percentage is ignored, because that size follows
+the window instead of defining it.
+
+The easiest way is a class that overrides the height. Put the size into your RCSS rather than into the
+body's `style` attribute, as an inline style wins over any class:
+
+```
+body
+{
+	left: 0dp;
+	top: 0dp;
+	width: 2518dp;
+	height: 1024dp;
+}
+
+body.folded
+{
+	height: 280dp;
+}
+```
+
+Toggle the class from [Lua](/docs/lua-scripting). Storing the state in a
+[skin variable](/docs/lua-scripting#skin-variables) makes every plugin instance remember whether it was folded,
+as part of the host project:
+
+```
+<head>
+	...
+	<script>
+function setFolded(folded)
+  document:SetClass("folded", folded)
+  skinvars.set("folded", folded)
+end
+
+function toggleFold()
+  setFolded(not document:IsClassSet("folded"))
+end
+
+function initFold()
+  document:SetClass("folded", skinvars.get("folded") == 1)
+  -- a project that is loaded while the editor is open reports its variables as changes
+  skinvars.onChange("folded", function(value)
+    document:SetClass("folded", value == 1)
+  end)
+end
+	</script>
+</head>
+<body id="Root" rootScale="0.5" onload="initFold()">
+	<div id="foldButton" onclick="toggleFold()"/>
+	...
+</body>
+```
+
+Use `"global"` as the scope of the skin variable instead if every instance should share one setting.
+{% endcomment %}
 
 ## Data Binding
 
