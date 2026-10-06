@@ -269,6 +269,64 @@ end
 ```
 
 Use `"global"` as the scope of the skin variable instead if every instance should share one setting.
+
+### Free Window Mode
+
+Everything above is the fixed window mode: the window has the size of the skin, and making it larger makes the
+skin larger. A skin can choose the free window mode instead, where a larger window gives the skin more room:
+
+```
+<body id="Root" rootScale="0.5" windowMode="free" windowWidth="2000" windowHeight="1200">
+```
+
+- The body follows the window, so give it `width: 100%` and `height: 100%` and lay out its content with flex boxes
+  or percentages rather than at fixed positions.
+- `windowWidth` and `windowHeight` are required and set, in dp, the size of the window the first time it opens.
+- The window can be resized to any size, there is no fixed aspect ratio. Each plugin instance remembers its window
+  size as part of the host project.
+- The GUI scale becomes a zoom: the window keeps its size, and the skin gets larger or smaller inside it, which
+  leaves it less or more room. The zoom is shared by all instances, like the GUI scale.
+- `min-width`, `min-height`, `max-width` and `max-height` of the body limit the window size. They are in dp, so the
+  limits follow the zoom, and changing them at runtime resizes the window, for example a class with a `max-height`
+  folds it.
+- The document receives a `resize` event whenever the room changes, from the window or from the zoom. It arrives
+  before the new layout is done.
+
+A part of the skin that keeps its design size, a front panel for example, goes into a container that scrolls:
+
+```
+body
+{
+	width: 100%;
+	height: 100%;
+	min-width: 1000dp;
+	min-height: 600dp;
+	display: flex;
+	flex-direction: column;
+}
+
+#toolbar
+{
+	flex: 0 0 80dp;
+}
+
+#scroller
+{
+	flex: 1 1 auto;
+	overflow: auto;
+}
+
+#frontPanel
+{
+	display: block;
+	position: relative;
+	width: 3400dp;
+	height: 2000dp;
+}
+```
+
+Note the `display: block`: RmlUi has no default style sheet, a `div` is an inline element unless your RCSS says
+otherwise, and an inline element ignores `width` and `height`.
 {% endcomment %}
 
 ## Data Binding
