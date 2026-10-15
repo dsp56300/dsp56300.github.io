@@ -32,15 +32,15 @@ downloads:
   <source src="/images/pages/88emuplayer/intro.mp4" type="video/mp4">
 </video>
 
-88Emu emulates the hardware inside most Sound Canvas modules and related earlier sound generators, used for retro gaming and DTM. It runs the original firmware on emulated CPUs and sound chips, including the firmware's instrument selection, voice allocation, effects, MIDI handling and front-panel behavior. You supply the ROM images; they are not included.
+88Emu emulates the hardware inside most Sound Canvas modules, MT-32 and related earlier sound generators, used for retro gaming and DTM. It runs the original firmware on emulated CPUs and sound chips, including the firmware's instrument selection, voice allocation, effects, MIDI handling and front-panel behavior. You supply the ROM images; they are not included.
 
 88EmuPlayer is NOT a DAW-compatible plugin, but instead a standalone application for playing MIDI files and using those devices from a MIDI keyboard, sequencer or game. 88EmuCli uses the same emulation to render files to WAV offline using a command line interface, without having to wait for the song to play in real time.
 
-Please read the provided [README](https://github.com/dsp56300/gearmulator/blob/main/doc/88emu_readme.md) and these instructions carefully to save our Discord Server from being overloaded with questions regarding the setup of the emulator.
+Please read the provided [README](https://github.com/dsp56300/gearmulator/blob/main/doc/88emu_readme.md) and these instructions carefully.
 
 > Is 88Emu ever gonna be released as DAW plugin?
 
-Not at the moment, but we are working on it.
+Yes, soon.
 
 ## Demo Video
 
@@ -48,7 +48,7 @@ Not at the moment, but we are working on it.
 
 ## <span class="inline-icon inline-icon-download" aria-hidden="true"></span>Emulator Downloads Links  
 
-88EmuPlayer (Roland Sound Canvas and related synths), latest version<span data-release-version></span>:  
+88EmuPlayer (Roland Sound Canvas, MT-32 and related synths), latest version<span data-release-version></span>:  
   
 <div class="download-buttons" data-package="{{ page.package }}">
 {%- for d in page.downloads %}
@@ -143,11 +143,32 @@ You can then configure your MIDI inputs and audio outputs in Settings, open/drag
 
 **Please refer to the included [README](https://github.com/dsp56300/gearmulator/blob/main/doc/88emu_readme.md) for the rest of the options, features, gotchas, and configuration.**
 
+
 ### Usage for Retro-Gaming
 
-You can use 88EmuPlayer for playing older games that use General MIDI or GS music. Experimental support for MT-32 and CM-64 compatible games is still partial (CM-32P only for now).
+You can use 88EmuPlayer for playing older games that use MT-32/CM-32L, CM-64, General MIDI or GS music.
 
 To achieve this you will need to route the MIDI output of your game or emulator (such as DOSBox, ScummVM or Neko Project) into 88EmuPlayer. If you are in a MacOS or Linux system, an option is available to create a "Virtual MIDI port", so that 88EmuPlayer can already show up as available option in the MIDI configuration of your emulator. If you are in a Windows based system, though, you will need to use a 3rd party software for that, such as [LoopBe1](https://www.nerds.de/en/loopbe1.html) or [loopmidi](https://www.tobias-erichsen.de/software/loopmidi.html).
+
+Here you can see for example 88EmuPlayer accurately emulating the sound of the the CM-64 (previously unemulated), using MAME as Sharp X68000 emulator.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1iogjyjmRms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin: 3em auto; display: block"></iframe>
+
+### Part Editor
+
+To make the usage easier for musical purposes, we provide a Part Editor for Sound Canvas, MT-32 and CM-32P modules.
+The Part Editor can be opened with the Options menu, or by double clicking on the emulated LCD display.
+
+<img class="ui-screenshot" style="margin: 1em auto 1em auto" src="/images/pages/88emuplayer/mixer_editor.png" alt="88EmuPlayer Part Editor Mixer">
+
+For the MT-32, the entire patch and its partials can also be edited.
+
+<img class="ui-screenshot" style="margin: 1em auto 1em auto" src="/images/pages/88emuplayer/mt32_editor.png" alt="88EmuPlayer Part Editor MT-32">
+
+To save the changed part settings, MIDI file export is available. It's also possible to drag a midi region from the dots icon to your DAW.
+
+<img class="ui-screenshot" style="max-width:300px" src="/images/pages/88emuplayer/editor_drag.png" alt="88EmuPlayer Part Editor Drag">
+
 
 ## Asking for help
 

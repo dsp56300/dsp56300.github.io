@@ -1678,7 +1678,7 @@
     {
       "id": "88emuPlayer",
       "name": "88EmuPlayer",
-      "description": "Roland LA/Sound Canvas Emulator, standalone player and CLI",
+      "description": "Roland MT-32/Sound Canvas Emulator, standalone player and CLI",
       "manufacturer": "Roland",
       "originalName": "Sound Canvas",
       "year": 1991,
