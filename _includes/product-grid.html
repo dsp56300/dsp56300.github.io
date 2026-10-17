@@ -11,7 +11,7 @@
   {% for category in site.data.products.categories %}
   {% assign items = site.data.products.products | where: "category", category %}
   <section class="product-category" data-category="{{ category | slugify }}">
-    <h2 class="product-category-title">{{ category }} <span>{{ items.size }}</span></h2>
+    <h2 class="product-category-title">{{ category }}</h2>
     <div class="product-grid">
       {% for p in items %}
       {% if p.status == "alpha" %}{% assign url = site.data.products.alpha_url %}{% else %}{% assign url = p.url %}{% endif %}
