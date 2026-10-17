@@ -33,6 +33,10 @@ Download and unzip/unpackage file(s) for any of the official "release" plugin ve
 
 [JE8086 (Roland JP-8000) Downloads](/downloads/je8086)  
 
+[88EmuPlayer (Roland Sound Canvas, MT-32 and related) Downloads](/downloads/88emuplayer)
+
+> **88EmuPlayer** is a standalone program rather than a DAW plugin, so the plugin folder and DAW steps below do not apply to it. Unzip it anywhere and run 88EmuPlayer; when you select a device to emulate, it guides you through installing that device's ROM files. See the [88EmuPlayer Usage Guide](/downloads/88emuplayer#usage-guide) for the macOS first-launch steps and the rest of its setup.
+
 **For further information, resources, discussion, and support of our plugins including the absolute latest beta versions (including the most current features and fixes) please visit our [Discord](https://discord.com/invite/WJ9cxySnsM).**
 
 ****Installing the plugin files****
