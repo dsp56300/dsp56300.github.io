@@ -13,90 +13,92 @@ permalink: /docs/installation-guide
 ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝
 ```
 
-## Installation Guide (general for all Emulators)
+## The short version
 
-**Download the Plugin Files**
+1. Download the **TUS Plugin Manager** for your system:
+   [Windows](/builds/downloads?product=PluginManager&format=All&os=win64) /
+   [macOS](/builds/downloads?product=PluginManager&format=All&os=MacOS) /
+   [Linux x64](/builds/downloads?product=PluginManager&format=All&os=Linux_x86_64) /
+   [Linux aarch64](/builds/downloads?product=PluginManager&format=All&os=Linux_aarch64)
+2. Unpack it and start it ([details per system](#starting-the-plugin-manager)).
+3. Tick the emulators and plugin formats you want and click **Install selected**.
+4. Put the ROM of each emulator into its `roms` folder ([see below](#roms)).
+5. Let your DAW rescan its plugins.
 
-Our emulators are provided in many different formats (VST, VST3, CLAP, AU, LV2) and for various operating systems (Windows, MacOS, Linux).  Depending upon the capabilities of the original hardware synthesizer, many of our emulators also come in "FX" versions which may be used as Audio Effects plugins to process external audio signals rather than behave as Instrument plugins.
+From then on the Plugin Manager tells you when an update is out and installs it with one click.
 
-Download and unzip/unpackage file(s) for any of the official "release" plugin versions of each emulator you wish to install from the following links:
+> **88EmuPlayer** is a standalone program rather than a DAW plugin, so the plugin folder and DAW steps do not apply to it. Install it with the Plugin Manager, or unzip it anywhere, and run it; when you select a device to emulate, it guides you through installing that device's ROM files. See the [88EmuPlayer Usage Guide](/downloads/88emuplayer#usage-guide) for the macOS first-launch steps and the rest of its setup.
 
-[Osirus (Virus A/B/C) Downloads](/downloads/osirus)  
-  
-[OsTIrus (Virus TI) Downloads](/downloads/ostirus)
+## The Plugin Manager
 
-[Vavra (microQ) Downloads](/downloads/vavra)  
-  
-[Xenia (microWave 2/XT) Downloads](/downloads/xenia)
+The Plugin Manager downloads our emulators and puts every plugin format into the folder your DAW looks in. It lists every emulator we have released, with the version you have installed of each format, and installs, upgrades, downgrades and removes them for you. It works on Windows, macOS and Linux, and also finds plugins you installed by hand before.
 
-[NodalRed2x (Nord Lead 2x) Downloads](/downloads/nodalred2x)
+### Starting the Plugin Manager
 
-[JE8086 (Roland JP-8000) Downloads](/downloads/je8086)  
+**Windows:** Unpack the archive, for example into your Documents folder, and run `TUS Plugin Manager.exe`. The plugin folders on Windows belong to the system, so Windows asks for administrator rights when plugins are copied into them. Only that copying runs with those rights, and declining leaves everything as it was.
 
-[88EmuPlayer (Roland Sound Canvas, MT-32 and related) Downloads](/downloads/88emuplayer)
+**macOS:** Unpack the archive and move `TUS Plugin Manager.app` into your Applications folder. The app is not signed, so macOS blocks its first start: open **System Settings › Privacy & Security**, scroll down and click **Open Anyway**. On older macOS versions, right-click the app and choose **Open**. The plugins it installs need no such step, it takes care of that itself.
 
-> **88EmuPlayer** is a standalone program rather than a DAW plugin, so the plugin folder and DAW steps below do not apply to it. Unzip it anywhere and run 88EmuPlayer; when you select a device to emulate, it guides you through installing that device's ROM files. See the [88EmuPlayer Usage Guide](/downloads/88emuplayer#usage-guide) for the macOS first-launch steps and the rest of its setup.
+**Linux:** Unpack the archive and run `usr/local/bin/TUS Plugin Manager` from it.
 
-**For further information, resources, discussion, and support of our plugins including the absolute latest beta versions (including the most current features and fixes) please visit our [Discord](https://discord.com/invite/WJ9cxySnsM).**
+### Using it
 
-****Installing the plugin files****
+* Every emulator is a row with a column per plugin format. A column shows the version you have installed, and its button installs it, upgrades it, puts an older version back or removes it. The dropdown offers every released version. The **All** column does the same for every format of an emulator at once.
+* **Install selected** installs every format you ticked, **Upgrade all** upgrades everything you have installed that has an update. Nothing is ticked on the first start, and the Plugin Manager remembers what you tick.
+* Emulators with an update are listed first, under **Updates available**.
+* Effect versions such as OsirusFX come with the emulator they belong to.
+* Click an emulator to see its page: its formats, its **Changelog**, **Uninstall all**, and **Back up now**, which saves everything the emulator keeps in its data folder (settings, patch manager database, ROMs and skins) so that you can restore it later.
+* When a new version of the Plugin Manager itself is out, a button at the top offers the update.
+* Donators: **Donator login** adds the builds for the emulators you support. Paste the login line you received, or drop the login file onto the window.
 
-Place the unzipped/unpackaged plugin files into your appropriate plugin folder(s) used by your DAW(s). The default locations for each OS are listed below, however if you have customized your environment put them in your specific folders:
+### Where the plugins go
 
-Windows:
+| Format | Windows | macOS | Linux |
+| --- | --- | --- | --- |
+| VST3 | `C:\Program Files\Common Files\VST3` | `~/Library/Audio/Plug-Ins/VST3` | `~/.vst3` |
+| VST2 | `C:\Program Files\VSTPlugins` | `~/Library/Audio/Plug-Ins/VST` | `~/.vst` |
+| CLAP | `C:\Program Files\Common Files\CLAP` | `~/Library/Audio/Plug-Ins/CLAP` | `~/.clap` |
+| LV2 | `C:\Program Files\Common Files\LV2` | `~/Library/Audio/Plug-Ins/LV2` | `~/.lv2` |
+| AU | | `~/Library/Audio/Plug-Ins/Components` | |
+| Programs | `C:\Program Files\The Usual Suspects` | `~/Applications` | `~/.local/bin` |
 
-**VST2:    C:\\Program Files\\Steinberg\\VSTPlugins  
-VST3:    C:\\Program Files\\Common Files\\VST3  
-CLAP:    C:\\Program Files\\Common Files\\CLAP  
-LV2:     C:\\Program Files\\Common Files\\LV2**
+These are the folders DAWs scan by default. If yours uses others, change them in **Preferences**.
 
-MacOS:  
-  
-Note:  MacOS requires that plugins be "signed" in order for the OS to allow use of these files.  We provide a script in the downloads for each plugin that can be executed via the Terminal program to allow these to be seen by your DAW(s).  Simply uncompress the plugin archive, double-click the included 'macsetup_\[synthname\].command' file, then copy the plugin file to the correct plugin folder location. If you do not perform this activity each time you install or update our plugins, your DAW will not detect these plugins and you will not be able to use them. 
+### If something goes wrong
 
-**VST2:    /Library/Audio/Plug-Ins/VST  
-VST3:    /Library/Audio/Plug-Ins/VST3  
-AU:      /Library/Audio/Plug-Ins/Components  
-CLAP:    /Library/Audio/Plug-Ins/CLAP  
-LV2:     /Library/Audio/Plug-Ins/LV2**
+The Plugin Manager writes a `log.txt` into its own folder, **Documents/The Usual Suspects/PluginManager/config** (on Linux **~/.local/share/The Usual Suspects/PluginManager/config**). Please attach it and `installed.json` from the same folder when you ask for help.
 
-Linux:
+There is also `tuspm`, the same program without a window, for scripts. Its commands are described in the [Plugin Manager README](https://github.com/dsp56300/gearmulator/blob/main/doc/pluginmanager_readme.md).
 
-**VST2:    /usr/local/lib/vst/  
-VST3:    /usr/local/lib/vst3/  
-CLAP:    /usr/local/lib/clap/  
-LV2:     /usr/local/lib/lv2/**
+## ROMs
 
-On Linux you can skip the manual copying altogether and install from our package repositories instead, which also keeps the plugins updated: see [Linux: install and update with our package repositories](#linux-install-and-update-with-our-package-repositories) below.
+Our emulators run the original firmware (the ROM) of the synthesizer they emulate, and make no sound without it. We cannot provide ROMs, the Plugin Manager does not download them, and per the rules of our Discord server asking where to get them leads to a ban. Owners of the hardware usually get them from the manufacturer, as an OS update or installation package.
 
-After you install the emulator plugin and run it for the first time it will create the following folders for the various resources required for our emulators to operate. If an emulator also has an "FX" version, this centralized resource location will be shared with the Instrument version of the plugin to eliminate duplication. These plugin resource folders are located as follows (where \[synthname\] is the name of the emulator such as Osirus, OsTIrus, Vavra, Xenia, etc):
+Put the ROM files, usually `.bin` or `.mid` files, into the `roms` folder inside the emulator's data folder:
 
-Windows: **C:\\Users\\\[username\]\\Documents\\The Usual Suspects\\\[synthname\]\\**
+| | |
+| --- | --- |
+| Windows | `Documents\The Usual Suspects\<emulator>\roms` |
+| macOS | `~/Documents/The Usual Suspects/<emulator>/roms` |
+| Linux | `~/.local/share/The Usual Suspects/<emulator>/roms` (or under `$XDG_DATA_HOME`) |
 
-MacOS: **~/Documents/The Usual Suspects/\[synthname\]/**
+`<emulator>` is its name, such as Osirus, Vavra or JE8086. An effect version shares the folder of its emulator. The emulator creates the folder when it runs for the first time; you can also create it yourself, all lowercase. Beside it, the emulator keeps `config`, `patchmanager` and `skins`.
 
-Linux: **XDG_DATA_HOME/The Usual Suspects/\[synthname\]/**  
-or  
-**~/.local/share/The Usual Suspects/\[synthname\]/**
+If the emulator cannot find a valid ROM, it shows an error instead of its user interface. That nearly always means the file is in the wrong folder, or is not the firmware this emulator needs. We support the final firmware release of each synthesizer; other versions may or may not work.
 
-The following subfolders will be created on first use of the plugin (if not already existing):
+## Rescan in your DAW
 
-**\\config** (plugin configuration information is stored here)  
-**\\patchmanager** (patch manager database and other config data is stored here; **_NOT recommended for patch storage_**)  
-**\\roms** (Firmware/ROMs must be placed here; **_emulator will not work without this_**, **_read notes below_**)  
-**\\skins** (Third-Party skins must be placed here)
+Most DAWs notice new and updated plugins on their next start. If an emulator does not appear, start a plugin rescan in your DAW's settings.
 
-If they are not automatically created you may create them yourself (please note they are **lowercase**).
+The first time you open an emulator it shows its terms of use, once per emulator. Then set up the [Patch Manager](/docs/patch-manager) with the folders that hold your banks and patches.
 
-****Rescan/Validate your plugins in your DAW(s)****
+## Installing by hand
 
-The user will need to tell the DAW that new plugins have been added.  This is performed differently per DAW, and most DAWs will automatically rescan/refresh/validate the plugin list as plugins are added or updated. If a plugin does not show up in the plugin list, performing a rescan should be the first step to resolve that issue.
+You do not need the Plugin Manager. Every emulator's [download page](/downloads) has the archives for each system:
 
-****Using the plugin****
-
-Add the plugin to a track in the DAW and open the plugin UI.  On the first run (only once, for each plugin type) the user will be reminded of the terms of use and prompted to accept and continue.  If a valid ROM/Firmware file is not installed and detected in the **\\roms** subfolder an error message describing this may also be displayed.  Remember, without a valid ROM/Firmware file in place the emulator will not function correctly or make any sound.
-
-Once the plugin has been correctly installed and is working, it is highly recommended to configure the Patch Manager to point to your personal bank/preset location(s) for loading and saving patches.  Please refer to the support article [HERE](/docs/patch-manager) for more information about how to use the Patch Manager.
+1. Unpack the archive of each plugin format you want.
+2. **macOS only:** double-click the `macsetup_<emulator>.command` file that comes with the plugin. The plugins are not signed, and without this step macOS refuses to load them. Do this again after every update.
+3. Copy the plugin into the plugin folder of its format: the folders [listed above](#where-the-plugins-go), or the system-wide ones (`/Library/Audio/Plug-Ins/…` on macOS, `/usr/local/lib/vst3` and so on on Linux).
 
 ## Linux: install and update with our package repositories
 
@@ -114,9 +116,9 @@ There is one package per emulator, each containing that emulator's VST2, VST3, C
 | `theusualsuspects-je8086` | JE-8086 (Roland JP-8000) |
 | `theusualsuspects-88emu` | 88emuPlayer and 88EmuCli, which are programs rather than plugins |
 
-The packages put the plugins into **/usr/lib/vst**, **/usr/lib/vst3**, **/usr/lib/clap** and **/usr/lib/lv2**, which nearly every DAW scans by default; if yours does not, add those folders to its plugin search paths. **If you have installed our plugins by hand before, delete your copies under /usr/local/lib/ first**, otherwise your DAW finds each emulator twice and may keep loading the old one.
+The packages put the plugins into **/usr/lib/vst**, **/usr/lib/vst3**, **/usr/lib/clap** and **/usr/lib/lv2**, which nearly every DAW scans by default; if yours does not, add those folders to its plugin search paths. **If you have installed our plugins by hand or with the Plugin Manager before, remove those copies first**, otherwise your DAW finds each emulator twice and may keep loading the old one.
 
-Everything else on this page still applies. The packages contain no ROM/firmware, and each emulator still keeps its ROMs, skins and settings in **~/.local/share/The Usual Suspects/\[synthname\]/**.
+The packages contain no ROM/firmware, and each emulator still keeps its ROMs, skins and settings in **~/.local/share/The Usual Suspects/\[synthname\]/**.
 
 ### Which repository do I use?
 
@@ -195,7 +197,7 @@ sudo pacman -Sy theusualsuspects-osirus
 
 ### Updating
 
-This is the point of the whole exercise: new releases arrive with your normal system updates, and nothing has to be downloaded or copied by hand.
+New releases arrive with your normal system updates, and nothing has to be downloaded or copied by hand.
 
 ```
 sudo apt update && sudo apt upgrade          # Debian, Ubuntu
@@ -217,30 +219,10 @@ sudo zypper remove theusualsuspects-osirus   # openSUSE
 sudo pacman -R theusualsuspects-osirus       # Arch
 ```
 
-****Asking for help****
+## Skins
 
-Please read our Support Guide which can be found [HERE](/docs/support-guide) to find out how and where to get support and assistance for our emulators.  
+Third-party skins go into the `skins` folder beside `roms`. We do not support them officially: if something misbehaves, switch back to the built-in skin first. Skins must not contain copyrighted or trademarked designs, logos or text. To make your own, see the [Skinning Guide](/docs/rmlui-skinning).
 
-> PRO TIP: To avoid frustration, confusion, and running afoul of the rules, it is essential for all users to read our FAQ and Pinned Messages in the the various support channels in the Discord; answers to most of the common questions will be found in those locations. 
+## Getting help
 
-  
-****Notes about ROM/Firmware****:
-
-Our emulator(s) work by executing the original code (ROM/firmware) of the synth it is emulating; it is not capable of generating audio on its own.  Our emulators are intended for use only by legitimate owners of the hardware synth(s).  As such, owners of these synths typically have access to such files through the manufacturer for users entitled to do so, usually in the form of installation packages or OS system updates.  We cannot legally provide you with this ROM/firmware as part of the emulator nor provide any assistance nor accept any responsibility or liability for any illegal usage of these emulators.  Per our **#rules** published on our Discord server, no discussion of how to acquire ROM/Firmware will be tolerated in our community and may result in a ban.
-
-> PRO TIP:  Any assistance or information we can provide is typically found in Pinned Messages (possibly called a "ROM Statement") in the appropriate support channels on the Discord.  It is probably a great idea for all users to find and read any such messages (and Pinned Messages in general). 
-
-**ROM/Firmware files (typically found in .BIN or .MID format) should be placed in the \\roms folder inside the main plugin resource folder.** If this is not done correctly the plugin will not operate properly and will present an error screen informing you that it does not detect valid file(s) in the correct location. Most times, if you see this error it means you have either not placed these files into the correct folder or the files themselves are not valid/correct firmware files for that particular emulator. Again we cannot assist with this, so please ensure you are following that step very carefully.
-
-Typically we only support the most recent/final release of ROM/firmware in our emulators; usage of any other versions are technically unsupported and may result in issues that we may or may not assist with (at our discretion).
-
-  
-**Notes about Third-Party Skins:**
-
-We provide a system to create/add/use third-party skins to alter the look and feel of our emulators. Third-party skins are not officially supported by us, so if errors are encountered it is first recommended to revert to the default skin provided by the emulator to troubleshoot any issues. Please ensure that skins do not include any specifically copyrighted or trademarked design elements, logos, text/verbiage or other content; any violations of this will be removed immediately.  
-  
-**To install and use third-party skins, place them inside the \\skins subfolder in the main plugin resource folder.**
-
-There are a number of extra features and options that set our emulators apart; we highly recommend browsing the entire website, especially our blogs and other articles to understand how these features work:
-
-We also highly recommend reading and referring to the official manuals and documentation from the manufacturer; these resources will answer most questions about how to actually use the synths and their various features and options if you are unfamiliar with them.
+Read our [FAQ](/docs/faqs) and the pinned messages in the support channels of our [Discord](https://discord.com/invite/WJ9cxySnsM) first; most questions are answered there. How and where to ask for help is in our [Support Guide](/docs/support-guide). For how to use the synthesizers themselves, the manufacturers' manuals are the best reference.

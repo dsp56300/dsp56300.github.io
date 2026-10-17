@@ -12,6 +12,8 @@ navigation:
   - title: Downloads
     url: /downloads
     children:
+      - title: TUS Plugin Manager
+        url: /downloads/plugin-manager
       - title: Osirus (Virus A/B/C)
         url: /downloads/osirus
       - title: OsTIrus (Virus TI)
@@ -20,7 +22,7 @@ navigation:
         url: /downloads/vavra
       - title: Xenia (MW II/XT)
         url: /downloads/xenia
-      - title: JE8086 (JP-8000)
+      - title: JE8086 (JP-8000/JP-8080)
         url: /downloads/je8086
       - title: NodalRed2x (Nord Lead)
         url: /downloads/nodalred2x

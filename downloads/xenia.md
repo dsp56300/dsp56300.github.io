@@ -15,26 +15,11 @@ permalink: /downloads/xenia
 
 ![](/images/pages/xenia/xenia_announce_preview.png)
 
-Please read these instructions carefully to save our Discord Server from being overloaded with questions regarding the setup of the emulator.
+Xenia emulates the Waldorf Microwave II and XT. The easiest way to install and update it is the **[TUS Plugin Manager](/downloads/plugin-manager)**; the [Installation Guide](/docs/installation-guide) explains it, and where the ROM goes.
 
-## Emulator Downloads Links  
-Please read the [Installation Guide](/docs/installation-guide) before downloading
+| <span class="table-title">Downloads</span> | Windows | macOS | Linux x64 | Linux aarch64 |
+| --- | --- | --- | --- | --- |
+| **Xenia** | [Download](/builds/downloads?product=Xenia&format=All&os=win64) | [Download](/builds/downloads?product=Xenia&format=All&os=MacOS) | [Download](/builds/downloads?product=Xenia&format=All&os=Linux_x86_64) | [Download](/builds/downloads?product=Xenia&format=All&os=Linux_aarch64) |
+| **XeniaFX** (effect version) | [Download](/builds/downloads?product=XeniaFX&format=All&os=win64) | [Download](/builds/downloads?product=XeniaFX&format=All&os=MacOS) | [Download](/builds/downloads?product=XeniaFX&format=All&os=Linux_x86_64) | [Download](/builds/downloads?product=XeniaFX&format=All&os=Linux_aarch64) |
 
-Xenia Emulator for Waldorf microWAVE 2/XT latest version:  
-  
-[Win](/builds/downloads?product=Xenia&format=All&os=win64) / [Mac](/builds/downloads?product=Xenia&format=All&os=MacOS) / [Linux x64](/builds/downloads?product=Xenia&format=All&os=Linux_x86_64) / [Linux aarch64](/builds/downloads?product=Xenia&format=All&os=Linux_aarch64)  
-
-XeniaFX (effects version) Waldorf microWAVE 2/XT latest version:  
-  
-[Win](/builds/downloads?product=XeniaFX&format=All&os=win64) / [Mac](/builds/downloads?product=XeniaFX&format=All&os=MacOS) / [Linux x64](/builds/downloads?product=XeniaFX&format=All&os=Linux_x86_64) / [Linux aarch64](/builds/downloads?product=XeniaFX&format=All&os=Linux_aarch64)
-
-  
-For the full list of Xenia downloads click [here](/builds/downloads?product=Xenia&format=All&os=All).  
-  
-For the full list of XeniaFX downloads click [here](/builds/downloads?product=XeniaFX&format=All&os=All).  
-  
-If you are unable to access these pages, you can also download directly from our [GitHub Releases Page](https://github.com/dsp56300/gearmulator/releases).
-
-### MacOS Catalina+ users, read this
-
-The plugins are not signed, if you get a warning such as "Xenia.xxx cannot be opened because the developer cannot be verified", please ensure you carefully follow the instructions in the [Installation Guide](/docs/installation-guide) to uncompress the plugin download, double-click the provided 'macsetup_Xenia.command' file, then copy the modified plugin file to the applicable plugin folder.
+Every version of [Xenia](/builds/downloads?product=Xenia&format=All&os=All) and [XeniaFX](/builds/downloads?product=XeniaFX&format=All&os=All), or our [GitHub Releases Page](https://github.com/dsp56300/gearmulator/releases). To install by hand, see [Installing by hand](/docs/installation-guide#installing-by-hand).

@@ -20,7 +20,7 @@ permalink: /docs/faqs
 - [Vavra VST/AU/CLAP/LV2 FAQ (Waldorf microQ)](#vavra-vstauclaplv2-faq-waldorf-microq)
 - [Xenia VST/AU/CLAP/LV2 FAQ (Waldorf microWAVE 2/XT)](#xenia-vstauclaplv2-faq-waldorf-microwave-2xt)
 - [NodalRed2x VST/AU/CLAP/LV2 FAQ (Clavia Nord Lead 2x)](#nodalred2x-vstauclaplv2-faq-clavia-nord-lead-2x)
-- [JE8086 VST/AU/CLAP/LV2 FAQ (Roland JP-8000 and soon JP-8080)](#je8086-vstauclaplv2-faq-roland-jp-8000-and-soon-jp-8080)
+- [JE8086 VST/AU/CLAP/LV2 FAQ (Roland JP-8000/JP-8080)](#je8086-vstauclaplv2-faq-roland-jp-8000-and-soon-jp-8080)
 
 ## General FAQ
 
@@ -141,6 +141,14 @@ MacOS users: Use a DAW that runs natively on Apple Silicon (M-series CPUs) as a 
 
 A: 32 bit CPUs offer fewer registers and are furthermore a limiting factor when it comes to DSP math calculations, as the DSP ALU registers are 56 bit wide and therefore do not fit into 32 bit host CPU registers. It does not make any sense to support these CPUs because even if the recompiler got ported to this architecture, it most likely won't be realtime capable.
 
+**Q: On macOS, the plugins do not load, or macOS says they cannot be opened because the developer cannot be verified**
+
+A: Our plugins are not signed. The [TUS Plugin Manager](/downloads/plugin-manager) takes care of that when it installs them. If you install by hand, double-click the `macsetup_<emulator>.command` file that comes with each plugin before you copy it into its plugin folder, after every update. See [Installing by hand](/docs/installation-guide#installing-by-hand). The same in a Terminal, for each plugin you installed:
+
+```
+xattr -cr ~/Library/Audio/Plug-Ins/VST3/Osirus.vst3
+```
+
 ## Discord FAQ
 
 **Q: I cannot see any (or very few) channels on the server**
@@ -163,20 +171,6 @@ A: Discord is primarily an interactive chat-based tool for collaboration and dis
 
 This is the FAQ specific for the Osirus plugin, which emulates the Access Virus A/B/C
 
-**Q: On MacOS, plugins do not load because they are not properly signed**
-
-A: Plugins on MacOS need to be signed manually after installation. To do so, we have included a script called 'macsetup_Osirus.command' packaged with the MacOS plugin downloads. Simply extract the plugin archive, double-click the .command file, then copy the plugin to the desired plugin folder.
-
-Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for Osirus is shown below:
-
-```
-sudo xattr -cr /Library/Audio/Plug-Ins/VST3/Osirus.vst3
-sudo xattr -cr /Library/Audio/Plug-Ins/VST/Osirus.vst
-sudo xattr -cr /Library/Audio/Plug-Ins/Components/Osirus.component
-sudo xattr -cr /Library/Audio/Plug-Ins/CLAP/Osirus.clap
-sudo xattr -cr /Library/Audio/Plug-Ins/lv2/Osirus.lv2
-```
-
 **Q: When controlling the plugin via my Master Keyboard, I get weird behavior such as volume changes / sound changes etc**
 
 A: The Virus hardware has control changes mapped to preset parameter changes. It is very likely that your Master Keyboard emits MPE control change messages that the Virus doesn't understand. To fix this, either disable MPE on your Master Keyboard or filter them in your DAW
@@ -192,20 +186,6 @@ A: Right click anywhere in the plugin and export the currently loaded skin to di
 ## OsTIrus VST/AU/CLAP/LV2 FAQ (Access Virus TI/Snow)
 
 This is the FAQ specific for the OsTIrus plugin, which emulates the Access Virus TI and Snow
-
-**Q: On MacOS, plugins do not load because they are not properly signed**
-
-A: Plugins on MacOS need to be signed manually after installation. To do so, we have included a script called 'macsetup_OsTIrus.command' packaged with the MacOS plugin downloads. Simply extract the plugin archive, double-click the .command file, then copy the plugin to the desired plugin folder.
-
-Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for OsTIrus is shown below:
-
-```
-sudo xattr -cr /Library/Audio/Plug-Ins/VST3/OsTIrus.vst3
-sudo xattr -cr /Library/Audio/Plug-Ins/VST/OsTIrus.vst
-sudo xattr -cr /Library/Audio/Plug-Ins/Components/OsTIrus.component
-sudo xattr -cr /Library/Audio/Plug-Ins/CLAP/OsTIrus.clap
-sudo xattr -cr /Library/Audio/Plug-Ins/lv2/OsTIrus.lv2
-```
 
 **Q: When controlling the plugin via my Master Keyboard, I get weird behavior such as volume changes / sound changes etc**
 
@@ -227,20 +207,6 @@ A: Right click anywhere in the plugin and export the currently loaded skin to di
 
 This is the FAQ specific for the Vavra plugin, which emulates the Waldorf microQ
 
-**Q: On MacOS, plugins do not load because they are not properly signed**
-
-A: Plugins on MacOS need to be signed manually after installation. To do so, we have included a script called 'macsetup_Vavra.command' packaged with the MacOS plugin downloads. Simply extract the plugin archive, double-click the .command file, then copy the plugin to the desired plugin folder.
-
-Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for Vavra is shown below:
-
-```
-sudo xattr -cr /Library/Audio/Plug-Ins/VST3/Vavra.vst3
-sudo xattr -cr /Library/Audio/Plug-Ins/VST/Vavra.vst
-sudo xattr -cr /Library/Audio/Plug-Ins/Components/Vavra.component
-sudo xattr -cr /Library/Audio/Plug-Ins/CLAP/Vavra.clap
-sudo xattr -cr /Library/Audio/Plug-Ins/LV2/Vavra.lv2
-```
-
 **Q: When controlling the plugin via my Master Keyboard, I get weird behavior such as volume changes / sound changes etc**
 
 A: The microQ hardware has control changes mapped to preset parameter changes. It is very likely that your Master Keyboard emits MPE control change messages that the microQ doesn't understand. To fix this, either disable MPE on your Master Keyboard or filter them in your DAW
@@ -256,20 +222,6 @@ A: Right click anywhere in the plugin and export the currently loaded skin to di
 ## Xenia VST/AU/CLAP/LV2 FAQ (Waldorf microWAVE 2/XT)
 
 This is the FAQ specific for the Xenia plugin, which emulates the Waldorf microWAVE 2/XT
-
-**Q: On MacOS, plugins do not load because they are not properly signed**
-
-A: Plugins on MacOS need to be signed manually after installation. To do so, we have included a script called 'macsetup_Xenia.command' packaged with the MacOS plugin downloads. Simply extract the plugin archive, double-click the .command file, then copy the plugin to the desired plugin folder.
-
-Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for Xenia is shown below:
-
-```
-sudo xattr -cr /Library/Audio/Plug-Ins/VST3/Xenia.vst3
-sudo xattr -cr /Library/Audio/Plug-Ins/VST/Xenia.vst
-sudo xattr -cr /Library/Audio/Plug-Ins/Components/Xenia.component
-sudo xattr -cr /Library/Audio/Plug-Ins/CLAP/Xenia.clap
-sudo xattr -cr /Library/Audio/Plug-Ins/LV2/Xenia.lv2
-```
 
 **Q: When controlling the plugin via my Master Keyboard, I get weird behavior such as volume changes / sound changes etc**
 
@@ -287,20 +239,6 @@ A: Right click anywhere in the plugin and export the currently loaded skin to di
 
 This is the FAQ specific for the NodalRed2x plugin, which emulates the Clavia Nord Lead 2X (not to be confused with the Nord Lead 2).
 
-**Q: On MacOS, plugins do not load because they are not properly signed**
-
-A: Plugins on MacOS need to be signed manually after installation. To do so, we have included a script called 'macsetup_NodalRed2x.command' packaged with the MacOS plugin downloads. Simply extract the plugin archive, double-click the .command file, then copy the plugin to the desired plugin folder.
-
-Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for NodalRed2x is shown below:
-
-```
-sudo xattr -cr /Library/Audio/Plug-Ins/VST3/NodalRed2x.vst3
-sudo xattr -cr /Library/Audio/Plug-Ins/VST/NodalRed2x.vst
-sudo xattr -cr /Library/Audio/Plug-Ins/Components/NodalRed2x.component
-sudo xattr -cr /Library/Audio/Plug-Ins/CLAP/NodalRed2x.clap
-sudo xattr -cr /Library/Audio/Plug-Ins/LV2/NodalRed2x.lv2
-```
-
 **Q: When controlling the plugin via my Master Keyboard, I get weird behavior such as volume changes / sound changes etc**
 
 A: The Nord Lead 2x hardware has control changes mapped to preset parameter changes. It is very likely that your Master Keyboard emits MPE control change messages that the Nord Lead 2x doesn't understand. To fix this, either disable MPE on your Master Keyboard or filter them in your DAW
@@ -313,23 +251,9 @@ As of Version 2.2.2 we have implemented MIDI Learn capabilities in our emulators
 
 A: Right click anywhere in the plugin and export the currently loaded skin to disk. We provide a skinning capability, please see the [Skinning Guide](/docs/rmlui-skinning).
 
-## JE8086 VST/AU/CLAP/LV2 FAQ (Roland JP-8000 and soon JP-8080)
+## JE8086 VST/AU/CLAP/LV2 FAQ (Roland JP-8000/JP-8080)
 
 This is the FAQ specific for the JE8086 plugin, which emulates the Roland JP-8000 (and soon the JP-8080).
-
-**Q: On MacOS, plugins do not load because they are not properly signed**
-
-A: Plugins on MacOS need to be signed manually after installation. To do so, we have included a script called 'macsetup_je8086.command' packaged with the MacOS plugin downloads. Simply extract the plugin archive, double-click the .command file, then copy the plugin to the desired plugin folder.
-
-Alternatively, you can open a Terminal and execute the following commands for each format of the plugin you wish to install and use (if you have installed the plugins in a non-standard location or renamed the files, modify these commands to reflect those differences). An example for JE8086 is shown below:
-
-```
-sudo xattr -cr /Library/Audio/Plug-Ins/VST3/JE8086.vst3
-sudo xattr -cr /Library/Audio/Plug-Ins/VST/JE8086.vst
-sudo xattr -cr /Library/Audio/Plug-Ins/Components/JE8086.component
-sudo xattr -cr /Library/Audio/Plug-Ins/CLAP/JE8086.clap
-sudo xattr -cr /Library/Audio/Plug-Ins/LV2/JE8086.lv2
-```
 
 **Q: When controlling the plugin via my Master Keyboard, I get weird behavior such as volume changes / sound changes etc**
 

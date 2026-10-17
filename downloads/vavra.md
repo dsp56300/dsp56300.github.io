@@ -13,38 +13,16 @@ permalink: /downloads/vavra
   ╚═══╝  ╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝
 ```
 
-https://videopress.com/v/iZBzhzPi?resizeToParent=true&cover=true&autoPlay=true&loop=true&preloadContent=metadata&useAverageColor=true
+Vavra emulates the Waldorf microQ. The easiest way to install and update it is the **[TUS Plugin Manager](/downloads/plugin-manager)**; the [Installation Guide](/docs/installation-guide) explains it, and where the ROM goes.
 
-Please read these instructions carefully to save our Discord Server from being overloaded with questions regarding the setup of the emulator.
+| <span class="table-title">Downloads</span> | Windows | macOS | Linux x64 | Linux aarch64 |
+| --- | --- | --- | --- | --- |
+| **Vavra** | [Download](/builds/downloads?product=Vavra&format=All&os=win64) | [Download](/builds/downloads?product=Vavra&format=All&os=MacOS) | [Download](/builds/downloads?product=Vavra&format=All&os=Linux_x86_64) | [Download](/builds/downloads?product=Vavra&format=All&os=Linux_aarch64) |
+| **VavraFX** (effect version) | [Download](/builds/downloads?product=VavraFX&format=All&os=win64) | [Download](/builds/downloads?product=VavraFX&format=All&os=MacOS) | [Download](/builds/downloads?product=VavraFX&format=All&os=Linux_x86_64) | [Download](/builds/downloads?product=VavraFX&format=All&os=Linux_aarch64) |
+| Performance test | [Download](/builds/downloads?product=VavraPerformanceTest&format=All&os=win64) | [Download](/builds/downloads?product=VavraPerformanceTest&format=All&os=MacOS) | [Download](/builds/downloads?product=VavraPerformanceTest&format=All&os=Linux_x86_64) | [Download](/builds/downloads?product=VavraPerformanceTest&format=All&os=Linux_aarch64) |
 
-## Performance Test Download Links
+Every version of [Vavra](/builds/downloads?product=Vavra&format=All&os=All) and [VavraFX](/builds/downloads?product=VavraFX&format=All&os=All), or our [GitHub Releases Page](https://github.com/dsp56300/gearmulator/releases). To install by hand, see [Installing by hand](/docs/installation-guide#installing-by-hand).
 
-If you are curious about how well your system will perform while running the emulator, please download and run the test program from one of the following links below to see if your CPU is capable of handling it. The ROM for the microQ will need to be placed in the root of this folder for it to work (we can not provide ROM files, so you will need to make your own arrangements)
+## Performance test
 
-[Win](/builds/downloads?product=VavraPerformanceTest&format=All&os=win64) / [Mac](/builds/downloads?product=VavraPerformanceTest&format=All&os=MacOS) / [Linux x64](/builds/downloads?product=VavraPerformanceTest&format=All&os=Linux_x86_64) / [Linux aarch64](/builds/downloads?product=VavraPerformanceTest&format=All&os=Linux_aarch64)
-
-Once you have downloaded the test program, uncompressed it, and placed the firmware in the same folder, run the .bat files (Windows) or .sh files (Mac/Linux) and the Performance Test will execute and provide you with feedback on the performance of the emulator on your computer.
-
-As the microQ runs at 118 MHz a result of 118 MIPs or more is needed to run it.
-
-## Emulator Downloads Links  
-Please read the [Installation Guide](/docs/installation-guide) before downloading
-
-Vavra Emulator for Waldorf microQ latest version:  
-  
-[Win](/builds/downloads?product=Vavra&format=All&os=win64) / [Mac](/builds/downloads?product=Vavra&format=All&os=MacOS) / [Linux x64](/builds/downloads?product=Vavra&format=All&os=Linux_x86_64) / [Linux aarch64](/builds/downloads?product=Vavra&format=All&os=Linux_aarch64)  
-
-VavraFX (effects version) Waldorf microQ latest version:  
-  
-[Win](/builds/downloads?product=VavraFX&format=All&os=win64) / [Mac](/builds/downloads?product=VavraFX&format=All&os=MacOS) / [Linux x64](/builds/downloads?product=VavraFX&format=All&os=Linux_x86_64) / [Linux aarch64](/builds/downloads?product=VavraFX&format=All&os=Linux_aarch64)
-
-  
-For the full list of Vavra downloads click [here](/builds/downloads?product=Vavra&format=All&os=All).  
-  
-For the full list of VavraFX downloads click [here](/builds/downloads?product=VavraFX&format=All&os=All).  
-  
-If you are unable to access these pages, you can also download directly from our [GitHub Releases Page](https://github.com/dsp56300/gearmulator/releases).
-
-### MacOS Catalina+ users, read this
-
-> The plugins are not signed, if you get a warning such as "Vavra.xxx cannot be opened because the developer cannot be verified", please ensure you carefully follow the instructions in the Installation Guide to uncompress the plugin download, double-click the provided 'macsetup_Vavra.command' file, then copy the modified plugin file to the applicable plugin folder.
+Find out whether your computer is fast enough before you install. Unpack it, put the ROM into the same folder and run the `.bat` file (Windows) or the `.sh` file (macOS, Linux). The microQ runs at 118 MHz and needs a result of 118 MIPS or more.
