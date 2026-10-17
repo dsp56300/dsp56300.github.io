@@ -1,0 +1,67 @@
+<div class="products">
+  <p class="products-intro">Free, open-source emulations of classic digital instruments, running the original firmware on emulated DSPs.</p>
+
+  <nav class="products-filter" aria-label="Filter products by category">
+    <button type="button" class="active" data-filter="all">All</button>
+    {% for category in site.data.products.categories %}
+    <button type="button" data-filter="{{ category | slugify }}">{{ category }}</button>
+    {% endfor %}
+  </nav>
+
+  {% for category in site.data.products.categories %}
+  {% assign items = site.data.products.products | where: "category", category %}
+  <section class="product-category" data-category="{{ category | slugify }}">
+    <h2 class="product-category-title">{{ category }} <span>{{ items.size }}</span></h2>
+    <div class="product-grid">
+      {% for p in items %}
+      {% if p.status == "alpha" %}{% assign url = site.data.products.alpha_url %}{% else %}{% assign url = p.url %}{% endif %}
+      {% if url %}<a class="product-card product-{{ p.status }}" href="{{ url | relative_url }}">{% else %}<div class="product-card product-{{ p.status }}">{% endif %}
+        <div class="product-image{% if p.fit == 'contain' %} product-image-contain{% endif %}{% if p.align == 'top' %} product-image-top{% endif %}">
+          {% if p.image %}
+          <img src="{{ p.image | relative_url }}" alt="{{ p.name }} user interface" loading="lazy">
+          {% if p.hover_image %}<img class="product-image-hover" src="{{ p.hover_image | relative_url }}" alt="" loading="lazy">{% endif %}
+          {% if p.hover_video %}<video class="product-image-hover" src="{{ p.hover_video | relative_url }}" poster="{{ p.image | relative_url }}" muted loop playsinline preload="none" aria-hidden="true"></video>{% endif %}
+          {% else %}
+          <div class="product-placeholder" aria-hidden="true">{{ p.name }}</div>
+          {% endif %}
+          {% if p.status == "alpha" %}<div class="product-alpha-overlay"><span>currently in alpha</span></div>{% endif %}
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">{{ p.name }}</h3>
+          <p class="product-hardware">{% if p.hardware %}{{ p.hardware }}{% else %}Details coming soon{% endif %}</p>
+        </div>
+      {% if url %}</a>{% else %}</div>{% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.products-filter button');
+    var sections = document.querySelectorAll('.product-category');
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var filter = button.getAttribute('data-filter');
+        buttons.forEach(function (b) { b.classList.toggle('active', b === button); });
+        sections.forEach(function (s) {
+          s.hidden = filter !== 'all' && s.getAttribute('data-category') !== filter;
+        });
+      });
+    });
+
+    document.querySelectorAll('.product-card video').forEach(function (video) {
+      var card = video.closest('.product-card');
+      // defaultPlaybackRate too, since loading the video resets playbackRate to it
+      video.defaultPlaybackRate = video.playbackRate = 4;
+      card.addEventListener('mouseenter', function () {
+        video.play().catch(function () {});
+      });
+      card.addEventListener('mouseleave', function () {
+        video.pause();
+        video.currentTime = 0;
+      });
+    });
+  })();
+</script>

@@ -1,0 +1,117 @@
+# Products shown on the home page, grouped by category in the order listed here.
+#
+# status:   released | alpha (closed alpha: darkened, labelled, and linked to alpha_url)
+# image:    card image, ~800px wide; leave out to show a placeholder
+# fit:      contain for images much wider than the card (default: cover)
+# align:    top to crop a tall image from the bottom only (default: centered)
+# hover_image: optional second image shown while the card is hovered
+# hover_video: optional muted video played while the card is hovered
+
+# Where closed alpha cards link to
+alpha_url: https://discord.gg/WJ9cxySnsM
+
+categories:
+  - Virtual Analog
+  - Rompler
+  - Effects
+
+products:
+  - name: Osirus
+    hardware: Access Virus A/B/C
+    category: Virtual Analog
+    status: released
+    url: /downloads/osirus
+    image: /images/products/osirus.jpg
+
+  - name: OsTIrus
+    hardware: Access Virus TI/TI2/Snow
+    category: Virtual Analog
+    status: released
+    url: /downloads/ostirus
+    image: /images/products/ostirus.jpg
+
+  - name: JE-8086
+    hardware: Roland JP-8000
+    category: Virtual Analog
+    status: released
+    url: /downloads/je8086
+    image: /images/products/je8086.jpg
+
+  - name: Nodal Red 2x
+    hardware: Clavia Nord Lead/Rack 2x
+    category: Virtual Analog
+    status: released
+    url: /downloads/nodalred2x
+    image: /images/products/nodalred2x.jpg
+
+  - name: Xenia
+    hardware: Waldorf Microwave II/XT
+    category: Virtual Analog
+    status: released
+    url: /downloads/xenia
+    image: /images/products/xenia.jpg
+
+  - name: Vavra
+    hardware: Waldorf microQ
+    category: Virtual Analog
+    status: released
+    url: /downloads/vavra
+    image: /images/products/vavra.jpg
+
+  - name: 88EmuPlayer
+    hardware: Roland Sound Canvas, MT-32 and related
+    category: Rompler
+    status: released
+    url: /downloads/88emuplayer
+    image: /images/products/88emuplayer.jpg
+    hover_video: /images/pages/88emuplayer/intro.mp4
+    fit: contain
+
+  # Closed alpha
+  - name: BlueGiant
+    hardware: Novation Supernova II
+    category: Virtual Analog
+    status: alpha
+    image: /images/products/bluegiant.jpg
+
+  - name: Goldfinger
+    hardware: Waldorf Q
+    category: Virtual Analog
+    status: alpha
+    image: /images/products/goldfinger.jpg
+
+  - name: Jade
+    hardware: Roland JD-990
+    category: Rompler
+    status: alpha
+    image: /images/products/jade.jpg
+    hover_image: /images/products/jade-editor.jpg
+    fit: contain
+
+  - name: Triplex
+    hardware: Roland SDE-330 / SRV-330 / SDX-330
+    category: Effects
+    status: alpha
+    image: /images/products/triplex.jpg
+    fit: contain
+
+  - name: OL-3S
+    hardware: Boss SE-70
+    category: Effects
+    status: alpha
+    image: /images/products/ol-3s.jpg
+    align: top
+
+  - name: DigiSpace
+    hardware: Roland RE-3
+    category: Effects
+    status: alpha
+    image: /images/products/digispace.jpg
+    fit: contain
+
+  - name: CandyVerb
+    hardware: Roland DEP-5
+    category: Effects
+    status: alpha
+    image: /images/products/candyverb.jpg
+    fit: contain
