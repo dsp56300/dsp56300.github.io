@@ -92,16 +92,20 @@ The context passed to your paint function is only valid **during** that call —
 
 | Property | Type | Description |
 |----------|------|-------------|
-| `ctx.fillStyle` | string | Fill color (CSS color string). Used by `fillRect` and `fill`. |
-| `ctx.strokeStyle` | string | Stroke color (CSS color string). Used by `strokeRect` and `stroke`. |
-| `ctx.lineWidth` | number | Line thickness in pixels. Used by `strokeRect` and `stroke`. |
+| `ctx.fillStyle` | string or gradient | Fill color (CSS color string) or a [gradient](#gradients). Used by `fillRect` and `fill`. |
+| `ctx.strokeStyle` | string or gradient | Stroke color (CSS color string) or a [gradient](#gradients). Used by `strokeRect` and `stroke`. |
+| `ctx.lineWidth` | number | Line thickness in pixels. Used by `strokeRect` and `stroke`. Zero or negative values are ignored. |
+| `ctx.lineJoin` | string | How corners of a stroke are drawn: `"miter"` (default), `"round"` or `"bevel"`. |
+| `ctx.lineCap` | string | How the ends of an open stroke are drawn: `"butt"` (default), `"round"` or `"square"`. |
+| `ctx.canvas` | element | The canvas element being drawn on (read-only). Use it to read the canvas size, see [Coordinate system and scaling](#coordinate-system-and-scaling). |
 
 ### Methods
 
 | Method | Description |
 |--------|-------------|
 | `ctx:fillRect(x, y, w, h)` | Fills a rectangle with `fillStyle`. |
-| `ctx:strokeRect(x, y, w, h)` | Outlines a rectangle with `strokeStyle` / `lineWidth`. |
+| `ctx:strokeRect(x, y, w, h)` | Outlines a rectangle with `strokeStyle` / `lineWidth` / `lineJoin`. |
+| `ctx:clearRect(x, y, w, h)` | Makes a rectangle fully transparent. |
 | `ctx:beginPath()` | Starts a new path. |
 | `ctx:closePath()` | Closes the current sub-path back to its start. |
 | `ctx:moveTo(x, y)` | Moves the pen to `(x, y)` without drawing. |
@@ -110,7 +114,10 @@ The context passed to your paint function is only valid **during** that call —
 | `ctx:arc(x, y, radius, startAngle, endAngle [, counterclockwise])` | Adds an arc / circle. Angles are in radians. |
 | `ctx:ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle [, counterclockwise])` | Adds an elliptical arc. |
 | `ctx:fill()` | Fills the current path with `fillStyle`. |
-| `ctx:stroke()` | Strokes the current path with `strokeStyle` / `lineWidth`. |
+| `ctx:stroke()` | Strokes the current path with `strokeStyle` / `lineWidth` / `lineJoin` / `lineCap`. |
+| `ctx:clip()` | Restricts everything drawn afterwards to the current path, see [Clipping](#clipping). |
+| `ctx:createLinearGradient(x0, y0, x1, y1)` | Returns a [gradient](#gradients) along the line from `(x0, y0)` to `(x1, y1)`. |
+| `ctx:createRadialGradient(x0, y0, r0, x1, y1, r1)` | Returns a [gradient](#gradients) from the circle at `(x0, y0)` with radius `r0` to the circle at `(x1, y1)` with radius `r1`. |
 
 Filled and outlined shapes follow the standard HTML5 pattern — rectangles have the `fillRect`/`strokeRect` shortcuts, while circles, ellipses and lines are built as paths and then filled or stroked:
 
@@ -141,9 +148,65 @@ ctx:stroke()
 | `rgb(r, g, b)` | `"rgb(255, 0, 0)"` |
 | `rgba(r, g, b, a)` | `"rgba(255, 0, 0, 0.5)"` |
 
-## Coordinate system
+## Gradients
 
-Drawing coordinates are in the canvas's **pixel** space with the origin `(0, 0)` at the **top-left** (same as HTML5, and unlike some low-level graphics APIs). Anything drawn outside the canvas's pixel size is clipped. The pixel size follows the element's rendered size, which depends on the skin's scaling — query it if you need to lay out relative to the canvas rather than using fixed coordinates.
+Create a gradient from the context, add color stops to it, and assign it to `fillStyle` or `strokeStyle`:
+
+```lua
+local grad = ctx:createLinearGradient(0, 0, 0, h)   -- from the top to the bottom
+grad:addColorStop(0, "rgba(70, 104, 132, 0.7)")
+grad:addColorStop(1, "#1e3040")
+ctx.fillStyle = grad
+ctx:fillRect(0, 0, w, h)
+```
+
+| Method | Description |
+|--------|-------------|
+| `gradient:addColorStop(offset, color)` | Adds `color` at `offset`, from 0 (start) to 1 (end). Colors are blended between the stops; before the first and after the last stop, that stop's color continues. An offset outside 0..1 or an invalid color is an error. |
+
+Gradient coordinates are canvas pixels and do not depend on the shape that is filled. A gradient without color stops draws nothing.
+
+A radial gradient blends from the first circle to the second one, as in HTML5. For a plain round gradient, give both circles the same center:
+
+```lua
+local glow = ctx:createRadialGradient(cx, cy, 0, cx, cy, r)
+glow:addColorStop(0, "#ffffffff")
+glow:addColorStop(1, "#ffffff00")
+ctx.fillStyle = glow
+ctx:beginPath()
+ctx:arc(cx, cy, r, 0, math.pi * 2)
+ctx:fill()
+```
+
+## Clipping
+
+`clip()` turns the current path into a clipping region: everything drawn afterwards, including `clearRect`, only affects the inside of that path. Calling `clip()` again narrows the region further. A clip lasts until the paint function returns, so every paint starts unclipped.
+
+```lua
+ctx:beginPath()
+ctx:rect(10, 10, 200, 100)
+ctx:clip()
+-- from here on, drawing only shows up inside the rectangle
+```
+
+## Coordinate system and scaling
+
+Drawing coordinates are in the canvas's **pixel** space with the origin `(0, 0)` at the **top-left** (same as HTML5, and unlike some low-level graphics APIs). Anything drawn outside the canvas is clipped.
+
+The pixel size of a canvas is not fixed. It is the size of the element on screen, which depends on the skin's `rootScale`, the scale chosen in the plugin settings and the display scaling of the operating system. A canvas declared as `width: 260dp` can be 130 pixels wide in one host and 390 in another. Do not hard-code a scale factor for this: read the canvas size in the paint function and derive the factor from it.
+
+```lua
+canvas:setPaintFunction(function(ctx)
+    local w = ctx.canvas.client_width     -- canvas size in pixels
+    local h = ctx.canvas.client_height
+    local s = w / 260                     -- pixels per dp, for a canvas declared 260dp wide
+
+    ctx.lineWidth = 2 * s
+    ctx:strokeRect(10 * s, 10 * s, 100 * s, 50 * s)   -- a 100 x 50 dp rectangle
+end)
+```
+
+The canvas is repainted whenever its size changes, so the drawing always matches the current scale. `client_width` and `client_height` include padding, so keep a canvas free of padding and borders.
 
 ## Redrawing from parameter changes
 
@@ -167,4 +230,14 @@ canvas:repaint()
 
 The context's property and method names match the HTML5 `CanvasRenderingContext2D`, so drawing code is portable. The one Gearmulator-specific step is the bootstrap: instead of `canvas.getContext("2d")` you register a **paint function** with `setPaintFunction`, and you trigger a redraw with `repaint()`. Everything inside the paint function is standard canvas 2D code.
 
-The current implementation covers rectangles, lines, arcs/circles, ellipses, fill and stroke styles, and line width. More of the HTML5 surface may be added over time.
+The current implementation covers rectangles, lines, arcs/circles and ellipses; filling and stroking with colors or linear and radial gradients; line width, joins and caps; clipping and clearing. Transformations (`scale`, `translate`, `rotate`), `save`/`restore`, text and images are not available yet. More of the HTML5 surface may be added over time.
+
+Gradients, `clearRect`, `clip`, `lineJoin`, `lineCap` and `ctx.canvas` are available as of version 2.2.25. A skin that should also run on older versions can check for a feature before using it, since a missing method or property reads as `nil`:
+
+```lua
+if ctx.createLinearGradient then
+    -- use a gradient
+else
+    ctx.fillStyle = "#2b4764"
+end
+```
